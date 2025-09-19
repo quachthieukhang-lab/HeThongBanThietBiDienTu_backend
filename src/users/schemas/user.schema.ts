@@ -1,21 +1,57 @@
+// src/users/schemas/user.schema.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-export type UserDocument = User & Document;
+export enum UserRole {
+  Customer = 'customer',
+  Admin = 'admin',
+  Staff = 'staff',
+}
+
+export enum UserStatus {
+  Active = 'active',
+  Blocked = 'blocked',
+  Deleted = 'deleted',
+}
 
 @Schema({ timestamps: true })
-export class User {
-  @Prop({ required: true })
+export class User extends Document {
+  @Prop({ required: true, trim: true })
   name: string;
 
-  @Prop({ required: true, unique: true })
+  @Prop({ required: true, unique: true, lowercase: true, trim: true })
   email: string;
 
   @Prop({ required: true })
-  password: string;
+  passwordHash: string;
 
-  @Prop({ default: false })
-  isActive: boolean;
+  @Prop({
+    type: [String],
+    enum: UserRole,
+    default: [UserRole.Customer],
+  })
+  roles: UserRole[];
+
+  @Prop({
+    type: String,
+    enum: UserStatus,
+    default: UserStatus.Active,
+  })
+  status: UserStatus;
+
+  @Prop()
+  phone?: string;
+
+  @Prop()
+  avatarUrl?: string;
+
+  @Prop()
+  defaultAddressId?: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
+
+
+UserSchema.index({ email: 1 }, { unique: true });
+UserSchema.index({ roles: 1 });
+UserSchema.index({ status: 1 });
