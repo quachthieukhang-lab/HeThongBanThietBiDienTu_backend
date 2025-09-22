@@ -1,3 +1,4 @@
+// src/products/schemas/product.schema.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
@@ -12,26 +13,24 @@ export class Product extends Document {
   @Prop({ type: Types.ObjectId, ref: 'Category', required: true })
   categoryId: Types.ObjectId;
 
+  @Prop({ type: Types.ObjectId, ref: 'Subcategory', required: true })
+  subcategoryId: Types.ObjectId;
+
   @Prop({ type: Types.ObjectId, ref: 'AttributeTemplate' })
   templateId: Types.ObjectId;
 
   @Prop({ default: 1 })
   templateVersion: number;
 
-  // HYBRID
+  // Hybrid
   @Prop({ type: Object, default: {} })
-  specs: Record<string, any>; // hiển thị chi tiết (bảng thông số)
+  specs: Record<string, any>;
 
   @Prop({ type: Object, default: {} })
-  facets: Record<string, any>; // chuẩn hóa để filter/sort
+  facets: Record<string, any>;
 
-  // Tổng hợp từ các variants
   @Prop({ type: Object, default: {} })
-  variantFacetSummary: {
-    colors?: string[];
-    storage_set?: number[];
-    ram_set?: number[];
-  };
+  variantFacetSummary: Record<string, any>;
 
   @Prop()
   thumbnail?: string;
@@ -39,7 +38,6 @@ export class Product extends Document {
   @Prop([String])
   images?: string[];
 
-  // Giá tổng hợp (min/max từ variants)
   @Prop({ required: true, default: 0 })
   priceFrom: number;
 
@@ -48,18 +46,11 @@ export class Product extends Document {
 
   @Prop({ default: true })
   isPublished: boolean;
-
-  @Prop({ default: 0 })
-  ratingAvg: number;
-
-  @Prop({ default: 0 })
-  ratingCount: number;
 }
 
 export const ProductSchema = SchemaFactory.createForClass(Product);
 
-// Indexes gợi ý
-ProductSchema.index({ categoryId: 1, isPublished: 1 });
+// Index gợi ý
+ProductSchema.index({ categoryId: 1 });
+ProductSchema.index({ subcategoryId: 1 });
 ProductSchema.index({ 'facets.brand': 1 });
-ProductSchema.index({ 'facets.screen_size': 1 });
-ProductSchema.index({ priceFrom: 1 });

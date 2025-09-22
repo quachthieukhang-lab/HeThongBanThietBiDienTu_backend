@@ -12,15 +12,15 @@ export enum AttrType {
 
 export class AttributeDef {
   @Prop({ required: true })
-  key: string; // khóa chuẩn hóa, vd: "screen_size", "ram"
+  key: string; // khóa chuẩn hóa: vd "screen_size", "ram"
 
   @Prop({ required: true })
-  label: string; // nhãn hiển thị, vd: "Màn hình (inch)"
+  label: string; // nhãn hiển thị: vd "Màn hình (inch)"
 
   @Prop({ enum: AttrType, required: true })
   type: AttrType;
 
-  @Prop() unit?: string; // đơn vị hiển thị, vd: "inch", "GB", "mAh"
+  @Prop() unit?: string; // đơn vị hiển thị: "inch", "GB", "mAh"
 
   // áp dụng cho number
   @Prop() min?: number;
@@ -44,18 +44,17 @@ export class AttributeDef {
   @Prop({ default: false })
   searchable?: boolean;
 
-  @Prop() group?: string; // nhóm hiển thị, vd: "Màn hình", "CPU", "Pin"
-
-  @Prop() order?: number; // thứ tự hiển thị trong form/bảng thông số
+  @Prop() group?: string; // nhóm hiển thị: "CPU", "Màn hình", "Pin"
+  @Prop() order?: number; // thứ tự hiển thị
 }
 
 @Schema({ timestamps: true })
 export class AttributeTemplate extends Document {
-  @Prop({ type: Types.ObjectId, ref: 'Category', required: true })
-  categoryId: Types.ObjectId;
+  @Prop({ type: Types.ObjectId, ref: 'Subcategory', required: true })
+  subcategoryId: Types.ObjectId;
 
   @Prop({ required: true, trim: true })
-  name: string; // "Điện thoại - Template v1"
+  name: string; // ví dụ: "Điện thoại - Template v1"
 
   @Prop({ type: Number, default: 1 })
   version: number;
@@ -73,6 +72,6 @@ export class AttributeTemplate extends Document {
 export const AttributeTemplateSchema =
   SchemaFactory.createForClass(AttributeTemplate);
 
-// Indexes
-AttributeTemplateSchema.index({ categoryId: 1, isActive: 1 });
-AttributeTemplateSchema.index({ categoryId: 1, version: -1 });
+// Indexes để query nhanh
+AttributeTemplateSchema.index({ subcategoryId: 1, isActive: 1 });
+AttributeTemplateSchema.index({ subcategoryId: 1, version: -1 });
