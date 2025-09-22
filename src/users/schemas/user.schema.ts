@@ -19,7 +19,7 @@ export class User extends Document {
   @Prop({ required: true, trim: true })
   name: string;
 
-  @Prop({ required: true, unique: true, lowercase: true, trim: true })
+  @Prop({ required: true, lowercase: true, trim: true })
   email: string;
 
   @Prop({ required: true })
