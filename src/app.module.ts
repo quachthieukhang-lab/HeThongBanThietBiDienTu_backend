@@ -7,6 +7,9 @@ import { AddressesModule } from './addresses/addresses.module';
 import { ProductsModule } from './products/products.module';
 import { ProductVariantsModule } from './product_variants/product_variants.module';
 import { AttributesModule } from './attributes/attributes.module';
+import { CategoriesModule } from './categories/categories.module';
+import { SubcategoriesModule } from './subcategories/subcategories.module';
+
 
 @Module({
   imports: [
@@ -16,6 +19,8 @@ import { AttributesModule } from './attributes/attributes.module';
     ProductsModule,
     ProductVariantsModule,
     AttributesModule,
+    CategoriesModule,
+    SubcategoriesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

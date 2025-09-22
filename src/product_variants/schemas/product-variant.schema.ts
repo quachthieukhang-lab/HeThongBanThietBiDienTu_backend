@@ -5,7 +5,7 @@ import { Document, Types } from 'mongoose';
 export class ProductVariant extends Document {
   @Prop({ type: Types.ObjectId, ref: 'Product', required: true })
   productId: Types.ObjectId;
-
+  
   @Prop({ required: true, unique: true })
   sku: string;
 
