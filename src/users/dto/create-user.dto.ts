@@ -5,7 +5,7 @@ import { UserRole, UserStatus } from '@users/schemas/user.schema';
 export class CreateUserDto {
   @IsNotEmpty()
   @IsString()
-  name: string;
+  name: string;0
 
   @IsEmail()
   email: string;

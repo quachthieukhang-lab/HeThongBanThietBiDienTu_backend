@@ -1,8 +1,22 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+  Query,
+  ParseIntPipe,
+  DefaultValuePipe,
+  ParseArrayPipe,
+} from '@nestjs/common';
+
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UserRole, UserStatus } from '@users/schemas/user.schema';
+import { FindAllQuery } from '@users/dto/find-all-query.dto';
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
@@ -13,8 +27,20 @@ export class UsersController {
   }
 
   @Get()
-  findAll() {
-    return this.usersService.findAll();
+  findAll(
+    @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number,
+    @Query('limit', new DefaultValuePipe(20), ParseIntPipe) limit: number,
+    @Query('search') search?: string,
+    @Query('status') status?: UserStatus,
+    @Query(
+      'roles',
+      new DefaultValuePipe([]),
+      new ParseArrayPipe({ optional: true, separator: ',', items: String }),
+    )
+    roles?: UserRole[],
+  ) {
+    const q: FindAllQuery = { page, limit, search, status, roles };
+    return this.usersService.findAll(q);
   }
 
   @Get(':id')

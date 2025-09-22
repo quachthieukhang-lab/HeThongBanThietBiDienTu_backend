@@ -5,7 +5,10 @@ import { CreateUserDto } from '@users/dto/create-user.dto';
 import { UpdateUserDto } from '@users/dto/update-user.dto';
 import { User, UserRole, UserStatus } from '@users/schemas/user.schema';
 import * as bcrypt from 'bcrypt';
+import { FindAllQuery } from '@users/dto/find-all-query.dto';
 @Injectable()
+
+
 export class UsersService {
   constructor(
     @InjectModel(User.name) private readonly userModel: Model<User>,
@@ -37,8 +40,41 @@ export class UsersService {
     const { passwordHash, __v, ...rest } = user;
     return rest;
   }
-  findAll() {
-    return `This action returns all users`;
+  async findAll(q: FindAllQuery = {}) {
+    const page = Math.max(1, Number(q.page) || 1);
+    const limit = Math.min(100, Math.max(1, Number(q.limit) || 20));
+    const skip = (page - 1) * limit;
+
+    const filter: any = {};
+    if (q.status) filter.status = q.status;
+    if (q.roles?.length) filter.roles = { $in: q.roles };
+    if (q.search) {
+      const s = q.search.trim();
+      filter.$or = [
+        { name: new RegExp(s, 'i') },
+        { email: new RegExp(s, 'i') },
+        { phone: new RegExp(s, 'i') },
+      ];
+    }
+
+    const [items, total] = await Promise.all([
+      this.userModel
+        .find(filter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limit)
+        .select('-passwordHash')     // ẩn pass
+        .lean(),
+      this.userModel.countDocuments(filter),
+    ]);
+
+    return {
+      items,
+      page,
+      limit,
+      total,
+      pages: Math.ceil(total / limit),
+    };
   }
 
   findOne(id: number) {
