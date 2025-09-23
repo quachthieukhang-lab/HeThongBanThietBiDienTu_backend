@@ -17,7 +17,7 @@ export class ProductVariant extends Document {
     Color?: string;
     Storage?: number;
     RAM?: number;
-    [key: string]: any; // mở rộng linh hoạt
+    [key: string]: any; 
   };
 
   @Prop({ type: Object, default: {} })
@@ -46,7 +46,7 @@ export class ProductVariant extends Document {
 export const ProductVariantSchema =
   SchemaFactory.createForClass(ProductVariant);
 
-// Indexes gợi ý
+
 ProductVariantSchema.index({ productId: 1, isActive: 1 });
 ProductVariantSchema.index({ 'facets.storage': 1 });
 ProductVariantSchema.index({ 'facets.ram': 1 });

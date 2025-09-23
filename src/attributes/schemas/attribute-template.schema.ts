@@ -1,4 +1,4 @@
-// src/attributes/schemas/attribute-template.schema.ts
+
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
@@ -7,28 +7,28 @@ export enum AttrType {
   Number = 'number',
   Boolean = 'boolean',
   Enum = 'enum',
-  Multienum = 'multienum', // nhiều giá trị (VD: hỗ trợ Wi-Fi a/b/g/n/ac/ax)
+  Multienum = 'multienum',
 }
 
 export class AttributeDef {
   @Prop({ required: true })
-  key: string; // khóa chuẩn hóa: vd "screen_size", "ram"
+  key: string; 
 
   @Prop({ required: true })
-  label: string; // nhãn hiển thị: vd "Màn hình (inch)"
+  label: string; 
 
   @Prop({ enum: AttrType, required: true })
   type: AttrType;
 
-  @Prop() unit?: string; // đơn vị hiển thị: "inch", "GB", "mAh"
+  @Prop() unit?: string; 
 
-  // áp dụng cho number
+  
   @Prop() min?: number;
   @Prop() max?: number;
   @Prop() step?: number;
   @Prop() decimals?: number;
 
-  // áp dụng cho enum/multienum
+
   @Prop([String])
   options?: (string | number)[];
 
@@ -44,8 +44,8 @@ export class AttributeDef {
   @Prop({ default: false })
   searchable?: boolean;
 
-  @Prop() group?: string; // nhóm hiển thị: "CPU", "Màn hình", "Pin"
-  @Prop() order?: number; // thứ tự hiển thị
+  @Prop() group?: string;
+  @Prop() order?: number;
 }
 
 @Schema({ timestamps: true })
@@ -54,7 +54,7 @@ export class AttributeTemplate extends Document {
   subcategoryId: Types.ObjectId;
 
   @Prop({ required: true, trim: true })
-  name: string; // ví dụ: "Điện thoại - Template v1"
+  name: string; 
 
   @Prop({ type: Number, default: 1 })
   version: number;
@@ -72,6 +72,6 @@ export class AttributeTemplate extends Document {
 export const AttributeTemplateSchema =
   SchemaFactory.createForClass(AttributeTemplate);
 
-// Indexes để query nhanh
+
 AttributeTemplateSchema.index({ subcategoryId: 1, isActive: 1 });
 AttributeTemplateSchema.index({ subcategoryId: 1, version: -1 });

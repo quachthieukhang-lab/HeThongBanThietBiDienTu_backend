@@ -1,4 +1,3 @@
-// src/categories/schemas/subcategory.schema.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
@@ -25,5 +24,4 @@ export class Subcategory extends Document {
 
 export const SubcategorySchema = SchemaFactory.createForClass(Subcategory);
 
-// Index để query nhanh theo category
 SubcategorySchema.index({ categoryId: 1, isActive: 1 });

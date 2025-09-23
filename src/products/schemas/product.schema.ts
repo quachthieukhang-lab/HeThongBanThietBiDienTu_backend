@@ -1,4 +1,3 @@
-// src/products/schemas/product.schema.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
@@ -50,7 +49,6 @@ export class Product extends Document {
 
 export const ProductSchema = SchemaFactory.createForClass(Product);
 
-// Index gợi ý
 ProductSchema.index({ categoryId: 1 });
 ProductSchema.index({ subcategoryId: 1 });
 ProductSchema.index({ 'facets.brand': 1 });

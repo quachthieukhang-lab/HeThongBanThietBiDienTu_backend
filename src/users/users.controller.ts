@@ -45,16 +45,34 @@ export class UsersController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.usersService.findOne(+id);
+    console.log('users.controller.findOne called', { id })
+    return this.usersService.findOne(id);
+  }
+
+  @Get('email/:email')
+  findByEmail(@Param('email') email: string) {
+    console.log('users.controller.findByEmail called', { email })
+    return this.usersService.findByEmail(email);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
+  update(@Param('id') id: string, @Body() dto: UpdateUserDto) {
+    return this.usersService.update(id, dto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.usersService.remove(+id);
-  }F
+    return this.usersService.remove(id);
+  }
+
+  @Post(':id/restore')
+  restore(@Param('id') id: string) {
+    return this.usersService.restore(id);
+  }
+
+  @Delete(':id/hard')
+  hardDelete(@Param('id') id: string) {
+    return this.usersService.hardDelete(id);
+  }
+
 }

@@ -8,7 +8,7 @@ export class UpdateUserDto extends PartialType(CreateUserDto) {
   @IsOptional()
   @IsString()
   @MinLength(6)
-  password?: string; // đổi mật khẩu (hash ở service)
+  password?: string;
 
   @IsOptional()
   @IsEnum(UserRole, { each: true })

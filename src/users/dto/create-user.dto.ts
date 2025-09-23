@@ -5,14 +5,14 @@ import { UserRole, UserStatus } from '@users/schemas/user.schema';
 export class CreateUserDto {
   @IsNotEmpty()
   @IsString()
-  name: string;0
+  name: string;
 
   @IsEmail()
   email: string;
 
   @IsNotEmpty()
   @MinLength(6)
-  password: string; // sẽ được hash ở service
+  password: string;
 
   @IsOptional()
   @IsString()

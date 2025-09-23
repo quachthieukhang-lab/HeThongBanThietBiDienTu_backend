@@ -1,4 +1,4 @@
-// src/addresses/schemas/address.schema.ts
+
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
