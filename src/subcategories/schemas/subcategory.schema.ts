@@ -1,27 +1,27 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document, Types } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
+import { Document, Types } from 'mongoose'
 
 @Schema({ timestamps: true })
 export class Subcategory extends Document {
   @Prop({ required: true, trim: true })
-  name: string;
+  name: string
 
   @Prop({ required: true, unique: true, lowercase: true, trim: true })
-  slug: string;
+  slug: string
 
   @Prop({ type: Types.ObjectId, ref: 'Category', required: true })
-  categoryId: Types.ObjectId;
+  categoryId: Types.ObjectId
 
   @Prop()
-  description?: string;
-  
+  description?: string
+
   @Prop()
-  image?: string;
+  image?: string
 
   @Prop({ default: true })
-  isActive: boolean;
+  isActive: boolean
 }
 
-export const SubcategorySchema = SchemaFactory.createForClass(Subcategory);
+export const SubcategorySchema = SchemaFactory.createForClass(Subcategory)
 
-SubcategorySchema.index({ categoryId: 1, isActive: 1 });
+SubcategorySchema.index({ categoryId: 1, isActive: 1 })

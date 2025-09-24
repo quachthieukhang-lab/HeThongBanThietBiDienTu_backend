@@ -74,5 +74,4 @@ export class UsersController {
   hardDelete(@Param('id') id: string) {
     return this.usersService.hardDelete(id)
   }
-
 }

@@ -2,7 +2,7 @@ import { Injectable, BadRequestException, NotFoundException } from '@nestjs/comm
 import { CreateCategoryDto } from './dto/create-category.dto'
 import { UpdateCategoryDto } from './dto/update-category.dto'
 import { InjectModel } from '@nestjs/mongoose'
-import { Model, Types } from 'mongoose'
+import { Model } from 'mongoose'
 import { Category } from './schemas/category.schema'
 import { StringUtil } from '@common/utils/string.util'
 
@@ -11,7 +11,7 @@ export class CategoriesService {
   constructor(
     @InjectModel(Category.name)
     private readonly categoryModel: Model<Category>,
-  ) { }
+  ) {}
   async create(createCategoryDto: CreateCategoryDto) {
     const slug = createCategoryDto.slug?.trim() || StringUtil.slugify(createCategoryDto.name)
     const exists = await this.categoryModel.exists({ slug })
@@ -33,13 +33,15 @@ export class CategoriesService {
     return doc.toObject()
   }
 
-  async findAll(params: {
-    page?: number
-    limit?: number
-    search?: string
-    isActive?: string | boolean // 'true' | 'false' | boolean
-    sort?: 'name' | 'sortOrder' | '-createdAt'
-  } = {}) {
+  async findAll(
+    params: {
+      page?: number
+      limit?: number
+      search?: string
+      isActive?: string | boolean // 'true' | 'false' | boolean
+      sort?: 'name' | 'sortOrder' | '-createdAt'
+    } = {},
+  ) {
     const page = Math.max(1, Number(params.page) || 1)
     const limit = Math.min(100, Math.max(1, Number(params.limit) || 20))
     const skip = (page - 1) * limit
@@ -50,19 +52,12 @@ export class CategoriesService {
       filter.$or = [{ name: new RegExp(s, 'i') }, { slug: new RegExp(s, 'i') }]
     }
     if (params.isActive !== undefined) {
-      const v =
-        typeof params.isActive === 'string'
-          ? params.isActive === 'true'
-          : !!params.isActive
+      const v = typeof params.isActive === 'string' ? params.isActive === 'true' : !!params.isActive
       filter.isActive = v
     }
 
     const sort =
-      params.sort === 'name'
-        ? 'name'
-        : params.sort === 'sortOrder'
-          ? 'sortOrder'
-          : '-createdAt'
+      params.sort === 'name' ? 'name' : params.sort === 'sortOrder' ? 'sortOrder' : '-createdAt'
 
     const [items, total] = await Promise.all([
       this.categoryModel.find(filter).sort(sort).skip(skip).limit(limit).lean(),
@@ -104,7 +99,8 @@ export class CategoriesService {
 
     if (updateCategoryDto.icon !== undefined) update.icon = updateCategoryDto.icon
     if (updateCategoryDto.sortOrder !== undefined) update.sortOrder = updateCategoryDto.sortOrder
-    if (updateCategoryDto.description !== undefined) update.description = updateCategoryDto.description
+    if (updateCategoryDto.description !== undefined)
+      update.description = updateCategoryDto.description
     if (updateCategoryDto.isActive !== undefined) update.isActive = updateCategoryDto.isActive
     if (updateCategoryDto.image !== undefined) update.image = updateCategoryDto.image
     if (updateCategoryDto.banner !== undefined) update.banner = updateCategoryDto.banner
@@ -140,5 +136,4 @@ export class CategoriesService {
     if (res.deletedCount === 0) throw new NotFoundException('Category not found')
     return { ok: true }
   }
-
 }
