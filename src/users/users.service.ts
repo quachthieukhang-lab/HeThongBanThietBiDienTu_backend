@@ -6,10 +6,13 @@ import { UpdateUserDto } from '@users/dto/update-user.dto'
 import { User, UserRole, UserStatus } from '@users/schemas/user.schema'
 import * as bcrypt from 'bcrypt'
 import { FindAllQuery } from '@users/dto/find-all-query.dto'
-@Injectable()
 
+@Injectable()
 export class UsersService {
-  constructor(@InjectModel(User.name) private readonly userModel: Model<User>) { }
+  constructor(
+    @InjectModel(User.name)
+    private readonly userModel: Model<User>
+  ) {}
   private toSafe(user: any) {
     if (!user) return user
     const { passwordHash, __v, ...rest } = user
@@ -17,8 +20,8 @@ export class UsersService {
   }
 
   private toId(id: string) {
-    if (!Types.ObjectId.isValid(id)) throw new BadRequestException('Invalid id');
-    return new Types.ObjectId(id);
+    if (!Types.ObjectId.isValid(id)) throw new BadRequestException('Invalid id')
+    return new Types.ObjectId(id)
   }
   async create(dto: CreateUserDto) {
     const existed = await this.userModel.exists({ email: dto.email.toLowerCase() })
@@ -40,7 +43,7 @@ export class UsersService {
     // .toObject() để strip getters ẩn passwordHash
     return this.toSafe(doc.toObject())
   }
-  
+
   async findAll(q: FindAllQuery = {}) {
     const page = Math.max(1, Number(q.page) || 1)
     const limit = Math.min(100, Math.max(1, Number(q.limit) || 20))
