@@ -10,6 +10,7 @@ import { AttributesModule } from './attributes/attributes.module';
 import { CategoriesModule } from './categories/categories.module';
 import { SubcategoriesModule } from './subcategories/subcategories.module';
 import { OrdersModule } from './orders/orders.module';
+import { BrandsModule } from './brands/brands.module';
          
 
 @Module({
@@ -23,6 +24,7 @@ import { OrdersModule } from './orders/orders.module';
     CategoriesModule,
     SubcategoriesModule,
     OrdersModule,
+    BrandsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

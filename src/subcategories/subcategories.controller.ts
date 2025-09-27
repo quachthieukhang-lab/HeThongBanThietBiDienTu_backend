@@ -45,7 +45,7 @@ export class SubcategoriesController {
   findOne(@Param('id') id: string) {
     return this.subcategoriesService.findOne(id)
   }
-  
+
   @Get('/by-category/:categoryId')
   findByCategory(
     @Param('categoryId') categoryId: string,

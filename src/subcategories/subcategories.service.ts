@@ -39,7 +39,7 @@ export class SubcategoriesService {
     })
     return doc.toObject()
   }
-
+  
   async findAll(params: {
     page?: number
     limit?: number
