@@ -13,7 +13,7 @@ export class SubcategoriesService {
     @InjectModel(Subcategory.name)
     private readonly subcategoryModel: Model<Subcategory>,
     @InjectModel(Category.name) private categoryModel: Model<Category>,
-  ) {}
+  ) { }
   async create(createSubcategoryDto: CreateSubcategoryDto) {
     const categoryId = StringUtil.toId(createSubcategoryDto.categoryId)
     const categoryExists = await this.categoryModel.exists({ _id: categoryId })
@@ -39,49 +39,63 @@ export class SubcategoriesService {
     })
     return doc.toObject()
   }
-  
+
   async findAll(params: {
-    page?: number
-    limit?: number
-    search?: string
-    isActive?: string | boolean
-    categoryId?: string
-    sort?: SortKey
+    page?: number;
+    limit?: number;
+    search?: string;
+    isActive?: string | boolean;
+    categoryId?: string;
+    sort?: 'name' | 'sortOrder' | '-createdAt';
   }) {
-    const page = Math.max(1, Number(params.page) || 1)
-    const limit = Math.min(100, Math.max(1, Number(params.limit) || 20))
-    const skip = (page - 1) * limit
+    const page = Math.max(1, Number(params.page) || 1);
+    const limit = Math.min(100, Math.max(1, Number(params.limit) || 20));
+    const skip = (page - 1) * limit;
 
-    const filter: any = {}
-    if (params.categoryId) filter.categoryId = StringUtil.toId(params.categoryId)
+    const filter: any = {};
+
+    // categoryId: chỉ set nếu hợp lệ
+    if (params.categoryId && Types.ObjectId.isValid(params.categoryId)) {
+      filter.categoryId = new Types.ObjectId(params.categoryId);
+    }
+
+    // search: dùng cả name/slug + (optional) searchKey
+    const normalize = (str: string) => str.toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s+/g, ' ').trim();
+
     if (params.search) {
-      const s = params.search.trim()
-      filter.$or = [{ name: new RegExp(s, 'i') }, { slug: new RegExp(s, 'i') }]
-    }
-    if (params.isActive !== undefined) {
-      const v =
-        typeof params.isActive === 'string'
-          ? params.isActive === 'true'
-          : !!params.isActive
-      filter.isActive = v
+      const s = params.search.trim();
+      const sNorm = normalize(s);
+      filter.$or = [
+        { name: { $regex: s, $options: 'i' } },
+        { slug: { $regex: s, $options: 'i' } },
+        { searchKey: { $regex: sNorm, $options: 'i' } }, // nếu bạn có trường này
+      ];
     }
 
-    // dùng chuỗi sort để tránh lỗi TS kiểu SortOrder
-    const sort: SortKey = params.sort ?? '-createdAt'
+    if (params.isActive !== undefined) {
+      const v = typeof params.isActive === 'string'
+        ? params.isActive === 'true'
+        : !!params.isActive;
+      filter.isActive = v;
+    }
+
+    const sort: 'name' | 'sortOrder' | '-createdAt' = params.sort ?? '-createdAt';
+
+    const q = this.subcategoryModel
+      .find(filter)
+      .collation({ locale: 'vi', strength: 1 })   // để search ko phân biệt dấu/case
+      .sort(sort).skip(skip).limit(limit).lean();
 
     const [items, total] = await Promise.all([
-      this.subcategoryModel.find(filter).sort(sort).skip(skip).limit(limit).lean(),
-      this.subcategoryModel.countDocuments(filter),
-    ])
+      q,
+      this.subcategoryModel.countDocuments(filter).collation({ locale: 'vi', strength: 1 }),
+    ]);
 
-    return {
-      items,
-      page,
-      limit,
-      total,
-      pages: Math.ceil(total / limit),
-    }
+    return { items, page, limit, total, pages: Math.ceil(total / limit) };
   }
+
 
   async findOne(id: string) {
     const doc = await this.subcategoryModel.findById(StringUtil.toId(id)).lean()

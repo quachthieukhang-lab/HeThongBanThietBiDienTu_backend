@@ -1,5 +1,5 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
+import { Document } from 'mongoose'
 
 export enum UserRole {
   Customer = 'customer',
@@ -16,40 +16,40 @@ export enum UserStatus {
 @Schema({ timestamps: true })
 export class User extends Document {
   @Prop({ required: true, trim: true })
-  name: string;
+  name: string
 
   @Prop({ required: true, lowercase: true, trim: true })
-  email: string;
+  email: string
 
   @Prop({ required: true })
-  passwordHash: string;
+  passwordHash: string
 
   @Prop({
     type: [String],
     enum: UserRole,
     default: [UserRole.Customer],
   })
-  roles: UserRole[];
+  roles: UserRole[]
 
   @Prop({
     type: String,
     enum: UserStatus,
     default: UserStatus.Active,
   })
-  status: UserStatus;
+  status: UserStatus
 
   @Prop()
-  phone?: string;
+  phone?: string
 
   @Prop()
-  avatarUrl?: string;
+  avatarUrl?: string
 
   @Prop()
-  defaultAddressId?: string;
+  defaultAddressId?: string
 }
 
-export const UserSchema = SchemaFactory.createForClass(User);
+export const UserSchema = SchemaFactory.createForClass(User)
 
-UserSchema.index({ email: 1 }, { unique: true });
-UserSchema.index({ roles: 1 });
-UserSchema.index({ status: 1 });
+UserSchema.index({ email: 1 }, { unique: true })
+UserSchema.index({ roles: 1 })
+UserSchema.index({ status: 1 })
