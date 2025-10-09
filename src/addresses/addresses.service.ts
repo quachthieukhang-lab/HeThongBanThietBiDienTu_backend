@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 import { Model, Types } from 'mongoose'
@@ -12,9 +15,8 @@ export class AddressesService {
   constructor(
     @InjectModel(Address.name) private readonly addressModel: Model<Address>,
     @InjectModel(User.name) private readonly userModel: Model<User>,
-  ) { }
+  ) {}
 
-  /** helper: bỏ default của các địa chỉ khác cùng user */
   private async unsetDefaultForUser(userId: Types.ObjectId) {
     await this.addressModel.updateMany({ userId, isDefault: true }, { $set: { isDefault: false } })
   }
@@ -55,8 +57,8 @@ export class AddressesService {
   async findAll(params: {
     page?: number
     limit?: number
-    search?: string      // tìm theo fullName/phone/line1/city
-    userId?: string      // optional: lọc theo user
+    search?: string
+    userId?: string
     sort?: '-updatedAt' | 'fullName' | 'city'
   }) {
     const page = Math.max(1, Number(params.page) || 1)
@@ -80,11 +82,11 @@ export class AddressesService {
 
     // sắp xếp mặc định: default trước, rồi updatedAt mới nhất
     const sort: { [key: string]: 1 | -1 } =
-    params.sort === 'fullName'
-      ? { isDefault: -1, fullName: 1, updatedAt: -1 }
-      : params.sort === 'city'
-      ? { isDefault: -1, city: 1, updatedAt: -1 }
-      : { isDefault: -1, updatedAt: -1 };
+      params.sort === 'fullName'
+        ? { isDefault: -1, fullName: 1, updatedAt: -1 }
+        : params.sort === 'city'
+          ? { isDefault: -1, city: 1, updatedAt: -1 }
+          : { isDefault: -1, updatedAt: -1 }
 
     const [items, total] = await Promise.all([
       this.addressModel.find(filter).sort(sort).skip(skip).limit(limit).lean(),
@@ -100,13 +102,11 @@ export class AddressesService {
     }
   }
 
-  /** danh sách address theo user */
   async findByUser(userId: string) {
     const _uid = StringUtil.toId(userId)
     return this.addressModel.find({ userId: _uid }).sort({ isDefault: -1, updatedAt: -1 }).lean()
   }
 
-  /** lấy 1 address */
   async findOne(id: string) {
     const doc = await this.addressModel.findById(StringUtil.toId(id)).lean()
     if (!doc) throw new NotFoundException('Address not found')
@@ -149,8 +149,6 @@ export class AddressesService {
 
     return saved!
   }
-
-  /** đặt mặc định (shortcut) */
   async setDefault(id: string) {
     const _id = StringUtil.toId(id)
     const address = await this.addressModel.findById(_id)
@@ -168,15 +166,12 @@ export class AddressesService {
     if (!doc) throw new NotFoundException('Address not found')
 
     const wasDefault = doc.isDefault
-    const userId = doc.userId as Types.ObjectId
+    const userId = doc.userId
 
     await doc.deleteOne()
 
     if (wasDefault) {
-      const another = await this.addressModel
-        .findOne({ userId })
-        .sort({ updatedAt: -1 })
-        .exec()
+      const another = await this.addressModel.findOne({ userId }).sort({ updatedAt: -1 }).exec()
       if (another) {
         another.isDefault = true
         await another.save()
