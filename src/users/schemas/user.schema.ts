@@ -5,6 +5,7 @@ export enum UserRole {
   Customer = 'customer',
   Admin = 'admin',
   Staff = 'staff',
+  Guest = 'guest',
 }
 
 export enum UserStatus {
@@ -27,7 +28,7 @@ export class User extends Document {
   @Prop({
     type: [String],
     enum: UserRole,
-    default: [UserRole.Customer],
+    default: [UserRole.Guest],
   })
   roles: UserRole[]
 

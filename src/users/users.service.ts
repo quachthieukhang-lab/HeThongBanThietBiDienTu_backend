@@ -6,12 +6,15 @@ import { UpdateUserDto } from '@users/dto/update-user.dto'
 import { User, UserRole, UserStatus } from '@users/schemas/user.schema'
 import * as bcrypt from 'bcrypt'
 import { FindAllQuery } from '@users/dto/find-all-query.dto'
+import { CartsService } from 'carts/carts.service'
+import { Cart } from 'carts/schemas/cart.schema'
 
 @Injectable()
 export class UsersService {
   constructor(
     @InjectModel(User.name)
-    private readonly userModel: Model<User>
+    private readonly userModel: Model<User>,
+    private readonly cartsService: CartsService,
   ) {}
   private toSafe(user: any) {
     if (!user) return user
@@ -24,8 +27,8 @@ export class UsersService {
     return new Types.ObjectId(id)
   }
   async create(dto: CreateUserDto) {
-    const existed = await this.userModel.exists({ email: dto.email.toLowerCase() })
-    if (existed) throw new BadRequestException('Email already exists')
+    const existed = await this.userModel.exists({ email: dto.email.toLowerCase() });
+    if (existed) throw new BadRequestException('Email already exists');
 
     const passwordHash = await bcrypt.hash(dto.password, 12)
 
@@ -38,10 +41,22 @@ export class UsersService {
       status: dto.status ?? UserStatus.Active,
       defaultAddressId: dto.defaultAddressId ?? null,
       avatarUrl: dto.avatarUrl ?? null,
-    })
+    }) as User & { _id: Types.ObjectId }; // Ensure _id is ObjectId
 
-    // .toObject() để strip getters ẩn passwordHash
-    return this.toSafe(doc.toObject())
+    await this.cartsService.findOrCreateActiveCart(doc._id);
+
+    return doc.toObject();
+  }
+  async createGuestUser(): Promise<User> {
+    const guestUser = new this.userModel({
+      name: 'Guest',
+      email: `guest_${Date.now()}@example.com`,
+      passwordHash: '', // Không cần mật khẩu
+      roles: [UserRole.Guest],
+      status: UserStatus.Active,
+    });
+
+    return guestUser.save();
   }
 
   async findAll(q: FindAllQuery = {}) {
@@ -82,10 +97,7 @@ export class UsersService {
   }
 
   async findOne(id: string) {
-    const user = await this.userModel
-      .findById(this.toId(id))
-      .select('-passwordHash')
-      .lean()
+    const user = await this.userModel.findById(this.toId(id)).select('-passwordHash').lean()
     if (!user) throw new NotFoundException('User not found')
     return user
   }
@@ -125,11 +137,7 @@ export class UsersService {
 
   async remove(id: string) {
     const doc = await this.userModel
-      .findByIdAndUpdate(
-        this.toId(id),
-        { $set: { status: UserStatus.Deleted } },
-        { new: true },
-      )
+      .findByIdAndUpdate(this.toId(id), { $set: { status: UserStatus.Deleted } }, { new: true })
       .select('-passwordHash')
       .lean()
     if (!doc) throw new NotFoundException('User not found')
@@ -137,11 +145,7 @@ export class UsersService {
   }
   async restore(id: string) {
     const doc = await this.userModel
-      .findByIdAndUpdate(
-        this.toId(id),
-        { $set: { status: UserStatus.Active } },
-        { new: true },
-      )
+      .findByIdAndUpdate(this.toId(id), { $set: { status: UserStatus.Active } }, { new: true })
       .select('-passwordHash')
       .lean()
     if (!doc) throw new NotFoundException('User not found')

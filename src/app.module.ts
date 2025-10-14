@@ -11,6 +11,7 @@ import { SubcategoriesModule } from './subcategories/subcategories.module'
 import { OrdersModule } from './orders/orders.module'
 import { BrandsModule } from './brands/brands.module'
 import { AttributeTemplatesModule } from './attribute-templates/attribute-templates.module'
+import { CartsModule } from './carts/carts.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { AttributeTemplatesModule } from './attribute-templates/attribute-templa
     OrdersModule,
     BrandsModule,
     AttributeTemplatesModule,
+    CartsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

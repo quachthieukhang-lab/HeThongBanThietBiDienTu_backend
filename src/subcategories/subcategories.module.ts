@@ -8,8 +8,8 @@ import { Category, CategorySchema } from '@categories/schemas/category.schema';
   imports: [
     MongooseModule.forFeature([
       { name: Subcategory.name, schema: SubcategorySchema },
-      { name: Category.name, schema: CategorySchema }
-    ])
+      { name: Category.name, schema: CategorySchema },
+    ]),
   ],
   controllers: [SubcategoriesController],
   providers: [SubcategoriesService],
