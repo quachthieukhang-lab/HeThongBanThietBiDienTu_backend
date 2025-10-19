@@ -1,53 +1,41 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document, Types } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
+import { Document, Types } from 'mongoose'
 
 @Schema({ timestamps: true })
 export class ProductVariant extends Document {
   @Prop({ type: Types.ObjectId, ref: 'Product', required: true })
-  productId: Types.ObjectId;
-  
-  @Prop({ required: true, unique: true })
-  sku: string;
+  productId: Types.ObjectId
 
-  @Prop()
-  barcode?: string;
+  @Prop({ trim: true })
+  sku?: string
 
+  @Prop({ trim: true })
+  barcode?: string
+
+  // Thuộc tính đầy đủ của variant (display/detail)
   @Prop({ type: Object, required: true })
-  attributes: {
-    Color?: string;
-    Storage?: number;
-    RAM?: number;
-    [key: string]: any; 
-  };
+  attributes: Record<string, any>
 
+  // Subset dùng filter/search (sinh từ template.filterable)
   @Prop({ type: Object, default: {} })
-  facets: {
-    color?: string;
-    storage?: number;
-    ram?: number;
-  };
+  facets?: Record<string, any>
 
-  @Prop({ required: true })
-  price: number;
+  @Prop({ required: true, min: 0 })
+  price: number
 
-  @Prop()
-  compareAtPrice?: number;
+  @Prop({ min: 0 })
+  compareAtPrice?: number
 
-  @Prop({ required: true, default: 0 })
-  stock: number;
+  @Prop({ required: true, default: 0, min: 0 })
+  stock: number
 
   @Prop([String])
-  images?: string[];
+  images?: string[]
 
   @Prop({ default: true })
-  isActive: boolean;
+  isActive: boolean
 }
+export const ProductVariantSchema = SchemaFactory.createForClass(ProductVariant)
 
-export const ProductVariantSchema =
-  SchemaFactory.createForClass(ProductVariant);
-
-
-ProductVariantSchema.index({ productId: 1, isActive: 1 });
-ProductVariantSchema.index({ 'facets.storage': 1 });
-ProductVariantSchema.index({ 'facets.ram': 1 });
-ProductVariantSchema.index({ 'facets.color': 1 });
+ProductVariantSchema.index({ productId: 1, isActive: 1 })
+ProductVariantSchema.index({ sku: 1 }, { sparse: true })

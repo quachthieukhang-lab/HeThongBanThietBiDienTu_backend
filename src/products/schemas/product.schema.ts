@@ -15,43 +15,46 @@ export class Product extends Document {
   @Prop({ type: Types.ObjectId, ref: 'Subcategory', required: true })
   subcategoryId: Types.ObjectId
 
+  @Prop({ type: Types.ObjectId, ref: 'Brand' })
+  brandId?: Types.ObjectId
+
+  // Hybrid: specs chung cấp product (không dùng để filter)
+  @Prop({ type: Object })
+  specs?: Record<string, any>
+
+  // Tham chiếu template để audit/version
   @Prop({ type: Types.ObjectId, ref: 'AttributeTemplate', required: true })
   templateId: Types.ObjectId
 
-  @Prop({ type: Types.ObjectId, ref: 'Brand', required: true, index: true })
-  brandId: Types.ObjectId
-
-  @Prop({ default: 1 })
+  @Prop({ required: true })
   templateVersion: number
 
-  // Hybrid
-  @Prop({ type: Object, default: {} })
-  specs: Record<string, any>
-
-  @Prop({ type: Object, default: {} })
-  facets: Record<string, any>
-
-  @Prop({ type: Object, default: {} })
-  variantFacetSummary: Record<string, any>
+  // Ảnh
+  @Prop([String])
+  images?: string[]
 
   @Prop()
   thumbnail?: string
 
-  @Prop([String])
-  images?: string[]
+  // Publish
+  @Prop({ default: false })
+  isPublished: boolean
 
-  @Prop({ required: true, default: 0 })
+  // Phạm vi giá lấy từ variants
+  @Prop({ default: 0 })
   priceFrom: number
 
-  @Prop({ required: true, default: 0 })
+  @Prop({ default: 0 })
   priceTo: number
 
-  @Prop({ default: true })
-  isPublished: boolean
+  @Prop({ type: Object }) // Adjust the type based on your data structure
+  facets?: Record<string, any>
+  // Tổng hợp facet từ variants (để FE render filter nhanh)
+  @Prop({ type: Object, default: {} })
+  variantFacetSummary?: Record<string, any>
 }
-
 export const ProductSchema = SchemaFactory.createForClass(Product)
 
-ProductSchema.index({ categoryId: 1 })
-ProductSchema.index({ subcategoryId: 1 })
-ProductSchema.index({ 'facets.brand': 1 })
+ProductSchema.index({ subcategoryId: 1, isPublished: 1 })
+ProductSchema.index({ slug: 1 }, { unique: true })
+ProductSchema.index({ name: 1 })
