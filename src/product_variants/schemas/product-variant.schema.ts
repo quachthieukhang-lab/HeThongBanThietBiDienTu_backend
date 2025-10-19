@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { Document, Types } from 'mongoose'
 
-@Schema({ timestamps: true })
+@Schema({ collection: 'product_variants', timestamps: true })
 export class ProductVariant extends Document {
   @Prop({ type: Types.ObjectId, ref: 'Product', required: true })
   productId: Types.ObjectId
@@ -39,3 +39,4 @@ export const ProductVariantSchema = SchemaFactory.createForClass(ProductVariant)
 
 ProductVariantSchema.index({ productId: 1, isActive: 1 })
 ProductVariantSchema.index({ sku: 1 }, { sparse: true })
+ProductVariantSchema.index({ barcode: 1 }, { sparse: true })

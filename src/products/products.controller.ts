@@ -13,7 +13,7 @@ import {
 import { ProductsService } from './products.service';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
-import { CreateProductVariantDto } from '../product_variants/dto/create-product_variant.dto';
+import { CreateVariantDto } from '../product_variants/dto/create-product_variant.dto';
 import { UpdateVariantDto } from '../product_variants/dto/update-product_variant.dto';
 import { QueryProductsDto } from './dto/query-product.dto';
 
@@ -53,7 +53,7 @@ export class ProductsController {
 
   // Variants (nested under product)
   @Post(':productId/variants')
-  createVariant(@Param('productId') productId: string, @Body() dto: CreateProductVariantDto) {
+  createVariant(@Param('productId') productId: string, @Body() dto: CreateVariantDto) {
     return this.products.createVariant(productId, dto);
   }
 

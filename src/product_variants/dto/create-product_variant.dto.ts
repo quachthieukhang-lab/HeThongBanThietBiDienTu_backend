@@ -1,6 +1,9 @@
 import { IsNotEmpty, IsOptional, IsString, IsNumber, Min, IsInt } from 'class-validator'
 
-export class CreateProductVariantDto {
+export class CreateVariantDto {
+  @IsNotEmpty() @IsString()
+  productId: string
+
   @IsOptional() @IsString()
   sku?: string
 

@@ -1,7 +1,7 @@
 // src/attribute-templates/attribute-template.service.ts
 import { Injectable, NotFoundException, ConflictException } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
-import { Model, ClientSession, Types, Connection } from 'mongoose'
+import { Model, Types, Connection } from 'mongoose'
 import { AttributeTemplate, AttributeTemplateDocument } from './schemas/attribute-template.schema'
 import {
   CreateAttributeTemplateDto,
@@ -20,23 +20,27 @@ export class AttributeTemplateService {
     @InjectModel(Subcategory.name)
     private readonly subcategoryModel: Model<Subcategory>,
     @InjectConnection() private readonly connection: Connection,
-  ) { }
+  ) {}
 
   async create(dto: CreateAttributeTemplateDto) {
     const subcategoryId = StringUtil.toId(dto.subcategoryId)
-    const subcategoryExists = await this.subcategoryModel.exists({ _id: subcategoryId })
-    if (!subcategoryExists) {
+    const subcategory = await this.subcategoryModel.findById(subcategoryId).lean()
+    if (!subcategory) {
       throw new NotFoundException(`Subcategory with ID ${dto.subcategoryId} not found.`)
+    }
+    const name = dto.name?.trim() || subcategory.name
+    if (!name) {
+      throw new ConflictException('Name is required for attribute template')
     }
     try {
       const doc = await this.model.create({
         ...dto,
         subcategoryId: new Types.ObjectId(subcategoryId),
+        name: name,
       })
       return doc
     } catch (err: any) {
       if (err?.code === 11000) {
-        // vi phạm unique: (subcategoryId, version) hoặc partial unique active
         throw new ConflictException(
           'Duplicate template for this subcategory/version or active already exists',
         )
@@ -90,9 +94,18 @@ export class AttributeTemplateService {
   }
   async update(id: string, dto: UpdateAttributeTemplateDto) {
     // Không cho đổi subcategoryId/version trong thiết kế hiện tại
+    // Chỉ cho phép update các trường hợp lệ (ví dụ: name, isActive, fields...)
+    const allowedFields = ['name', 'isActive', 'attributes', 'meta']
+    const updateData: Record<string, any> = {}
+    for (const key of allowedFields) {
+      if (key in dto) updateData[key] = (dto as any)[key]
+    }
+    if (Object.keys(updateData).length === 0) {
+      throw new ConflictException('No valid fields to update')
+    }
     try {
       const doc = await this.model
-        .findByIdAndUpdate(id, dto, { new: true, runValidators: true })
+        .findByIdAndUpdate(id, updateData, { new: true, runValidators: true })
         .exec()
       if (!doc) throw new NotFoundException('AttributeTemplate not found')
       return doc

@@ -20,7 +20,7 @@ export class CreateAttributeTemplateDto {
 
   @IsString()
   @IsNotEmpty()
-  name!: string
+  name: string
 
   @IsOptional()
   @IsNumber()

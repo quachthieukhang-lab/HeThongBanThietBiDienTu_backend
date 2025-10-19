@@ -1,34 +1,75 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  DefaultValuePipe,
+  Delete,
+  Get,
+  Param,
+  ParseIntPipe,
+  Patch,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { ProductVariantsService } from './product_variants.service';
-import { CreateProductVariantDto } from './dto/create-product_variant.dto';
+import { CreateVariantDto } from './dto/create-product_variant.dto';
 import { UpdateVariantDto } from './dto/update-product_variant.dto';
+import { QueryVariantsDto } from './dto/query-product_variant.dto';
 
 @Controller('product-variants')
 export class ProductVariantsController {
-  constructor(private readonly productVariantsService: ProductVariantsService) {}
+  constructor(private readonly variants: ProductVariantsService) {}
 
+  /** Tạo variant (body phải có productId) */
   @Post()
-  create(@Body() createProductVariantDto: CreateProductVariantDto) {
-    return this.productVariantsService.create(createProductVariantDto);
+  create(@Body() dto: CreateVariantDto) {
+    return this.variants.create(dto);
   }
 
+  /** Danh sách (phân trang + lọc) */
   @Get()
-  findAll() {
-    return this.productVariantsService.findAll();
+  findAll(
+    @Query(new DefaultValuePipe({ page:1, limit:20 })) query: QueryVariantsDto,
+    @Query('page', new DefaultValuePipe(1), ParseIntPipe) _p?: number,
+    @Query('limit', new DefaultValuePipe(20), ParseIntPipe) _l?: number,
+  ) {
+    return this.variants.findAll(query);
+  }
+
+  /** Alias: lấy theo productId */
+  @Get('/by-product/:productId')
+  findByProduct(
+    @Param('productId') productId: string,
+    @Query('page', new DefaultValuePipe(1), ParseIntPipe) page?: number,
+    @Query('limit', new DefaultValuePipe(20), ParseIntPipe) limit?: number,
+  ) {
+    return this.variants.findAll({ productId, page, limit });
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.productVariantsService.findOne(+id);
+    return this.variants.findOne(id);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateProductVariantDto: UpdateVariantDto) {
-    return this.productVariantsService.update(+id, updateProductVariantDto);
+  update(@Param('id') id: string, @Body() dto: UpdateVariantDto) {
+    return this.variants.update(id, dto)
+  }
+
+  @Patch(':id/active')
+  setActive(@Param('id') id: string, @Query('value', new DefaultValuePipe('true')) value: string) {
+    return this.variants.setActive(id, value === 'true')
+  }
+
+  @Patch(':id/stock')
+  adjustStock(
+    @Param('id') id: string,
+    @Query('delta', new DefaultValuePipe(0), ParseIntPipe) delta: number,
+  ) {
+    return this.variants.adjustStock(id, delta);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.productVariantsService.remove(+id);
+    return this.variants.remove(id);
   }
 }

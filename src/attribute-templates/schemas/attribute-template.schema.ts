@@ -62,14 +62,13 @@ export class AttributeDef {
 
 export const AttributeDefSchema = SchemaFactory.createForClass(AttributeDef)
 
-/** Collection: attribute_templates */
 @Schema({ collection: 'attribute_templates', timestamps: true })
 export class AttributeTemplate {
   @Prop({ type: Types.ObjectId, ref: 'Subcategory', required: true, index: true })
   subcategoryId!: Types.ObjectId
 
   @Prop({ required: true, trim: true })
-  name!: string
+  name: string
 
   @Prop({ type: Number, default: 1, min: 1 })
   version!: number

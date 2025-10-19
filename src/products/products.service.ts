@@ -5,7 +5,7 @@ import { Product } from './schemas/product.schema';
 import { ProductVariant } from '../product_variants/schemas/product-variant.schema';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
-import { CreateProductVariantDto } from '../product_variants/dto/create-product_variant.dto';
+import { CreateVariantDto } from '../product_variants/dto/create-product_variant.dto';
 import { UpdateVariantDto } from '../product_variants/dto/update-product_variant.dto';
 import { QueryProductsDto } from './dto/query-product.dto';
 
@@ -169,8 +169,8 @@ export class ProductsService {
       images: dto.images ?? [],
       thumbnail: dto.thumbnail,
       isPublished: dto.isPublished ?? false,
-      priceFrom: 0,
-      priceTo: 0,
+      priceFrom: dto.priceFrom ?? 0,
+      priceTo: dto.priceTo ?? 0,
       variantFacetSummary: {},
     });
 
@@ -255,7 +255,7 @@ export class ProductsService {
 
   // ---------------- Variants ----------------
 
-  async createVariant(productId: string, dto: CreateProductVariantDto) {
+  async createVariant(productId: string, dto: CreateVariantDto) {
     const pid = this.toId(productId);
     const product = await this.productModel.findById(pid).lean();
     if (!product) throw new NotFoundException('Product not found');

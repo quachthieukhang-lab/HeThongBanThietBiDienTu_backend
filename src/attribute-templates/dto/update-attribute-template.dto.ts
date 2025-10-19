@@ -17,7 +17,7 @@ export class UpdateAttributeTemplateDto {
 
   @IsOptional()
   @IsBoolean()
-  isActive?: boolean // khuyên dùng endpoint activate riêng
+  isActive?: boolean
 
   @IsOptional()
   @IsArray()
