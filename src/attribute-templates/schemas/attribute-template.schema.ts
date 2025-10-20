@@ -67,7 +67,7 @@ export class AttributeTemplate {
   @Prop({ type: Types.ObjectId, ref: 'Subcategory', required: true, index: true })
   subcategoryId!: Types.ObjectId
 
-  @Prop({ required: true, trim: true })
+  @Prop({ type: String, required: true, trim: true })
   name: string
 
   @Prop({ type: Number, default: 1, min: 1 })
@@ -110,8 +110,22 @@ AttributeTemplateSchema.pre('validate', function (next) {
   }
   next()
 })
-
-// validate attributes trước khi save
+AttributeTemplateSchema.pre('validate', async function (next) {
+  const doc = this as AttributeTemplateDocument
+  if (!doc.name && doc.subcategoryId) {
+    try {
+      // lấy model Subcategory từ cùng connection
+      const SubcategoryModel = (doc.constructor as any).db.model('Subcategory')
+      if (SubcategoryModel) {
+        const sub = await SubcategoryModel.findById(doc.subcategoryId).lean()
+        if (sub?.name) doc.name = sub.name
+      }
+      next()
+    } catch (err) {
+      next(err)
+    }
+  } else next()
+})
 AttributeTemplateSchema.pre('validate', function (next) {
   const doc = this as AttributeTemplateDocument
   for (const a of doc.attributes ?? []) {

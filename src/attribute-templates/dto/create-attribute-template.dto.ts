@@ -18,8 +18,8 @@ export class CreateAttributeTemplateDto {
   @IsMongoId()
   subcategoryId!: string
 
-  @IsString()
   @IsNotEmpty()
+  @IsString()
   name: string
 
   @IsOptional()

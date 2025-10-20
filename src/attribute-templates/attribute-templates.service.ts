@@ -29,6 +29,7 @@ export class AttributeTemplateService {
       throw new NotFoundException(`Subcategory with ID ${dto.subcategoryId} not found.`)
     }
     const name = dto.name?.trim() || subcategory.name
+    console.log('Derived name for template:', name)
     if (!name) {
       throw new ConflictException('Name is required for attribute template')
     }
@@ -36,7 +37,6 @@ export class AttributeTemplateService {
       const doc = await this.model.create({
         ...dto,
         subcategoryId: new Types.ObjectId(subcategoryId),
-        name: name,
       })
       return doc
     } catch (err: any) {
