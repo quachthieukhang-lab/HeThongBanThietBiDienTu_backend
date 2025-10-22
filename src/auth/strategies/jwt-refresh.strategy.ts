@@ -1,7 +1,7 @@
 // src/auth/strategies/jwt-refresh.strategy.ts
-import { PassportStrategy } from '@nestjs/passport';
-import { ExtractJwt, Strategy } from 'passport-jwt';
-import { Injectable } from '@nestjs/common';
+import { PassportStrategy } from '@nestjs/passport'
+import { ExtractJwt, Strategy } from 'passport-jwt'
+import { Injectable } from '@nestjs/common'
 
 function extractRefreshToken(req: any): string | null {
   return (
@@ -19,11 +19,11 @@ export class JwtRefreshStrategy extends PassportStrategy(Strategy, 'jwt-refresh'
       jwtFromRequest: ExtractJwt.fromExtractors([extractRefreshToken]),
       secretOrKey: process.env.JWT_REFRESH_SECRET!,
       passReqToCallback: true,
-    });
+    })
   }
   async validate(req: any, payload: any) {
     // Trả kèm token gốc để so sánh hash trong DB
-    const token = extractRefreshToken(req);
-    return { ...payload, refreshToken: token };
+    const token = extractRefreshToken(req)
+    return { ...payload, refreshToken: token }
   }
 }

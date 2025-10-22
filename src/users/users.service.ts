@@ -31,25 +31,20 @@ export class UsersService {
     await this.userModel.updateOne({ _id: userId }, { $set: { refreshTokenHash: hash } });
   }
   async create(dto: CreateUserDto) {
-    const { password } = dto
+    //fixbug
+    console.log('Creating user with DTO:', dto);
     const existed = await this.userModel.exists({ email: dto.email.toLowerCase() });
     if (existed) throw new BadRequestException('Email already exists');
-    if (!password) {
-      throw new BadRequestException('Password is required');
-    }
-    const saltRounds = 10
-    const passwordHash = await bcrypt.hash(dto.password, saltRounds)
-
     const doc = await this.userModel.create({
       name: dto.name.trim(),
       email: dto.email.toLowerCase(),
-      passwordHash,
+      passwordHash: dto.passwordHash, // hash ở AuthService
       phone: dto.phone ?? null,
       roles: dto.roles?.length ? dto.roles : [UserRole.Customer],
       status: dto.status ?? UserStatus.Active,
       defaultAddressId: dto.defaultAddressId ?? null,
       avatarUrl: dto.avatarUrl ?? null,
-    }) as User & { _id: Types.ObjectId }; // Ensure _id is ObjectId
+    }) as User & { _id: Types.ObjectId };
 
     await this.cartsService.findOrCreateActiveCart(doc._id);
 
