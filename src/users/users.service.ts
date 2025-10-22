@@ -15,7 +15,7 @@ export class UsersService {
     @InjectModel(User.name)
     private readonly userModel: Model<User>,
     private readonly cartsService: CartsService,
-  ) {}
+  ) { }
   private toSafe(user: any) {
     if (!user) return user
     const { passwordHash, __v, ...rest } = user
@@ -26,11 +26,19 @@ export class UsersService {
     if (!Types.ObjectId.isValid(id)) throw new BadRequestException('Invalid id')
     return new Types.ObjectId(id)
   }
+
+  async setRefreshToken(userId: string, hash: string | null) {
+    await this.userModel.updateOne({ _id: userId }, { $set: { refreshTokenHash: hash } });
+  }
   async create(dto: CreateUserDto) {
+    const { password } = dto
     const existed = await this.userModel.exists({ email: dto.email.toLowerCase() });
     if (existed) throw new BadRequestException('Email already exists');
-
-    const passwordHash = await bcrypt.hash(dto.password, 12)
+    if (!password) {
+      throw new BadRequestException('Password is required');
+    }
+    const saltRounds = 10
+    const passwordHash = await bcrypt.hash(dto.password, saltRounds)
 
     const doc = await this.userModel.create({
       name: dto.name.trim(),

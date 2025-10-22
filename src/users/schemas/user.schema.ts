@@ -47,6 +47,9 @@ export class User extends Document {
 
   @Prop()
   defaultAddressId?: string
+
+  @Prop()
+  refreshTokenHash?: string
 }
 
 export const UserSchema = SchemaFactory.createForClass(User)
