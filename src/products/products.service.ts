@@ -12,10 +12,12 @@ import { QueryProductsDto } from './dto/query-product.dto';
 // Tối thiểu hoá AttributeTemplate để lấy rules
 type AttrType = 'string' | 'number' | 'boolean' | 'enum' | 'multienum';
 type AttributeDef = {
-  key: string; type: AttrType; required?: boolean;
-  options?: (string | number)[];
-  min?: number; max?: number;
-  filterable?: boolean;
+  key: string
+  type: AttrType
+  required?: boolean
+  options?: (string | number)[]
+  min?: number; max?: number
+  filterable?: boolean
 };
 type AttributeTemplate = {
   _id: Types.ObjectId;
@@ -176,7 +178,6 @@ export class ProductsService {
 
     return product.toObject();
   }
-
   async findAll(q: QueryProductsDto) {
     const page = Math.max(1, Number(q.page) || 1);
     const limit = Math.min(100, Math.max(1, Number(q.limit) || 20));

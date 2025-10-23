@@ -22,15 +22,20 @@
     "noFallthroughCasesInSwitch": false,
     "baseUrl": "src",
     "paths": {
+      "@/*": ["src/*"],
+      "@auth/*": ["auth/*"],
       "@addresses/*": ["addresses/*"],
-      "@attributes/*": ["attributes/*"],
+      "@attribute-templates/*": ["attribute-templates/*"],
+      "@brands/*": ["brands/*"],
+      "@carts/*": ["carts/*"],
       "@categories/*": ["categories/*"],
+      "@common/*": ["common/*"],
+      "@orders/*": ["orders/*"],
       "@product_variants/*": ["product_variants/*"],
       "@products/*": ["products/*"],
       "@reviews/*": ["reviews/*"],
       "@subcategories/*": ["subcategories/*"],
-      "@users/*": ["users/*"],
-      "@common/*": ["common/*"]
+      "@users/*": ["users/*"]
     }
   }
 }

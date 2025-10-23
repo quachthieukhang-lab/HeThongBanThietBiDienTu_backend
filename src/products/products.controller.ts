@@ -16,7 +16,10 @@ import { UpdateProductDto } from './dto/update-product.dto';
 import { CreateVariantDto } from '../product_variants/dto/create-product_variant.dto';
 import { UpdateVariantDto } from '../product_variants/dto/update-product_variant.dto';
 import { QueryProductsDto } from './dto/query-product.dto';
+import { UseGuards } from '@nestjs/common';
+import { LocalAuthGuard } from '@auth/guards/local-auth.guard';
 
+@UseGuards(LocalAuthGuard)
 @Controller('products')
 export class ProductsController {
   constructor(private readonly products: ProductsService) {}

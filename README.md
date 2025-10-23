@@ -55,31 +55,20 @@ $ npm run start:prod
 
 ## API Endpoints
 
-### Users
-- `POST /users`: Create a new user.
-- `GET /users`: Get a list of users.
-- `GET /users/:id`: Get details of a specific user.
-- `PATCH /users/:id`: Update a user.
-- `DELETE /users/:id`: Soft delete a user.
-- `POST /users/:id/restore`: Restore a deleted user.
-
-### Carts
-- `GET /carts/me`: Get the current user's cart (or guest cart using sessionId).
-- `POST /carts/items`: Add an item to the cart.
-- `PATCH /carts/items`: Update the quantity of an item in the cart.
-- `DELETE /carts/items`: Remove an item from the cart.
-- `POST /carts/clear`: Clear all items from the cart.
-- `POST /carts/merge`: Merge a guest cart into a user cart.
-
-### Products
-- `GET /products`: Get a list of products.
-- `GET /products/:id`: Get details of a specific product.
-
-### Categories
-- `GET /categories`: Get a list of categories.
-- `POST /categories`: Create a new category.
-
----
+| Controller | Prefix | Mô tả |
+| :--- | :--- | :--- |
+| **AppController** | `/` | Endpoint gốc của ứng dụng. |
+| **AuthController** | `/auth` | Xử lý đăng ký, đăng nhập, refresh token. |
+| **UsersController** | `/users` | Quản lý thông tin người dùng. |
+| **CartsController** | `/carts` | Quản lý giỏ hàng. |
+| **AddressesController** | `/addresses` | Quản lý địa chỉ người dùng. |
+| **ProductsController** | `/products` | Quản lý sản phẩm và các biến thể lồng nhau. |
+| **ProductVariantsController** | `/product-variants` | Quản lý chi tiết biến thể sản phẩm. |
+| **CategoriesController** | `/categories` | Quản lý danh mục. |
+| **SubcategoriesController** | `/subcategories` | Quản lý danh mục con. |
+| **OrdersController** | `/orders` | Quản lý đơn hàng. |
+| **BrandsController** | `/brands` | Quản lý thương hiệu. |
+| **AttributeTemplateController** | `/attribute-templates` | Quản lý các mẫu thuộc tính. |
 
 ## Project Structure
 
