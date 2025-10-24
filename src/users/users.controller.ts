@@ -27,6 +27,7 @@ import { Roles } from '@auth/decorators/roles.decorator'
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
+  @Roles(UserRole.Admin)
   @Post()
   create(@Body() createUserDto: CreateUserDto) {
     return this.usersService.create(createUserDto)
@@ -51,28 +52,33 @@ export class UsersController {
   }
 
   @Get(':id')
+  @Roles(UserRole.Admin, UserRole.Staff)
   findOne(@Param('id') id: string) {
     console.log('users.controller.findOne called', { id })
     return this.usersService.findOne(id)
   }
 
   @Get('email/:email')
+  @Roles(UserRole.Admin, UserRole.Staff)
   findByEmail(@Param('email') email: string) {
     console.log('users.controller.findByEmail called', { email })
     return this.usersService.findByEmail(email)
   }
 
   @Patch(':id')
+  @Roles(UserRole.Admin)
   update(@Param('id') id: string, @Body() dto: UpdateUserDto) {
     return this.usersService.update(id, dto)
   }
 
   @Delete(':id')
+  @Roles(UserRole.Admin, UserRole.Staff)
   remove(@Param('id') id: string) {
     return this.usersService.remove(id)
   }
 
   @Post(':id/restore')
+  @Roles(UserRole.Admin, UserRole.Staff)
   restore(@Param('id') id: string) {
     return this.usersService.restore(id)
   }

@@ -179,8 +179,7 @@ export class ProductsService {
     return product.toObject();
   }
   async findAll(q: QueryProductsDto) {
-    const page = Math.max(1, Number(q.page) || 1);
-    const limit = Math.min(100, Math.max(1, Number(q.limit) || 20));
+    const { page, limit } = q;
     const skip = (page - 1) * limit;
 
     const filter: any = {};
@@ -241,7 +240,9 @@ export class ProductsService {
       update.templateVersion = tmpl.version;
     }
 
-    const saved = await this.productModel.findByIdAndUpdate(_id, { $set: update }, { new: true }).lean();
+    const saved = await this.productModel
+      .findByIdAndUpdate(_id, { $set: update }, { new: true })
+      .lean()
     return saved!;
   }
 

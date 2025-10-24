@@ -10,10 +10,15 @@ import {
   Patch,
   Post,
   Query,
+  UseGuards,
 } from '@nestjs/common'
 import { SubcategoriesService } from './subcategories.service'
 import { CreateSubcategoryDto } from './dto/create-subcategory.dto'
 import { UpdateSubcategoryDto } from './dto/update-subcategory.dto'
+import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard'
+import { RolesGuard } from '@auth/guards/roles.guard'
+import { Roles } from '@auth/decorators/roles.decorator'
+import { UserRole } from '@users/schemas/user.schema'
 
 type SortKey = 'name' | 'sortOrder' | '-createdAt'
 
@@ -21,14 +26,12 @@ type SortKey = 'name' | 'sortOrder' | '-createdAt'
 export class SubcategoriesController {
   constructor(private readonly subcategoriesService: SubcategoriesService) { }
 
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin, UserRole.Staff)
   @Post()
   create(@Body() dto: CreateSubcategoryDto) {
     return this.subcategoriesService.create(dto)
   }
-
-  /**
-   * GET /subcategories?page=1&limit=20&search=phone&isActive=true&categoryId=...&sort=name
-   */
   @Get()
   findAll(
     @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number,
@@ -58,19 +61,29 @@ export class SubcategoriesController {
     })
   }
 
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin, UserRole.Staff)
   @Patch(':id')
   update(@Param('id') id: string, @Body() dto: UpdateSubcategoryDto) {
     return this.subcategoriesService.update(id, dto)
   }
 
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin, UserRole.Staff)
   @Delete(':id')
   deactivate(@Param('id') id: string) {
     return this.subcategoriesService.deactivate(id)
   }
+
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin, UserRole.Staff)
   @Post(':id/active')
   activate(@Param('id') id: string) {
     return this.subcategoriesService.activate(id)
   }
+
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin)
   @Delete(':id/hard')
   removeHard(@Param('id') id: string) {
     return this.subcategoriesService.removeHard(id)

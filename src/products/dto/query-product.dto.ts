@@ -1,11 +1,12 @@
-import { IsOptional, IsString, IsInt } from 'class-validator'
+import { IsOptional, IsString, IsInt, IsIn } from 'class-validator'
+import { Type } from 'class-transformer'
 
 export class QueryProductsDto {
-  @IsOptional() @IsInt()
-  page?: number
+  @IsOptional() @Type(() => Number) @IsInt()
+  page: number = 1
 
-  @IsOptional() @IsInt()
-  limit?: number
+  @IsOptional() @Type(() => Number) @IsInt()
+  limit: number = 20
 
   @IsOptional() @IsString()
   search?: string
@@ -22,6 +23,7 @@ export class QueryProductsDto {
   @IsOptional() @IsString()
   isPublished?: string // 'true' | 'false'
 
-  @IsOptional() @IsString()
-  sort?: 'name' | '-createdAt' | 'priceFrom' | 'priceTo'
+  @IsOptional()
+  @IsIn(['name', '-createdAt', 'priceFrom', 'priceTo'])
+  sort?: 'name' | '-createdAt' | 'priceFrom' | 'priceTo' = '-createdAt'
 }
