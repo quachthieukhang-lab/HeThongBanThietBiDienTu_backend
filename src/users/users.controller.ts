@@ -10,6 +10,7 @@ import {
   ParseIntPipe,
   DefaultValuePipe,
   ParseArrayPipe,
+  UseGuards,
 } from '@nestjs/common'
 
 import { UsersService } from './users.service'
@@ -17,6 +18,11 @@ import { CreateUserDto } from './dto/create-user.dto'
 import { UpdateUserDto } from './dto/update-user.dto'
 import { UserRole, UserStatus } from '@users/schemas/user.schema'
 import { FindAllQuery } from '@users/dto/find-all-query.dto'
+import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard'
+import { RolesGuard } from '@auth/guards/roles.guard'
+import { Roles } from '@auth/decorators/roles.decorator'
+
+@UseGuards(JwtAuthGuard, RolesGuard)
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
@@ -27,6 +33,7 @@ export class UsersController {
   }
 
   @Get()
+  @Roles(UserRole.Admin, UserRole.Staff)
   findAll(
     @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number,
     @Query('limit', new DefaultValuePipe(20), ParseIntPipe) limit: number,
@@ -71,6 +78,7 @@ export class UsersController {
   }
 
   @Delete(':id/hard')
+  @Roles(UserRole.Admin)
   hardDelete(@Param('id') id: string) {
     return this.usersService.hardDelete(id)
   }
