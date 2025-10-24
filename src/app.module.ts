@@ -14,6 +14,7 @@ import { AttributeTemplatesModule } from './attribute-templates/attribute-templa
 import { CartsModule } from './carts/carts.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config'
+import { UploadModule } from './upload/upload.module';
 
 @Module({
   imports: [
@@ -38,6 +39,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
     AttributeTemplatesModule,
     CartsModule,
     AuthModule,
+    UploadModule,
   ],
   controllers: [AppController],
   providers: [AppService],
