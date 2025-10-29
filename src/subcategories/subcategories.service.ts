@@ -61,8 +61,10 @@ export class SubcategoriesService {
 
     // search: dùng cả name/slug + (optional) searchKey
     const normalize = (str: string) => str.toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/\s+/g, ' ').trim();
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
 
     if (params.search) {
       const s = params.search.trim();
@@ -75,9 +77,7 @@ export class SubcategoriesService {
     }
 
     if (params.isActive !== undefined) {
-      const v = typeof params.isActive === 'string'
-        ? params.isActive === 'true'
-        : !!params.isActive;
+      const v = typeof params.isActive === 'string' ? params.isActive === 'true' : !!params.isActive
       filter.isActive = v;
     }
 
@@ -85,8 +85,12 @@ export class SubcategoriesService {
 
     const q = this.subcategoryModel
       .find(filter)
+      .populate('categoryId')
       .collation({ locale: 'vi', strength: 1 })   // để search ko phân biệt dấu/case
-      .sort(sort).skip(skip).limit(limit).lean();
+      .sort(sort)
+      .skip(skip)
+      .limit(limit)
+      .lean()
 
     const [items, total] = await Promise.all([
       q,
@@ -123,7 +127,10 @@ export class SubcategoriesService {
           ? { sortOrder: 1, name: 1 }
           : { createdAt: -1, sortOrder: 1, name: 1 }
 
-    const docs = await this.subcategoryModel.find(filter).sort(sort as any).lean()
+    const docs = await this.subcategoryModel
+      .find(filter)
+      .sort(sort as any)
+      .lean()
     return docs
   }
 
