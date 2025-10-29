@@ -15,9 +15,22 @@ import { CartsModule } from './carts/carts.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { UploadModule } from './upload/upload.module';
+import { ServeStaticModule } from '@nestjs/serve-static'
+import { join } from 'path'
 
 @Module({
   imports: [
+    // Cấu hình để phục vụ file tĩnh từ thư mục 'public'
+    ServeStaticModule.forRoot({
+      // process.cwd() trả về thư mục gốc của project
+      // join(process.cwd(), 'public') sẽ tạo ra đường dẫn tuyệt đối đến thư mục 'public'
+      rootPath: join(process.cwd(), 'public'),
+      serveStaticOptions: {
+        index: false, // Ngăn không cho serve-static tìm index.html khi một file cụ thể không được tìm thấy
+      },
+      // Không cần prefix, request sẽ map trực tiếp
+      // Ví dụ: request đến /uploads/image.jpg sẽ tìm file tại public/uploads/image.jpg
+    }),
     ConfigModule.forRoot({
       isGlobal: true,
     }),

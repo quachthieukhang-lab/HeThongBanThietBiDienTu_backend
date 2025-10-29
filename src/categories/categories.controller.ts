@@ -9,18 +9,33 @@ import {
   Query,
   DefaultValuePipe,
   ParseIntPipe,
+  UseInterceptors,
+  UploadedFiles,
 } from '@nestjs/common'
 import { CategoriesService } from './categories.service'
 import { CreateCategoryDto } from './dto/create-category.dto'
 import { UpdateCategoryDto } from './dto/update-category.dto'
+import { FileFieldsInterceptor } from '@nestjs/platform-express'
 type SortKey = 'name' | 'sortOrder' | '-createdAt'
 @Controller('categories')
 export class CategoriesController {
   constructor(private readonly categoriesService: CategoriesService) {}
 
   @Post()
-  create(@Body() createCategoryDto: CreateCategoryDto) {
-    return this.categoriesService.create(createCategoryDto)
+  @UseInterceptors(
+    FileFieldsInterceptor([
+      { name: 'image', maxCount: 1 },
+      { name: 'banner', maxCount: 1 },
+    ]),
+  )
+  create(
+    @Body() createCategoryDto: CreateCategoryDto,
+    @UploadedFiles()
+    files: { image?: Express.Multer.File[]; banner?: Express.Multer.File[] },
+  ) {
+    const imageFile = files?.image?.[0]
+    const bannerFile = files?.banner?.[0]
+    return this.categoriesService.create(createCategoryDto, imageFile, bannerFile)
   }
   @Get()
   findAll(
@@ -39,8 +54,21 @@ export class CategoriesController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCategoryDto: UpdateCategoryDto) {
-    return this.categoriesService.update(id, updateCategoryDto)
+  @UseInterceptors(
+    FileFieldsInterceptor([
+      { name: 'image', maxCount: 1 },
+      { name: 'banner', maxCount: 1 },
+    ]),
+  )
+  update(
+    @Param('id') id: string,
+    @Body() updateCategoryDto: UpdateCategoryDto,
+    @UploadedFiles()
+    files: { image?: Express.Multer.File[]; banner?: Express.Multer.File[] },
+  ) {
+    const imageFile = files?.image?.[0]
+    const bannerFile = files?.banner?.[0]
+    return this.categoriesService.update(id, updateCategoryDto, imageFile, bannerFile)
   }
 
   @Delete(':id')

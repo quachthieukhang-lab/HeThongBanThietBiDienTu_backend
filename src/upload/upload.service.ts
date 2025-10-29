@@ -3,7 +3,17 @@ import * as fs from 'fs/promises';
 import { extname, join } from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
-export type UploadDestination = 'brands' | 'products' | 'avatars' | 'general';
+export type UploadDestination =
+  | 'brands'
+  | 'products'
+  | 'avatars'
+  | 'general'
+  | 'categories'
+  | 'subcategories'
+  | 'reviews'
+  | 'users'
+  | 'other'
+  | 'orders'
 
 @Injectable()
 export class UploadService {
@@ -18,13 +28,13 @@ export class UploadService {
     await fs.mkdir(uploadDir, { recursive: true });
 
     const fileExtension = extname(file.originalname);
-    const uniqueFileName = `${Date.now()}-${uuidv4()}`;
+    const uniqueFileName = `${Date.now()}-${uuidv4()}${fileExtension}`;
     const fullPath = join(uploadDir, uniqueFileName);
 
     await fs.writeFile(fullPath, file.buffer);
 
     // Trả về đường dẫn không bao gồm 'public' để dễ dàng phục vụ file tĩnh
-    return `uploads//`;
+    return `uploads/${destination}/${uniqueFileName}`;
   }
 
   /**
