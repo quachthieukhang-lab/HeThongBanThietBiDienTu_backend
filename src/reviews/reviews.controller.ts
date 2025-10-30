@@ -6,37 +6,73 @@ import {
   Patch,
   Param,
   Delete,
-} from '@nestjs/common';
-import { ReviewsService } from './reviews.service';
-import { CreateReviewDto } from './dto/create-review.dto';
-import { UpdateReviewDto } from './dto/update-review.dto';
+  UseGuards,
+  Query,
+  UseInterceptors,
+  UploadedFiles,
+  ParseFilePipe,
+  MaxFileSizeValidator,
+  FileTypeValidator,
+} from '@nestjs/common'
+import { ReviewsService } from './reviews.service'
+import { CreateReviewDto } from './dto/create-review.dto'
+import { UpdateReviewDto } from './dto/update-review.dto'
+import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard'
+import { RolesGuard } from '@auth/guards/roles.guard'
+import { CurrentUser } from '@auth/decorators/current-user.decorator'
+import { Roles } from '@auth/decorators/roles.decorator'
+import { UserRole } from '@users/schemas/user.schema'
+import { FilesInterceptor } from '@nestjs/platform-express'
+
+type UserPayload = { sub: string; email: string; roles: string[] }
 
 @Controller('reviews')
 export class ReviewsController {
   constructor(private readonly reviewsService: ReviewsService) {}
 
   @Post()
-  create(@Body() createReviewDto: CreateReviewDto) {
-    return this.reviewsService.create(createReviewDto);
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @UseInterceptors(FilesInterceptor('images', 5)) // Tối đa 5 ảnh
+  create(
+    @Body() createReviewDto: CreateReviewDto,
+    @CurrentUser() user: UserPayload,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 5 * 1024 * 1024 }), // 5MB
+          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp)' }),
+        ],
+        fileIsRequired: false,
+      }),
+    )
+    files?: Express.Multer.File[],
+  ) {
+    return this.reviewsService.create(createReviewDto, user, files)
   }
 
   @Get()
-  findAll() {
-    return this.reviewsService.findAll();
+  findAll(@Query() query: any) {
+    return this.reviewsService.findAll(query)
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.reviewsService.findOne(+id);
+    return this.reviewsService.findOne(id)
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateReviewDto: UpdateReviewDto) {
-    return this.reviewsService.update(+id, updateReviewDto);
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  update(
+    @Param('id') id: string,
+    @Body() updateReviewDto: UpdateReviewDto,
+    @CurrentUser() user: UserPayload,
+  ) {
+    return this.reviewsService.update(id, updateReviewDto, user)
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.reviewsService.remove(+id);
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  remove(@Param('id') id: string, @CurrentUser() user: UserPayload) {
+    return this.reviewsService.remove(id, user)
   }
 }

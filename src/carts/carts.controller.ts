@@ -1,49 +1,54 @@
-import { Body, Controller, Get, Post, Patch, Delete, Query } from '@nestjs/common'
+import { Body, Controller, Get, Post, Patch, Delete, Query, UseGuards } from '@nestjs/common'
 import { CartsService } from './carts.service'
 import { AddItemDto } from './dto/add-item.dto'
 import { SetQtyDto } from './dto/set-qty.dto'
 import { RemoveItemDto } from './dto/remove-item.dto'
-import { ClearCartDto } from './dto/clear-cart.dto'
 import { MergeCartDto } from './dto/merge-cart.dto'
+import { JwtOptionalAuthGuard } from '@auth/guards/jwt-optional-auth.guard'
+import { CurrentUser } from '@auth/decorators/current-user.decorator'
+import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard'
+
+type UserPayload = { sub: string; email: string; roles: string[] }
 
 @Controller('carts')
 export class CartsController {
   constructor(private readonly carts: CartsService) {}
 
-  // GET /carts/me?sessionId=...
   @Get('me')
-  getMy(@Query('userId') userId?: string, @Query('sessionId') sessionId?: string) {
-    // Nếu dùng JWT: lấy userId từ req.user.id và bỏ query userId
-    return this.carts.getMyCart(userId, sessionId)
+  @UseGuards(JwtOptionalAuthGuard)
+  getMy(@CurrentUser() user: UserPayload, @Query('sessionId') sessionId?: string) {
+    // Nếu user đăng nhập, dùng user.sub (userId). Nếu không, dùng sessionId.
+    return this.carts.getMyCart(user?.sub, sessionId)
   }
 
-  // POST /carts/items
   @Post('items')
-  addItem(@Body() dto: AddItemDto, @Query('userId') userId?: string) {
-    return this.carts.addItem({ ...dto, userId })
+  @UseGuards(JwtOptionalAuthGuard)
+  addItem(@CurrentUser() user: UserPayload, @Body() dto: AddItemDto) {
+    return this.carts.addItem({ ...dto, userId: user?.sub })
   }
 
-  // PATCH /carts/items
   @Patch('items')
-  setQty(@Body() dto: SetQtyDto, @Query('userId') userId?: string) {
-    return this.carts.setItemQty({ ...dto, userId })
+  @UseGuards(JwtOptionalAuthGuard)
+  setQty(@CurrentUser() user: UserPayload, @Body() dto: SetQtyDto) {
+    return this.carts.setItemQty({ ...dto, userId: user?.sub })
   }
 
-  // DELETE /carts/items
   @Delete('items')
-  removeItem(@Body() dto: RemoveItemDto, @Query('userId') userId?: string) {
-    return this.carts.removeItem({ ...dto, userId })
+  @UseGuards(JwtOptionalAuthGuard)
+  removeItem(@CurrentUser() user: UserPayload, @Body() dto: RemoveItemDto) {
+    return this.carts.removeItem({ ...dto, userId: user?.sub })
   }
 
-  // POST /carts/clear
   @Post('clear')
-  clear(@Body() dto: ClearCartDto, @Query('userId') userId?: string) {
-    return this.carts.clearCart(userId, dto.sessionId)
+  @UseGuards(JwtOptionalAuthGuard)
+  clear(@CurrentUser() user: UserPayload, @Query('sessionId') sessionId?: string) {
+    return this.carts.clearCart(user?.sub, sessionId)
   }
 
-  // POST /carts/merge
   @Post('merge')
-  merge(@Body() dto: MergeCartDto) {
-    return this.carts.mergeGuestToUser(dto.sessionId, dto.userId)
+  @UseGuards(JwtAuthGuard) // Yêu cầu đăng nhập bắt buộc
+  merge(@CurrentUser() user: UserPayload, @Body() dto: MergeCartDto) {
+    // Lấy userId từ token để bảo mật, sessionId từ body
+    return this.carts.mergeGuestToUser(dto.sessionId, user.sub)
   }
 }

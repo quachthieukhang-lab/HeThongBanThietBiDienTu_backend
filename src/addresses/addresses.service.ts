@@ -1,14 +1,21 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common'
+import {
+  BadRequestException,
+  ForbiddenException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 import { Model, Types } from 'mongoose'
 import { Address } from './schemas/address.schema'
 import { CreateAddressDto } from './dto/create-address.dto'
 import { UpdateAddressDto } from './dto/update-address.dto'
 import { StringUtil } from '@common/utils/string.util'
-import { User } from '@users/schemas/user.schema'
+import { User, UserRole } from '@users/schemas/user.schema'
+
+type UserPayload = { sub: string; email: string; roles: string[] }
 
 @Injectable()
 export class AddressesService {
@@ -107,22 +114,36 @@ export class AddressesService {
     return this.addressModel.find({ userId: _uid }).sort({ isDefault: -1, updatedAt: -1 }).lean()
   }
 
-  async findOne(id: string) {
+  async findOne(id: string, user: UserPayload) {
     const doc = await this.addressModel.findById(StringUtil.toId(id)).lean()
     if (!doc) throw new NotFoundException('Address not found')
+
+    // Kiểm tra quyền: Admin/Staff hoặc chủ sở hữu
+    const isOwner = doc.userId.equals(user.sub)
+    const isAdminOrStaff = user.roles.some((r) => r === UserRole.Admin || r === UserRole.Staff)
+    if (!isOwner && !isAdminOrStaff) {
+      throw new ForbiddenException('You do not have permission to view this address.')
+    }
     return doc
   }
 
   /** cập nhật (nếu set isDefault=true → hạ default cái khác) */
-  async update(id: string, dto: UpdateAddressDto) {
+  async update(id: string, dto: UpdateAddressDto, user: UserPayload) {
     const _id = StringUtil.toId(id)
-    const current = await this.addressModel.findById(_id)
+    const current = await this.addressModel.findById(_id).exec()
     if (!current) throw new NotFoundException('Address not found')
 
     const update: any = {}
     if (dto.userId) {
       const nextUserId = StringUtil.toId(dto.userId)
       update.userId = nextUserId
+    }
+
+    // Kiểm tra quyền: Admin/Staff hoặc chủ sở hữu
+    const isOwner = current.userId.equals(user.sub)
+    const isAdminOrStaff = user.roles.some((r) => r === UserRole.Admin || r === UserRole.Staff)
+    if (!isOwner && !isAdminOrStaff) {
+      throw new ForbiddenException('You do not have permission to update this address.')
     }
 
     if (dto.fullName !== undefined) update.fullName = dto.fullName.trim()
@@ -149,10 +170,16 @@ export class AddressesService {
 
     return saved!
   }
-  async setDefault(id: string) {
+  async setDefault(id: string, user: UserPayload) {
     const _id = StringUtil.toId(id)
-    const address = await this.addressModel.findById(_id)
+    const address = await this.addressModel.findById(_id).exec()
     if (!address) throw new NotFoundException('Address not found')
+
+    // Kiểm tra quyền sở hữu
+    if (!address.userId.equals(user.sub)) {
+      throw new ForbiddenException('You can only set your own address as default.')
+    }
+
     await this.unsetDefaultForUser(address.userId)
     address.isDefault = true
     await address.save()
@@ -160,13 +187,20 @@ export class AddressesService {
   }
 
   /** xoá (nếu xoá default → set 1 cái khác làm default nếu còn) */
-  async remove(id: string) {
+  async remove(id: string, user: UserPayload) {
     const _id = StringUtil.toId(id)
     const doc = await this.addressModel.findById(_id)
     if (!doc) throw new NotFoundException('Address not found')
 
     const wasDefault = doc.isDefault
     const userId = doc.userId
+
+    // Kiểm tra quyền: Admin/Staff hoặc chủ sở hữu
+    const isOwner = doc.userId.equals(user.sub)
+    const isAdminOrStaff = user.roles.some((r) => r === UserRole.Admin || r === UserRole.Staff)
+    if (!isOwner && !isAdminOrStaff) {
+      throw new ForbiddenException('You do not have permission to delete this address.')
+    }
 
     await doc.deleteOne()
 

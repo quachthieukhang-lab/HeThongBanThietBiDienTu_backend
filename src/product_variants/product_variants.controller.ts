@@ -19,13 +19,11 @@ import { QueryVariantsDto } from './dto/query-product_variant.dto';
 export class ProductVariantsController {
   constructor(private readonly variants: ProductVariantsService) {}
 
-  /** Tạo variant (body phải có productId) */
   @Post()
   create(@Body() dto: CreateVariantDto) {
     return this.variants.create(dto);
   }
 
-  /** Danh sách (phân trang + lọc) */
   @Get()
   findAll(
     @Query(new DefaultValuePipe({ page:1, limit:20 })) query: QueryVariantsDto,
@@ -35,7 +33,6 @@ export class ProductVariantsController {
     return this.variants.findAll(query);
   }
 
-  /** Alias: lấy theo productId */
   @Get('/by-product/:productId')
   findByProduct(
     @Param('productId') productId: string,
