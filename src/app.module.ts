@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
+// Module
 import { UsersModule } from './users/users.module'
 import { AddressesModule } from './addresses/addresses.module'
 import { ProductsModule } from './products/products.module'
@@ -13,10 +14,13 @@ import { BrandsModule } from './brands/brands.module'
 import { AttributeTemplatesModule } from './attribute-templates/attribute-templates.module'
 import { CartsModule } from './carts/carts.module';
 import { AuthModule } from './auth/auth.module';
-import { ConfigModule, ConfigService } from '@nestjs/config'
 import { UploadModule } from './upload/upload.module';
 import { ServeStaticModule } from '@nestjs/serve-static'
+import { ReviewsModule } from '@reviews/reviews.module'
+//utilities
 import { join } from 'path'
+// Env
+import { ConfigModule, ConfigService } from '@nestjs/config'
 
 @Module({
   imports: [
@@ -41,6 +45,7 @@ import { join } from 'path'
       }),
       inject: [ConfigService],
     }),
+    ReviewsModule,
     UsersModule,
     AddressesModule,
     ProductsModule,
