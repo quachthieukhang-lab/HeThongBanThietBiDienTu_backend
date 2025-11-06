@@ -7,6 +7,7 @@ import {
   ProductVariant,
   ProductVariantSchema,
 } from '../product_variants/schemas/product-variant.schema'
+import { UploadModule } from '../upload/upload.module'
 
 // Tối thiểu hóa model AttributeTemplate để query
 import { Schema as MSchema } from 'mongoose'
@@ -27,6 +28,7 @@ const AttributeTemplateSchema = new MSchema(
       { name: ProductVariant.name, schema: ProductVariantSchema },
       { name: 'AttributeTemplate', schema: AttributeTemplateSchema },
     ]),
+    UploadModule,
   ],
   controllers: [ProductsController],
   providers: [ProductsService],

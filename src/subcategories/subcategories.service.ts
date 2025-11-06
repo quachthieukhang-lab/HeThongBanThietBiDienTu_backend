@@ -6,17 +6,31 @@ import { Subcategory } from './schemas/subcategory.schema'
 import { InjectModel } from '@nestjs/mongoose'
 import { Model, Types } from 'mongoose'
 import { Category } from '@categories/schemas/category.schema'
+import { UploadService } from '../upload/upload.service'
+
 type SortKey = 'name' | 'sortOrder' | '-createdAt'
+
+interface SubcategoryFiles {
+  image?: Express.Multer.File
+  banner?: Express.Multer.File
+}
+
 @Injectable()
 export class SubcategoriesService {
   constructor(
     @InjectModel(Subcategory.name)
     private readonly subcategoryModel: Model<Subcategory>,
     @InjectModel(Category.name) private categoryModel: Model<Category>,
+    private readonly uploadService: UploadService,
   ) { }
-  async create(createSubcategoryDto: CreateSubcategoryDto) {
+  
+  async create(
+    createSubcategoryDto: CreateSubcategoryDto,
+    files: SubcategoryFiles = {},
+  ) {
     const categoryId = StringUtil.toId(createSubcategoryDto.categoryId)
     const categoryExists = await this.categoryModel.exists({ _id: categoryId })
+
     if (!categoryExists) {
       throw new NotFoundException(`Category with ID ${createSubcategoryDto.categoryId} not found.`)
     }
@@ -24,20 +38,37 @@ export class SubcategoriesService {
     const exists = await this.subcategoryModel.exists({ categoryId, slug })
     if (exists) throw new BadRequestException('Slug already exists in this category')
     const doc = await this.subcategoryModel.create({
+      ...createSubcategoryDto,
       categoryId,
-      name: createSubcategoryDto.name.trim(),
       slug,
-      icon: createSubcategoryDto.icon,
-      sortOrder: createSubcategoryDto.sortOrder ?? 0,
-      description: createSubcategoryDto.description,
-      isActive: createSubcategoryDto.isActive ?? true,
-      image: createSubcategoryDto.image,
-      banner: createSubcategoryDto.banner,
-      metaTitle: createSubcategoryDto.metaTitle,
-      metaDescription: createSubcategoryDto.metaDescription,
-      path: createSubcategoryDto.path ?? slug,
     })
-    return doc.toObject()
+
+    const update: any = {}
+    let hasFileUpdate = false
+
+    try {
+      if (files.image) {
+        update.image = await this.uploadService.saveFile(files.image, 'subcategories')
+        hasFileUpdate = true
+      }
+      if (files.banner) {
+        update.banner = await this.uploadService.saveFile(files.banner, 'subcategories')
+        hasFileUpdate = true
+      }
+
+      if (hasFileUpdate) {
+        const updatedDoc = await this.subcategoryModel.findByIdAndUpdate(doc._id, { $set: update }, { new: true }).lean()
+        return updatedDoc!
+      }
+
+      return doc.toObject()
+    } catch (error) {
+      // Rollback: Xóa document đã tạo và các file đã upload nếu có lỗi
+      await this.subcategoryModel.findByIdAndDelete(doc._id)
+      if (update.image) await this.uploadService.deleteFile(update.image)
+      if (update.banner) await this.uploadService.deleteFile(update.banner)
+      throw error
+    }
   }
 
   async findAll(params: {
@@ -135,7 +166,11 @@ export class SubcategoriesService {
   }
 
 
-  async update(id: string, dto: UpdateSubcategoryDto) {
+  async update(
+    id: string,
+    dto: UpdateSubcategoryDto,
+    files: SubcategoryFiles = {},
+  ) {
     const _id = StringUtil.toId(id)
     const current = await this.subcategoryModel.findById(_id).lean()
     if (!current) throw new NotFoundException('Subcategory not found')
@@ -165,11 +200,35 @@ export class SubcategoriesService {
     if (dto.sortOrder !== undefined) update.sortOrder = dto.sortOrder
     if (dto.description !== undefined) update.description = dto.description
     if (dto.isActive !== undefined) update.isActive = dto.isActive
-    if (dto.image !== undefined) update.image = dto.image
-    if (dto.banner !== undefined) update.banner = dto.banner
     if (dto.metaTitle !== undefined) update.metaTitle = dto.metaTitle
     if (dto.metaDescription !== undefined) update.metaDescription = dto.metaDescription
     if (dto.path !== undefined) update.path = dto.path
+
+    // Xử lý upload file
+    const savedPaths: { image?: string, banner?: string } = {}
+    try {
+      if (files.image) {
+        savedPaths.image = await this.uploadService.saveFile(files.image, 'subcategories')
+        update.image = savedPaths.image
+      }
+      if (files.banner) {
+        savedPaths.banner = await this.uploadService.saveFile(files.banner, 'subcategories')
+        update.banner = savedPaths.banner
+      }
+    } catch (error) {
+      // Rollback file uploads on error
+      if (savedPaths.image) await this.uploadService.deleteFile(savedPaths.image)
+      if (savedPaths.banner) await this.uploadService.deleteFile(savedPaths.banner)
+      throw error
+    }
+
+    // Xóa file cũ nếu có file mới được upload
+    if (savedPaths.image && current.image) {
+      await this.uploadService.deleteFile(current.image)
+    }
+    if (savedPaths.banner && current.banner) {
+      await this.uploadService.deleteFile(current.banner)
+    }
 
     const updated = await this.subcategoryModel
       .findByIdAndUpdate(_id, { $set: update }, { new: true })
@@ -195,8 +254,16 @@ export class SubcategoriesService {
   }
   /** Hard delete: xoá hẳn (cẩn thận ràng buộc) */
   async removeHard(id: string) {
-    const res = await this.subcategoryModel.deleteOne({ _id: StringUtil.toId(id) })
-    if (res.deletedCount === 0) throw new NotFoundException('Subcategory not found')
+    const doc = await this.subcategoryModel.findByIdAndDelete(StringUtil.toId(id)).lean()
+    if (!doc) throw new NotFoundException('Subcategory not found')
+
+    // Xóa file liên quan
+    if (doc.image) {
+      await this.uploadService.deleteFile(doc.image)
+    }
+    if (doc.banner) {
+      await this.uploadService.deleteFile(doc.banner)
+    }
     return { ok: true }
   }
 }

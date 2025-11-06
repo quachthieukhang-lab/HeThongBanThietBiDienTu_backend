@@ -7,7 +7,7 @@ import { User, UserRole, UserStatus } from '@users/schemas/user.schema'
 import * as bcrypt from 'bcrypt'
 import { FindAllQuery } from '@users/dto/find-all-query.dto'
 import { CartsService } from 'carts/carts.service'
-import { Cart } from 'carts/schemas/cart.schema'
+import { UploadService } from 'upload/upload.service'
 
 @Injectable()
 export class UsersService {
@@ -15,6 +15,7 @@ export class UsersService {
     @InjectModel(User.name)
     private readonly userModel: Model<User>,
     private readonly cartsService: CartsService,
+    private readonly uploadService: UploadService,
   ) { }
   private toSafe(user: any) {
     if (!user) return user
@@ -136,6 +137,39 @@ export class UsersService {
 
     if (!doc) throw new NotFoundException('User not found')
     return doc
+  }
+
+  async updateAvatar(userId: string, file: Express.Multer.File): Promise<User> {
+    const user = await this.userModel.findById(userId);
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+
+    const oldAvatar = user.avatarUrl;
+    let newAvatarPath: string | null = null;
+
+    try {
+      // Lưu file avatar mới vào thư mục 'avatars'
+      newAvatarPath = await this.uploadService.saveFile(file, 'avatars');
+      
+      // Cập nhật đường dẫn avatar mới cho user
+      user.avatarUrl = newAvatarPath;
+      const updatedUser = await user.save();
+
+      // Nếu cập nhật thành công, xóa avatar cũ
+      if (oldAvatar) {
+        await this.uploadService.deleteFile(oldAvatar);
+      }
+
+      return this.toSafe(updatedUser.toObject());
+
+    } catch (error) {
+      // Nếu có lỗi xảy ra, xóa file avatar vừa tải lên để tránh rác
+      if (newAvatarPath) {
+        await this.uploadService.deleteFile(newAvatarPath);
+      }
+      throw error;
+    }
   }
 
   async remove(id: string) {

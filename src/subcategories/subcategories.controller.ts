@@ -4,13 +4,18 @@ import {
   Controller,
   DefaultValuePipe,
   Delete,
+  FileTypeValidator,
   Get,
+  MaxFileSizeValidator,
   Param,
+  ParseFilePipe,
   ParseIntPipe,
   Patch,
   Post,
   Query,
+  UploadedFiles,
   UseGuards,
+  UseInterceptors,
 } from '@nestjs/common'
 import { SubcategoriesService } from './subcategories.service'
 import { CreateSubcategoryDto } from './dto/create-subcategory.dto'
@@ -19,6 +24,7 @@ import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard'
 import { RolesGuard } from '@auth/guards/roles.guard'
 import { Roles } from '@auth/decorators/roles.decorator'
 import { UserRole } from '@users/schemas/user.schema'
+import { FileFieldsInterceptor } from '@nestjs/platform-express'
 
 type SortKey = 'name' | 'sortOrder' | '-createdAt'
 
@@ -29,8 +35,29 @@ export class SubcategoriesController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.Admin, UserRole.Staff)
   @Post()
-  create(@Body() dto: CreateSubcategoryDto) {
-    return this.subcategoriesService.create(dto)
+  @UseInterceptors(FileFieldsInterceptor([
+    { name: 'image', maxCount: 1 },
+    { name: 'banner', maxCount: 1 },
+  ]))
+  create(
+    @Body() dto: CreateSubcategoryDto,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
+          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
+        ],
+        fileIsRequired: false,
+      }),
+    )
+    files: { image?: Express.Multer.File[], banner?: Express.Multer.File[] },
+  ) {
+    const imageFile = files?.image?.[0]
+    const bannerFile = files?.banner?.[0]
+    return this.subcategoriesService.create(dto, {
+      image: imageFile,
+      banner: bannerFile,
+    })
   }
   @Get()
   findAll(
@@ -64,8 +91,30 @@ export class SubcategoriesController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.Admin, UserRole.Staff)
   @Patch(':id')
-  update(@Param('id') id: string, @Body() dto: UpdateSubcategoryDto) {
-    return this.subcategoriesService.update(id, dto)
+  @UseInterceptors(FileFieldsInterceptor([
+    { name: 'image', maxCount: 1 },
+    { name: 'banner', maxCount: 1 },
+  ]))
+  update(
+    @Param('id') id: string,
+    @Body() dto: UpdateSubcategoryDto,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
+          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
+        ],
+        fileIsRequired: false,
+      }),
+    )
+    files: { image?: Express.Multer.File[], banner?: Express.Multer.File[] },
+  ) {
+    const imageFile = files?.image?.[0]
+    const bannerFile = files?.banner?.[0]
+    return this.subcategoriesService.update(id, dto, {
+      image: imageFile,
+      banner: bannerFile,
+    })
   }
 
   @UseGuards(JwtAuthGuard, RolesGuard)

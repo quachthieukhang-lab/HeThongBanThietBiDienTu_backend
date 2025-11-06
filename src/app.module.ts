@@ -21,6 +21,7 @@ import { ReviewsModule } from '@reviews/reviews.module'
 import { join } from 'path'
 // Env
 import { ConfigModule, ConfigService } from '@nestjs/config'
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [
@@ -29,11 +30,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
       // process.cwd() trả về thư mục gốc của project
       // join(process.cwd(), 'public') sẽ tạo ra đường dẫn tuyệt đối đến thư mục 'public'
       rootPath: join(process.cwd(), 'public'),
-      serveStaticOptions: {
-        index: false, // Ngăn không cho serve-static tìm index.html khi một file cụ thể không được tìm thấy
-      },
-      // Không cần prefix, request sẽ map trực tiếp
-      // Ví dụ: request đến /uploads/image.jpg sẽ tìm file tại public/uploads/image.jpg
+      serveRoot: '/',
     }),
     ConfigModule.forRoot({
       isGlobal: true,
@@ -58,6 +55,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
     CartsModule,
     AuthModule,
     UploadModule,
+    ChatModule,
   ],
   controllers: [AppController],
   providers: [AppService],

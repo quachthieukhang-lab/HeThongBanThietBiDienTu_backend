@@ -3,14 +3,20 @@ import {
   Controller,
   Delete,
   Get,
+  MaxFileSizeValidator,
   Param,
   Patch,
+  ParseFilePipe,
   Post,
   Query,
   ParseIntPipe,
   DefaultValuePipe,
   ParseArrayPipe,
   UseGuards,
+  Req,
+  UseInterceptors,
+  UploadedFile,
+  FileTypeValidator,
 } from '@nestjs/common'
 
 import { UsersService } from './users.service'
@@ -21,6 +27,7 @@ import { FindAllQuery } from '@users/dto/find-all-query.dto'
 import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard'
 import { RolesGuard } from '@auth/guards/roles.guard'
 import { Roles } from '@auth/decorators/roles.decorator'
+import { FileInterceptor } from '@nestjs/platform-express'
 
 @UseGuards(JwtAuthGuard, RolesGuard)
 @Controller('users')
@@ -49,6 +56,30 @@ export class UsersController {
   ) {
     const q: FindAllQuery = { page, limit, search, status, roles }
     return this.usersService.findAll(q)
+  }
+
+  @Get('me')
+  getProfile(@Req() req) {
+    // req.user chứa payload từ JWT (sub: userId)
+    return this.usersService.findOne(req.user.sub);
+  }
+
+  @Patch('me/avatar')
+  @UseInterceptors(FileInterceptor('avatar'))
+  updateAvatar(
+    @Req() req,
+    @UploadedFile(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 5 * 1024 * 1024 }), // 5MB
+          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp)' }),
+        ],
+      }),
+    )
+    file: Express.Multer.File,
+  ) {
+    const userId = req.user.sub;
+    return this.usersService.updateAvatar(userId, file);
   }
 
   @Get(':id')

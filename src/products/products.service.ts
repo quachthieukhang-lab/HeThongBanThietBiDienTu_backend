@@ -8,6 +8,7 @@ import { UpdateProductDto } from './dto/update-product.dto';
 import { CreateVariantDto } from '../product_variants/dto/create-product_variant.dto';
 import { UpdateVariantDto } from '../product_variants/dto/update-product_variant.dto';
 import { QueryProductsDto } from './dto/query-product.dto';
+import { UploadService } from '../upload/upload.service';
 
 // Tối thiểu hoá AttributeTemplate để lấy rules
 type AttrType = 'string' | 'number' | 'boolean' | 'enum' | 'multienum';
@@ -27,6 +28,11 @@ type AttributeTemplate = {
   attributes: AttributeDef[];
 };
 
+interface ProductFiles {
+  thumbnail?: Express.Multer.File[];
+  images?: Express.Multer.File[];
+}
+
 @Injectable()
 export class ProductsService {
   constructor(
@@ -34,6 +40,7 @@ export class ProductsService {
     @InjectModel(ProductVariant.name) private readonly variantModel: Model<ProductVariant>,
     // Template model — đổi tên theo module của bạn
     @InjectModel('AttributeTemplate') private readonly tmplModel: Model<AttributeTemplate>,
+    private readonly uploadService: UploadService,
   ) { }
 
   private toId(id: string) {
@@ -147,7 +154,10 @@ export class ProductsService {
 
   // ---------------- Products ----------------
 
-  async createProduct(dto: CreateProductDto) {
+  async createProduct(
+    dto: CreateProductDto,
+    files: ProductFiles = {},
+  ) {
     const categoryId = this.toId(dto.categoryId);
     const subcategoryId = this.toId(dto.subcategoryId);
     const brandId = dto.brandId ? this.toId(dto.brandId) : undefined;
@@ -159,7 +169,7 @@ export class ProductsService {
     // template active theo subcategory
     const tmpl = await this.getActiveTemplate(subcategoryId);
 
-    const product = await this.productModel.create({
+    const doc = await this.productModel.create({
       name: dto.name.trim(),
       slug,
       categoryId,
@@ -168,16 +178,43 @@ export class ProductsService {
       specs: dto.specs ?? {},
       templateId: tmpl._id,
       templateVersion: tmpl.version,
-      images: dto.images ?? [],
-      thumbnail: dto.thumbnail,
       isPublished: dto.isPublished ?? false,
-      priceFrom: dto.priceFrom ?? 0,
-      priceTo: dto.priceTo ?? 0,
-      variantFacetSummary: {},
     });
+    
+    const update: any = {};
+    const savedPaths: { thumbnail?: string, images?: string[] } = {};
 
-    return product.toObject();
+    try {
+      const thumbnailFile = files.thumbnail?.[0];
+      if (thumbnailFile) {
+        savedPaths.thumbnail = await this.uploadService.saveFile(thumbnailFile, 'products');
+        update.thumbnail = savedPaths.thumbnail;
+      }
+
+      if (files.images && files.images.length > 0) {
+        savedPaths.images = await Promise.all(
+          files.images.map(file => this.uploadService.saveFile(file, 'products'))
+        );
+        update.images = savedPaths.images;
+      }
+
+      if (Object.keys(update).length > 0) {
+        const updatedDoc = await this.productModel.findByIdAndUpdate(doc._id, { $set: update }, { new: true }).lean();
+        return updatedDoc!;
+      }
+
+      return doc.toObject();
+    } catch (error) {
+      // Rollback
+      await this.productModel.findByIdAndDelete(doc._id);
+      if (savedPaths.thumbnail) await this.uploadService.deleteFile(savedPaths.thumbnail);
+      if (savedPaths.images) {
+        await Promise.all(savedPaths.images.map(p => this.uploadService.deleteFile(p)));
+      }
+      throw error;
+    }
   }
+
   async findAll(q: QueryProductsDto) {
     const { page, limit } = q;
     const skip = (page - 1) * limit;
@@ -212,7 +249,11 @@ export class ProductsService {
     return doc;
   }
 
-  async updateProduct(id: string, dto: UpdateProductDto) {
+  async updateProduct(
+    id: string,
+    dto: UpdateProductDto,
+    files: ProductFiles = {},
+  ) {
     const _id = this.toId(id);
     const current = await this.productModel.findById(_id);
     if (!current) throw new NotFoundException('Product not found');
@@ -229,9 +270,41 @@ export class ProductsService {
     if (dto.subcategoryId) update.subcategoryId = this.toId(dto.subcategoryId);
     if (dto.brandId) update.brandId = this.toId(dto.brandId);
     if (dto.specs !== undefined) update.specs = dto.specs;
-    if (dto.images !== undefined) update.images = dto.images;
-    if (dto.thumbnail !== undefined) update.thumbnail = dto.thumbnail;
     if (dto.isPublished !== undefined) update.isPublished = dto.isPublished;
+
+    // Xử lý upload file
+    const savedPaths: { thumbnail?: string, images?: string[] } = {};
+    try {
+      const thumbnailFile = files.thumbnail?.[0];
+      if (thumbnailFile) {
+        savedPaths.thumbnail = await this.uploadService.saveFile(thumbnailFile, 'products');
+        update.thumbnail = savedPaths.thumbnail;
+      }
+
+      if (files.images && files.images.length > 0) {
+        savedPaths.images = await Promise.all(
+          files.images.map(file => this.uploadService.saveFile(file, 'products'))
+        );
+        // Logic: thay thế hoàn toàn gallery cũ bằng gallery mới
+        update.images = savedPaths.images;
+      }
+    } catch (error) {
+      // Rollback file uploads on error
+      if (savedPaths.thumbnail) await this.uploadService.deleteFile(savedPaths.thumbnail);
+      if (savedPaths.images) {
+        await Promise.all(savedPaths.images.map(p => this.uploadService.deleteFile(p)));
+      }
+      throw error;
+    }
+
+    // Xóa file cũ sau khi upload thành công
+    if (savedPaths.thumbnail && current.thumbnail) {
+      await this.uploadService.deleteFile(current.thumbnail);
+    }
+    if (savedPaths.images && current.images && current.images.length > 0) {
+      // Xóa toàn bộ ảnh cũ trong gallery
+      await Promise.all(current.images.map(p => this.uploadService.deleteFile(p)));
+    }
 
     // Nếu đổi subcategory -> cập nhật template mới (active)
     if (dto.subcategoryId) {
@@ -248,8 +321,16 @@ export class ProductsService {
 
   async removeHard(id: string) {
     const _id = this.toId(id);
+    const product = await this.productModel.findById(_id).lean();
+    if (!product) throw new NotFoundException('Product not found');
+
     // xoá variants trước
     await this.variantModel.deleteMany({ productId: _id });
+    // Xóa ảnh
+    if (product.thumbnail) await this.uploadService.deleteFile(product.thumbnail);
+    if (product.images && product.images.length > 0) {
+      await Promise.all(product.images.map(p => this.uploadService.deleteFile(p)));
+    }
     const res = await this.productModel.deleteOne({ _id });
     if (res.deletedCount === 0) throw new NotFoundException('Product not found');
     return { ok: true };

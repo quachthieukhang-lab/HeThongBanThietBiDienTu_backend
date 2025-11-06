@@ -3,13 +3,18 @@ import {
   Controller,
   DefaultValuePipe,
   Delete,
+  FileTypeValidator,
   Get,
+  MaxFileSizeValidator,
   Param,
+  ParseFilePipe,
   ParseIntPipe,
   Patch,
   Post,
   Query,
+  UploadedFiles,
   UseGuards,
+  UseInterceptors,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -23,6 +28,7 @@ import { JwtAuthGuard } from '@auth/guards/jwt-auth.guard';
 import { RolesGuard } from '@auth/guards/roles.guard';
 import { Roles } from '@auth/decorators/roles.decorator';
 import { UserRole } from '@users/schemas/user.schema';
+import { FileFieldsInterceptor } from '@nestjs/platform-express';
 
 @Controller('products')
 export class ProductsController {
@@ -32,8 +38,27 @@ export class ProductsController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.Admin, UserRole.Staff)
   @Post()
-  create(@Body() dto: CreateProductDto) {
-    return this.products.createProduct(dto);
+  @UseInterceptors(FileFieldsInterceptor([
+    { name: 'thumbnail', maxCount: 1 },
+    { name: 'images', maxCount: 10 },
+  ]))
+  create(
+    @Body() dto: CreateProductDto,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
+          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
+        ],
+        fileIsRequired: false,
+      }),
+    )
+    files: { thumbnail?: Express.Multer.File[], images?: Express.Multer.File[] },
+  ) {
+    return this.products.createProduct(dto, {
+      thumbnail: files?.thumbnail,
+      images: files?.images,
+    });
   }
 
   @Get()
@@ -50,13 +75,33 @@ export class ProductsController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.Admin, UserRole.Staff)
   @Patch(':id')
-  update(@Param('id') id: string, @Body() dto: UpdateProductDto) {
-    return this.products.updateProduct(id, dto);
+  @UseInterceptors(FileFieldsInterceptor([
+    { name: 'thumbnail', maxCount: 1 },
+    { name: 'images', maxCount: 10 },
+  ]))
+  update(
+    @Param('id') id: string,
+    @Body() dto: UpdateProductDto,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
+          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
+        ],
+        fileIsRequired: false,
+      }),
+    )
+    files: { thumbnail?: Express.Multer.File[], images?: Express.Multer.File[] },
+  ) {
+    return this.products.updateProduct(id, dto, {
+      thumbnail: files?.thumbnail,
+      images: files?.images,
+    });
   }
 
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.Admin)
-  @Delete(':id')
+  @Delete(':id/hard')
   removeHard(@Param('id') id: string) {
     return this.products.removeHard(id);
   }

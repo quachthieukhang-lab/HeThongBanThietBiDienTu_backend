@@ -40,7 +40,7 @@ export class BrandsController {
     @UploadedFile(
       new ParseFilePipe({
         validators: [
-          new MaxFileSizeValidator({ maxSize: 5 * 1024 * 1024 }), // 5MB
+          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 5MB
           new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
         ],
         fileIsRequired: false,
@@ -77,7 +77,7 @@ export class BrandsController {
     @UploadedFile(
       new ParseFilePipe({
         validators: [
-          new MaxFileSizeValidator({ maxSize: 5 * 1024 * 1024 }), // 5MB
+          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }),
           new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
         ],
         fileIsRequired: false,
