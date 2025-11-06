@@ -5,6 +5,7 @@ import { UsersService } from '../users/users.service'
 import * as bcrypt from 'bcrypt'
 import { RegisterDto } from './dto/register.dto'
 import type { StringValue } from 'ms'
+import { ChangePasswordDto } from './dto/change-password.dto'
 import { ConfigService } from '@nestjs/config'
 type JwtPayload = { sub: string; email: string; roles: string[] }
 
@@ -116,5 +117,23 @@ export class AuthService {
   async logout(userId: string) {
     await this.users.setRefreshToken(userId, null)
     return { ok: true }
+  }
+
+  async changePassword(userId: string, dto: ChangePasswordDto) {
+    const user = await this.users.findByEmail(
+      (await this.users.findOne(userId)).email,
+    );
+
+    if (!user || !user.passwordHash) {
+      throw new BadRequestException('User not found or password not set.');
+    }
+
+    const isPasswordMatching = await bcrypt.compare(dto.currentPassword, user.passwordHash);
+    if (!isPasswordMatching) {
+      throw new BadRequestException('Wrong current password');
+    }
+
+    await this.users.update(userId, { password: dto.newPassword });
+    return { ok: true, message: 'Password changed successfully' };
   }
 }

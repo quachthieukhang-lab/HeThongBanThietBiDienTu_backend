@@ -6,6 +6,7 @@ import { LocalAuthGuard } from './guards/local-auth.guard';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { JwtRefreshGuard } from './guards/jwt-refresh.guard';
 import { LoginDto } from './dto/login.dto';
+import { ChangePasswordDto } from './dto/change-password.dto';
 
 @Controller('auth')
 export class AuthController {
@@ -29,6 +30,13 @@ export class AuthController {
   me(@Req() req: any) {
     // req.user là payload của access token
     return req.user;
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('change-password')
+  changePassword(@Req() req: any, @Body() dto: ChangePasswordDto) {
+    const userId = req.user.sub; // Lấy userId từ payload của token
+    return this.auth.changePassword(userId, dto);
   }
 
   // refresh: gửi refreshToken qua Cookie/x-refresh-token header/Body.refreshToken
