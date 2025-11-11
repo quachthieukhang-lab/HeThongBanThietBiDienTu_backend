@@ -48,7 +48,6 @@ export class BrandsController {
     )
     file?: Express.Multer.File,
   ) {
-    // Controller chỉ truyền file object vào Service
     return this.service.create(createBrandDto, file);
   }
 
@@ -74,15 +73,8 @@ export class BrandsController {
   async update(
     @Param('id') id: string,
     @Body() updateBrandDto: UpdateBrandDto,
-    @UploadedFile(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }),
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    ) file?: Express.Multer.File,
+    @UploadedFile()
+    file?: Express.Multer.File,
   ) {
     // Controller chỉ truyền file object vào Service
     return this.service.update(id, updateBrandDto, file);

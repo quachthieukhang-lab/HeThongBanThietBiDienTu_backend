@@ -44,7 +44,7 @@ export class SubcategoriesController {
     @UploadedFiles(
       new ParseFilePipe({
         validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
+          new MaxFileSizeValidator({ maxSize: 100 * 1024 * 1024 }), // 100MB
           new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
         ],
         fileIsRequired: false,
@@ -98,15 +98,7 @@ export class SubcategoriesController {
   update(
     @Param('id') id: string,
     @Body() dto: UpdateSubcategoryDto,
-    @UploadedFiles(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    )
+    @UploadedFiles()
     files: { image?: Express.Multer.File[], banner?: Express.Multer.File[] },
   ) {
     const imageFile = files?.image?.[0]
