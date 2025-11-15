@@ -10,9 +10,6 @@ import {
   Query,
   UseInterceptors,
   UploadedFiles,
-  ParseFilePipe,
-  MaxFileSizeValidator,
-  FileTypeValidator,
 } from '@nestjs/common'
 import { ReviewsService } from './reviews.service'
 import { CreateReviewDto } from './dto/create-review.dto'
@@ -36,15 +33,7 @@ export class ReviewsController {
   create(
     @Body() createReviewDto: CreateReviewDto,
     @CurrentUser() user: UserPayload,
-    @UploadedFiles(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }),
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    )
+    @UploadedFiles()
     files?: Express.Multer.File[],
   ) {
     return this.reviewsService.create(createReviewDto, user, files)

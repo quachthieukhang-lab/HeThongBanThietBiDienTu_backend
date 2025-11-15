@@ -3,11 +3,8 @@ import {
   Controller,
   DefaultValuePipe,
   Delete,
-  FileTypeValidator,
   Get,
-  MaxFileSizeValidator,
   Param,
-  ParseFilePipe,
   ParseIntPipe,
   Patch,
   Post,
@@ -44,15 +41,7 @@ export class ProductsController {
   ]))
   create(
     @Body() dto: CreateProductDto,
-    @UploadedFiles(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    )
+    @UploadedFiles()
     files: { thumbnail?: Express.Multer.File[], images?: Express.Multer.File[] },
   ) {
     return this.products.createProduct(dto, {
@@ -82,15 +71,7 @@ export class ProductsController {
   update(
     @Param('id') id: string,
     @Body() dto: UpdateProductDto,
-    @UploadedFiles(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 20MB
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    )
+    @UploadedFiles()
     files: { thumbnail?: Express.Multer.File[], images?: Express.Multer.File[] },
   ) {
     return this.products.updateProduct(id, dto, {

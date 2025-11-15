@@ -3,10 +3,8 @@ import {
   Controller,
   Delete,
   Get,
-  MaxFileSizeValidator,
   Param,
   Patch,
-  ParseFilePipe,
   Post,
   Query,
   ParseIntPipe,
@@ -16,7 +14,6 @@ import {
   Req,
   UseInterceptors,
   UploadedFile,
-  FileTypeValidator,
 } from '@nestjs/common'
 
 import { UsersService } from './users.service'

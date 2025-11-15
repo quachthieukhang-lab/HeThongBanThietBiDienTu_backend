@@ -2,11 +2,8 @@ import {
   Body,
   Controller,
   Delete,
-  FileTypeValidator,
   Get,
-  MaxFileSizeValidator,
   Param,
-  ParseFilePipe,
   Patch,
   Post,
   Query,
@@ -37,15 +34,7 @@ export class BrandsController {
   @UseInterceptors(FileInterceptor('logoUrl'))
   async create(
     @Body() createBrandDto: CreateBrandDto,
-    @UploadedFile(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 20 * 1024 * 1024 }), // 5MB
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    )
+    @UploadedFile()
     file?: Express.Multer.File,
   ) {
     return this.service.create(createBrandDto, file);

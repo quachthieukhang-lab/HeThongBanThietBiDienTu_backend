@@ -4,11 +4,8 @@ import {
   Controller,
   DefaultValuePipe,
   Delete,
-  FileTypeValidator,
   Get,
-  MaxFileSizeValidator,
   Param,
-  ParseFilePipe,
   ParseIntPipe,
   Patch,
   Post,
@@ -41,15 +38,7 @@ export class SubcategoriesController {
   ]))
   create(
     @Body() dto: CreateSubcategoryDto,
-    @UploadedFiles(
-      new ParseFilePipe({
-        validators: [
-          new MaxFileSizeValidator({ maxSize: 100 * 1024 * 1024 }), // 100MB
-          new FileTypeValidator({ fileType: '.(png|jpeg|jpg|webp|svg)' }),
-        ],
-        fileIsRequired: false,
-      }),
-    )
+    @UploadedFiles()
     files: { image?: Express.Multer.File[], banner?: Express.Multer.File[] },
   ) {
     const imageFile = files?.image?.[0]
