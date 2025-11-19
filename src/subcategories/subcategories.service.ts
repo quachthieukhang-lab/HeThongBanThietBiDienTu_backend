@@ -117,6 +117,7 @@ export class SubcategoriesService {
     const q = this.subcategoryModel
       .find(filter)
       .populate('categoryId')
+      .populate('attributeTemplateId')
       .collation({ locale: 'vi', strength: 1 })   // để search ko phân biệt dấu/case
       .sort(sort)
       .skip(skip)
@@ -133,7 +134,7 @@ export class SubcategoriesService {
 
 
   async findOne(id: string) {
-    const doc = await this.subcategoryModel.findById(StringUtil.toId(id)).lean()
+    const doc = await this.subcategoryModel.findById(StringUtil.toId(id)).populate('attributeTemplateId').lean()
     if (!doc) throw new NotFoundException('Subcategory not found')
     return doc
   }

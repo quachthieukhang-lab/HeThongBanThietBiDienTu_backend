@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { Document, Types } from 'mongoose'
+import { AttributeTemplate } from '../../attribute-templates/schemas/attribute-template.schema'
 
 @Schema({ timestamps: true })
 export class Subcategory extends Document {
@@ -12,8 +13,8 @@ export class Subcategory extends Document {
   @Prop({ required: true, unique: true, lowercase: true, trim: true })
   slug: string
 
-  @Prop({ type: Types.ObjectId, ref: 'AttributeTemplate' })
-  attributeTemplateId?: Types.ObjectId
+  @Prop({ type: Types.ObjectId, ref: AttributeTemplate.name })
+  attributeTemplateId?: AttributeTemplate
 
   @Prop({ default: true })
   sortOrder?: number
