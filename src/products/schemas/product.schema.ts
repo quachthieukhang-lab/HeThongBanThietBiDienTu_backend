@@ -18,6 +18,10 @@ export class Product extends Document {
   @Prop({ type: Types.ObjectId, ref: 'Brand' })
   brandId?: Types.ObjectId
 
+  // Mảng các gói dịch vụ đi kèm
+  @Prop({ type: [{ type: Types.ObjectId, ref: 'ServicePackage' }] })
+  servicePackageIds?: Types.ObjectId[]
+
   // Hybrid: specs chung cấp product (không dùng để filter)
   @Prop({ type: Object })
   specs?: Record<string, any>

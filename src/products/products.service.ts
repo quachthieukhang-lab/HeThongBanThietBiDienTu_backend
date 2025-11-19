@@ -154,6 +154,32 @@ export class ProductsService {
 
   // ---------------- Products ----------------
 
+  async addServicePackages(productId: string, servicePackageIds: string[]) {
+    const product = await this.productModel.findByIdAndUpdate(
+      productId,
+      { $addToSet: { servicePackageIds: { $each: servicePackageIds } } },
+      { new: true },
+    ).lean();
+
+    if (!product) {
+      throw new NotFoundException(`Product with ID "${productId}" not found`);
+    }
+    return product;
+  }
+
+  async removeServicePackages(productId: string, servicePackageIds: string[]) {
+    const product = await this.productModel.findByIdAndUpdate(
+      productId,
+      { $pullAll: { servicePackageIds: servicePackageIds } },
+      { new: true },
+    ).lean();
+
+    if (!product) {
+      throw new NotFoundException(`Product with ID "${productId}" not found`);
+    }
+    return product;
+  }
+
   async createProduct(
     dto: CreateProductDto,
     files: ProductFiles = {},

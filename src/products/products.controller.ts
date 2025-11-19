@@ -26,6 +26,7 @@ import { RolesGuard } from '@auth/guards/roles.guard';
 import { Roles } from '@auth/decorators/roles.decorator';
 import { UserRole } from '@users/schemas/user.schema';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
+import { ManageServicePackagesDto } from './dto/manage-service-packages.dto';
 
 @Controller('products')
 export class ProductsController {
@@ -86,6 +87,28 @@ export class ProductsController {
   removeHard(@Param('id') id: string) {
     return this.products.removeHard(id);
   }
+
+  // Service Packages (nested under product)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin, UserRole.Staff)
+  @Post(':id/service-packages')
+  addServicePackages(
+    @Param('id') productId: string,
+    @Body() dto: ManageServicePackagesDto,
+  ) {
+    return this.products.addServicePackages(productId, dto.servicePackageIds);
+  }
+
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.Admin, UserRole.Staff)
+  @Delete(':id/service-packages')
+  removeServicePackages(
+    @Param('id') productId: string,
+    @Body() dto: ManageServicePackagesDto,
+  ) {
+    return this.products.removeServicePackages(productId, dto.servicePackageIds);
+  }
+
 
   // Variants (nested under product)
   @UseGuards(JwtAuthGuard, RolesGuard)
