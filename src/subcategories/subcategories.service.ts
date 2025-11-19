@@ -203,6 +203,8 @@ export class SubcategoriesService {
     if (dto.metaTitle !== undefined) update.metaTitle = dto.metaTitle
     if (dto.metaDescription !== undefined) update.metaDescription = dto.metaDescription
     if (dto.path !== undefined) update.path = dto.path
+    if (dto.attributeTemplateId !== undefined)
+      update.attributeTemplateId = StringUtil.toId(dto.attributeTemplateId)
 
     // Xử lý upload file
     const savedPaths: { image?: string, banner?: string } = {}

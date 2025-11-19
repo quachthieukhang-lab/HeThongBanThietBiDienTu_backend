@@ -1,5 +1,5 @@
 // src/categories/dto/create-subcategory.dto.ts
-import { IsNotEmpty, IsString, IsOptional, IsBoolean, IsInt, Min } from 'class-validator'
+import { IsNotEmpty, IsString, IsOptional, IsBoolean, IsInt, Min, IsMongoId } from 'class-validator'
 export class CreateSubcategoryDto {
   @IsNotEmpty()
   @IsString()
@@ -12,6 +12,10 @@ export class CreateSubcategoryDto {
   @IsOptional()
   @IsString()
   slug?: string
+
+  @IsOptional()
+  @IsMongoId()
+  attributeTemplateId?: string
 
   @IsOptional()
   @IsString()

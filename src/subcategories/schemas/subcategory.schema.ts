@@ -12,6 +12,9 @@ export class Subcategory extends Document {
   @Prop({ required: true, unique: true, lowercase: true, trim: true })
   slug: string
 
+  @Prop({ type: Types.ObjectId, ref: 'AttributeTemplate' })
+  attributeTemplateId?: Types.ObjectId
+
   @Prop({ default: true })
   sortOrder?: number
 
