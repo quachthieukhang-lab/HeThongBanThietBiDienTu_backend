@@ -62,6 +62,7 @@ export class AttributeTemplateService {
       this.model
         .find(filter)
         .sort({ updatedAt: -1, version: -1 })
+        .populate('subcategoryId')
         .skip(skip)
         .limit(limit)
         .lean()
@@ -93,12 +94,22 @@ export class AttributeTemplateService {
     return doc
   }
   async update(id: string, dto: UpdateAttributeTemplateDto) {
-    // Không cho đổi subcategoryId/version trong thiết kế hiện tại
-    // Chỉ cho phép update các trường hợp lệ (ví dụ: name, isActive, fields...)
-    const allowedFields = ['name', 'isActive', 'attributes', 'meta']
+    const allowedFields = ['name', 'isActive', 'attributes', 'meta', 'subcategoryId']
     const updateData: Record<string, any> = {}
+
+    // Nếu có subcategoryId, kiểm tra sự tồn tại của nó
+    if (dto.subcategoryId) {
+      const subcategoryId = StringUtil.toId(dto.subcategoryId)
+      const subcategoryExists = await this.subcategoryModel.exists({ _id: subcategoryId })
+      if (!subcategoryExists) {
+        throw new NotFoundException(`Subcategory with ID ${dto.subcategoryId} not found.`)
+      }
+      updateData.subcategoryId = subcategoryId
+    }
+
     for (const key of allowedFields) {
-      if (key in dto) updateData[key] = (dto as any)[key]
+      // Bỏ qua subcategoryId vì đã xử lý ở trên
+      if (key in dto && key !== 'subcategoryId') updateData[key] = (dto as any)[key]
     }
     if (Object.keys(updateData).length === 0) {
       throw new ConflictException('No valid fields to update')

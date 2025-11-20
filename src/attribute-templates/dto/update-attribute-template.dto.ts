@@ -16,6 +16,11 @@ export class UpdateAttributeTemplateDto {
   name?: string
 
   @IsOptional()
+  @IsString()
+  subcategoryId?: string
+
+  
+  @IsOptional()
   @IsBoolean()
   isActive?: boolean
 
