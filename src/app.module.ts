@@ -23,6 +23,7 @@ import { join } from 'path'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { ChatModule } from './chat/chat.module';
 import { ServicePackagesModule } from './service-packages/service-packages.module';
+import { PromotionModule } from './promotion/promotion.module';
 
 @Module({
   imports: [
@@ -58,6 +59,7 @@ import { ServicePackagesModule } from './service-packages/service-packages.modul
     UploadModule,
     ChatModule,
     ServicePackagesModule,
+    PromotionModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -36,7 +36,8 @@
       "@reviews/*": ["reviews/*"],
       "@subcategories/*": ["subcategories/*"],
       "@users/*": ["users/*"],
-      "@upload/*": ["uploads/*"]
+      "@upload/*": ["uploads/*"],
+      "@promotion/*": ["promotion/*"]
     }
   }
 }
