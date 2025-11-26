@@ -270,7 +270,7 @@ export class ProductsService {
   }
 
   async findOne(id: string) {
-    const doc = await this.productModel.findById(this.toId(id)).lean();
+    const doc = await this.productModel.findById(this.toId(id)).populate('brandId').populate('servicePackageIds').lean();
     if (!doc) throw new NotFoundException('Product not found');
     return doc;
   }

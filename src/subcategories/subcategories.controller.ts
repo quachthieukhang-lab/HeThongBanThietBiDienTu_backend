@@ -7,6 +7,7 @@ import {
   Get,
   Param,
   ParseIntPipe,
+  ParseBoolPipe,
   Patch,
   Post,
   Query,
@@ -48,16 +49,26 @@ export class SubcategoriesController {
       banner: bannerFile,
     })
   }
+
+  
   @Get()
   findAll(
     @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number,
-    @Query('limit', new DefaultValuePipe(20), ParseIntPipe) limit: number,
+    @Query('limit', new DefaultValuePipe(300), ParseIntPipe) limit: number,
     @Query('search') search?: string,
     @Query('isActive') isActive?: string,
     @Query('categoryId') categoryId?: string,
     @Query('sort', new DefaultValuePipe('-createdAt')) sort?: SortKey,
   ) {
     return this.subcategoriesService.findAll({ page, limit, search, isActive, categoryId, sort })
+  }
+
+  @Get('simple')
+  findAllSimple(
+    @Query('isActive', new DefaultValuePipe(true), ParseBoolPipe)
+    isActive: boolean,
+  ) {
+    return this.subcategoriesService.findAllSimple({ isActive });
   }
 
   @Get(':id')

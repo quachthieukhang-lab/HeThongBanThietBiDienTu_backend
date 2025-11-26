@@ -80,7 +80,7 @@ export class SubcategoriesService {
     sort?: 'name' | 'sortOrder' | '-createdAt';
   }) {
     const page = Math.max(1, Number(params.page) || 1);
-    const limit = Math.min(100, Math.max(1, Number(params.limit) || 20));
+    const limit = Math.min(300, Math.max(1, Number(params.limit) || 500));
     const skip = (page - 1) * limit;
 
     const filter: any = {};
@@ -268,5 +268,22 @@ export class SubcategoriesService {
       await this.uploadService.deleteFile(doc.banner)
     }
     return { ok: true }
+  }
+
+  async findAllSimple(options: { isActive?: boolean } = {}) {
+    const filter: any = {};
+
+    // Mặc định chỉ lấy các subcategory đang hoạt động (active).
+    // Nếu `isActive` được truyền vào một cách tường minh, sẽ dùng giá trị đó.
+    if (options.isActive !== undefined) {
+      filter.isActive = options.isActive;
+    } else {
+      filter.isActive = true;
+    }
+
+    return this.subcategoryModel
+      .find(filter)
+      .sort({ sortOrder: 1, name: 1 }) // Sắp xếp theo thứ tự và tên
+      .lean()
   }
 }
