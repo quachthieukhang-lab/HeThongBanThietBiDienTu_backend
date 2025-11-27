@@ -312,7 +312,8 @@ export class ProductsService {
     if (dto.brandId) update.brandId = this.toId(dto.brandId);
     if (dto.specs !== undefined) update.specs = dto.specs;
     if (dto.isPublished !== undefined) update.isPublished = dto.isPublished;
-
+    if (dto.priceFrom !== undefined) update.priceFrom = dto.priceFrom;
+    if (dto.priceTo !== undefined) update.priceTo = dto.priceTo;
     // Xử lý upload file
     const savedPaths: { thumbnail?: string, images?: string[] } = {};
     try {
@@ -363,7 +364,6 @@ export class ProductsService {
 
   async search(params: SearchChatDto): Promise<Product[]> {
     const filter: any = {};
-
     if (params.keyword) {
       const regex = new RegExp(params.keyword, 'i');
       // Tìm kiếm trong tên sản phẩm và slug
@@ -372,7 +372,6 @@ export class ProductsService {
         { slug: regex },
       ];
     }
-
     return this.productModel
       .find(filter)
       .populate('brandId')

@@ -29,7 +29,19 @@ export class ChatService {
         // Chuyển đổi dữ liệu sản phẩm thành dạng text để AI có thể đọc
         contextData = `Tìm thấy ${products.length} sản phẩm liên quan:\n` +
           products
-            .map(p => `- Tên: ${p.name}, Giá từ: ${p.priceFrom.toLocaleString('vi-VN')} VNĐ, Thương hiệu: ${(p.brandId as any)?.name || 'N/A'}`)
+            .map(p => {
+              // Ép kiểu `as any` để truy cập các trường đã được populate mà không bị lỗi TypeScript
+              const brandName = (p.brandId as any)?.name || 'Chưa xác định';
+              const categoryName = (p.categoryId as any)?.name || 'Chưa xác định';
+              const subcategoryName = (p.subcategoryId as any)?.name || 'Chưa xác định';
+              const servicePackages = (p.servicePackageIds as any[])?.map(sp => sp.name).join(', ') || 'Không có';
+
+              return `- Tên: ${p.name}\n` +
+                     `  - Giá từ: ${p.priceFrom.toLocaleString('vi-VN')} VNĐ\n` +
+                     `  - Thương hiệu: ${brandName}\n` +
+                     `  - Danh mục: ${categoryName} > ${subcategoryName}\n` +
+                     `  - Gói dịch vụ đi kèm: ${servicePackages}`;
+            })
             .join('\n');
       }
       this.logger.log(`Context for AI: ${contextData}`);
@@ -42,7 +54,8 @@ export class ChatService {
     const systemPrompt = `Bạn là trợ lý ảo bán hàng chuyên nghiệp và thân thiện của một cửa hàng thiết bị điện tử.
 NGUYÊN TẮC VÀNG:
 1.  CHỈ được phép trả lời dựa trên thông tin trong phần "DỮ LIỆU HỆ THỐNG CUNG CẤP".
-2.  Nếu "DỮ LIỆU HỆ THỐNG CUNG CẤP" báo không tìm thấy, hãy lịch sự xin lỗi, nói rằng bạn chưa tìm thấy sản phẩm và gợi ý khách hàng cung cấp từ khóa khác rõ ràng hơn (ví dụ: "laptop gaming" thay vì "máy tính"). TUYỆT ĐỐI KHÔNG tự bịa ra sản phẩm.
+2.  Nếu "DỮ LIỆU HỆ THỐNG CUNG CẤP" báo không tìm thấy, hãy lịch sự xin lỗi, nói rằng bạn chưa tìm thấy sản phẩm và gợi 
+ý khách hàng cung cấp từ khóa khác rõ ràng hơn (ví dụ: "laptop gaming" thay vì "máy tính"). TUYỆT ĐỐI KHÔNG tự bịa ra sản phẩm.
 3.  Khi trả lời, hãy tư vấn như một người bán hàng: giới thiệu ngắn gọn sản phẩm tìm thấy, nhấn mạnh vào giá hoặc thương hiệu và mời khách hàng xem xét.
 4.  Sử dụng ngôn ngữ tiếng Việt tự nhiên, vui vẻ, có thể dùng emoji phù hợp (💻, 📱, 🛒).
 
