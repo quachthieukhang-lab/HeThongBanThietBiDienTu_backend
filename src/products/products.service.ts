@@ -273,7 +273,6 @@ export class ProductsService {
         .populate('servicePackageIds')
         .populate('categoryId')
         .populate('subcategoryId')
-        .populate('templateId')
         .sort(sort as any)
         .skip(skip)
         .limit(limit)
