@@ -211,7 +211,7 @@ export class ProductsService {
       templateVersion: tmpl.version,
       isPublished: dto.isPublished ?? false,
     });
-    
+
     const update: any = {};
     const savedPaths: { thumbnail?: string, images?: string[] } = {};
 
@@ -264,10 +264,20 @@ export class ProductsService {
       ? { priceTo: 1 }
       : q.sort === 'priceFrom'
         ? { priceFrom: 1 }
-          : { createdAt: -1 } // Default sort
+        : { createdAt: -1 } // Default sort
 
     const [items, total] = await Promise.all([
-      this.productModel.find(filter).sort(sort as any).skip(skip).limit(limit).lean(),
+      this.productModel
+        .find(filter)
+        .populate('brandId')
+        .populate('servicePackageIds')
+        .populate('categoryId')
+        .populate('subcategoryId')
+        .populate('templateId')
+        .sort(sort as any)
+        .skip(skip)
+        .limit(limit)
+        .lean(),
       this.productModel.countDocuments(filter),
     ]);
 
@@ -365,8 +375,11 @@ export class ProductsService {
 
     return this.productModel
       .find(filter)
-      .populate('brandId') // Populate để lấy 'name' từ 'brandId'
-      .limit(10) // Giới hạn 10 kết quả cho chatbot
+      .populate('brandId')
+      .populate('servicePackageIds')
+      .populate('categoryId')
+      .populate('subcategoryId')
+      .populate('templateId')
       .lean();
   }
 

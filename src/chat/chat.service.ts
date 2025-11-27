@@ -20,7 +20,6 @@ export class ChatService {
   }
 
   async chat(dto: CreateChatDto, userId: string) {
-    // --- BƯỚC 1: TRUY XUẤT DỮ LIỆU (Data Retrieval) ---
     let contextData = 'Không tìm thấy thông tin sản phẩm phù hợp trong hệ thống.';
     try {
       // Sử dụng phương thức search đã có trong ProductsService
