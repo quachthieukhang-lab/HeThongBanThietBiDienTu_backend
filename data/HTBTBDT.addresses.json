@@ -1,0 +1,184 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b93001"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "fullName": "Tran Thi B",
+  "phone": "0900000002",
+  "line1": "123 Đường ABC",
+  "ward": "Phường 10",
+  "district": "Quận 10",
+  "city": "Hồ Chí Minh",
+  "country": "VN",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2025-11-06T06:32:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:32:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b93002"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "fullName": "Tran Thi B (Văn phòng)",
+  "phone": "0900000002",
+  "line1": "456 Đường XYZ, Tòa nhà Bitexco",
+  "ward": "Phường Bến Nghé",
+  "district": "Quận 1",
+  "city": "Hồ Chí Minh",
+  "country": "VN",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2025-11-06T06:33:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:33:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b93003"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "fullName": "Le Minh Khang",
+  "phone": "0900000004",
+  "line1": "256 Lý Thường Kiệt",
+  "ward": "Phường 14",
+  "district": "Quận 10",
+  "city": "Hồ Chí Minh",
+  "country": "VN",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2025-11-06T06:43:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:43:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b93004"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "fullName": "Nguyen Thuy Thao",
+  "phone": "0900000005",
+  "line1": "88 Võ Văn Tần",
+  "ward": "Phường 6",
+  "district": "Quận 3",
+  "city": "Hồ Chí Minh",
+  "country": "VN",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2025-11-06T06:44:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:44:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b93005"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "fullName": "Thao Nguyen (Công ty)",
+  "phone": "0900000005",
+  "line1": "195 Điện Biên Phủ",
+  "ward": "Phường 15",
+  "district": "Bình Thạnh",
+  "city": "Hồ Chí Minh",
+  "country": "VN",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2025-11-06T06:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b93006"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "fullName": "Le Minh Khang (Nhà)",
+  "phone": "0900000004",
+  "line1": "12 Ngô Quyền",
+  "ward": "Phường Hiệp Phú",
+  "district": "Thành phố Thủ Đức",
+  "city": "Hồ Chí Minh",
+  "country": "VN",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2025-11-06T06:46:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:46:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "691fe5421d54cb1d10be147b"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "fullName": "Khang",
+  "phone": "0942766191",
+  "line1": "asd",
+  "line2": "",
+  "ward": "asd",
+  "district": "asd",
+  "city": "asd",
+  "province": "",
+  "country": "VN",
+  "postalCode": "",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2025-11-21T04:06:26.888Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:06:26.888Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "691fe65d1d54cb1d10be1607"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "fullName": "asd",
+  "phone": "asd",
+  "line1": "asd",
+  "line2": "",
+  "ward": "as",
+  "district": "das",
+  "city": "dasd",
+  "province": "",
+  "country": "VN",
+  "postalCode": "",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2025-11-21T04:11:09.776Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:11:09.776Z"
+  },
+  "__v": 0
+}]

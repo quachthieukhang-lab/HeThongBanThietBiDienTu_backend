@@ -1,0 +1,330 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96001"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91502"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95001"
+  },
+  "rating": 5,
+  "title": "Rất hài lòng!",
+  "content": "Máy giặt chạy êm, giặt sạch, giao hàng nhanh. Nhân viên hỗ trợ nhiệt tình. Sẽ tiếp tục ủng hộ shop.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-25T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T09:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96002"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91508"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95002"
+  },
+  "rating": 4,
+  "title": "Tạm ổn, máy rửa sạch",
+  "content": "Máy rửa khá sạch, tuy nhiên thời gian rửa hơi lâu. Bù lại đỡ phải rửa tay. Ảnh chụp thực tế.",
+  "images": [
+    "uploads/reviews/review-bosch-1.jpg",
+    "uploads/reviews/review-bosch-2.jpg"
+  ],
+  "status": "pending",
+  "createdAt": {
+    "$date": "2025-11-03T11:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-03T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96003"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91503"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95003"
+  },
+  "rating": 1,
+  "title": "Không hài lòng",
+  "content": "Sản phẩm không giống mô tả, đã hủy đơn hàng.",
+  "images": [],
+  "status": "rejected",
+  "createdAt": {
+    "$date": "2025-11-05T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-05T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96004"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91509"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95004"
+  },
+  "rating": 5,
+  "title": "Âm thanh tuyệt vời!",
+  "content": "Loa Sony nghe rất hay, bass mạnh, kết nối bluetooth ổn định. Rất đáng tiền.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-05T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-05T10:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96005"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91507"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95005"
+  },
+  "rating": 4,
+  "title": "Tủ đông chạy êm",
+  "content": "Tủ đông Hòa Phát chạy êm, làm đông nhanh. Tuy nhiên thiết kế bên trong chưa được tiện lợi lắm. Tạm ổn.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-06T11:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-06T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96006"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91501"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95006"
+  },
+  "rating": 5,
+  "title": "Máy lạnh tốt",
+  "content": "Máy lạnh Panasonic làm mát nhanh, chạy không ồn. Rất hài lòng với dịch vụ lắp đặt.",
+  "images": [
+    "uploads/reviews/maylanh-review-1.jpg"
+  ],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-08T12:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96007"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91504"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95007"
+  },
+  "rating": 3,
+  "title": "Sấy hơi lâu",
+  "content": "Máy sấy Electrolux sấy quần áo hơi lâu khô, không như quảng cáo. Được cái êm.",
+  "images": [],
+  "status": "pending",
+  "createdAt": {
+    "$date": "2025-10-14T14:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-14T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96008"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91500"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95008"
+  },
+  "rating": 5,
+  "title": "Tivi 65 inch quá đã!",
+  "content": "Mình mua con Tivi LG 65 inch xem phim rất nét, màu sắc rực rỡ. Rất hài lòng.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-15T15:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-15T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b96009"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91505"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b95009"
+  },
+  "rating": 4,
+  "title": "Nước nóng nhanh",
+  "content": "Máy Ariston này làm nước nóng nhanh thật, không có bơm trợ lực nên nước hơi yếu tí nhưng không sao.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-18T16:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-18T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9600a"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91502"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b9500a"
+  },
+  "rating": 4,
+  "title": "Máy giặt LG 10kg",
+  "content": "Mình mua con 10kg, giặt được nhiều đồ, khá êm. Nhưng cửa hơi thấp, phải cúi nhiều.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-20T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-20T17:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9600b"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b9150a"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b9500b"
+  },
+  "rating": 5,
+  "title": "Hát hay",
+  "content": "Micro Shure có dây hát karaoke gia đình là chuẩn rồi, âm thanh rõ, không bị hú.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-22T18:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-22T18:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9600c"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91508"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b9500c"
+  },
+  "rating": 5,
+  "title": "Máy rửa chén để bàn tiện lợi",
+  "content": "Nhà ít người dùng máy để bàn Electrolux này là vừa đủ. Rửa sạch, đỡ tốn thời gian.",
+  "images": [],
+  "status": "approved",
+  "createdAt": {
+    "$date": "2025-10-25T19:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-25T19:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9600d"
+  },
+  "productId": {
+    "$oid": "672b111a9b01c38260b91506"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "orderId": {
+    "$oid": "672b111a9b01c38260b9500d"
+  },
+  "rating": 4,
+  "title": "Giao hàng nhanh",
+  "content": "Tủ mát Sanaky giao hàng nhanh, giữ lạnh tốt, đựng được nhiều đồ.",
+  "images": [],
+  "status": "pending",
+  "createdAt": {
+    "$date": "2025-10-29T20:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-29T20:00:00.000Z"
+  }
+}]

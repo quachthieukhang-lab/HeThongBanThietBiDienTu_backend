@@ -8,6 +8,11 @@ import { UpdateProductDto } from './dto/update-product.dto';
 import { CreateVariantDto } from '../product_variants/dto/create-product_variant.dto';
 import { UpdateVariantDto } from '../product_variants/dto/update-product_variant.dto';
 import { QueryProductsDto } from './dto/query-product.dto';
+
+export class SearchChatDto {
+  keyword?: string;
+}
+
 import { UploadService } from '../upload/upload.service';
 
 // Tối thiểu hoá AttributeTemplate để lấy rules
@@ -343,6 +348,26 @@ export class ProductsService {
       .findByIdAndUpdate(_id, { $set: update }, { new: true })
       .lean()
     return saved!;
+  }
+
+
+  async search(params: SearchChatDto): Promise<Product[]> {
+    const filter: any = {};
+
+    if (params.keyword) {
+      const regex = new RegExp(params.keyword, 'i');
+      // Tìm kiếm trong tên sản phẩm và slug
+      filter.$or = [
+        { name: regex },
+        { slug: regex },
+      ];
+    }
+
+    return this.productModel
+      .find(filter)
+      .populate('brandId') // Populate để lấy 'name' từ 'brandId'
+      .limit(10) // Giới hạn 10 kết quả cho chatbot
+      .lean();
   }
 
   async removeHard(id: string) {

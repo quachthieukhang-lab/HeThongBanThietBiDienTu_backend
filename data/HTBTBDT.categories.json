@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Hàng chuẩn, giá mê",
+  "slug": "hang-chuan-gia-me",
+  "icon": "fa-solid fa-tags",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:38:47.464Z"
+  },
+  "image": "uploads/categories/1764189527463-0915481d-c937-4251-91ae-99e7d0bd183a.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Điện tử, điện máy",
+  "slug": "dien-tu-dien-may",
+  "icon": "fa-solid fa-tv",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:40:14.301Z"
+  },
+  "image": "uploads/categories/1764189614300-6e213e34-11c6-4549-93d2-87e2397d855f.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Điện gia dụng",
+  "slug": "dien-gia-dung",
+  "icon": "fa-solid fa-blender",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:27:50.142Z"
+  },
+  "image": "uploads/categories/1764188870140-9175a07e-8eec-460d-926a-de49a5d3c74e.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Điện tử, Viễn thông",
+  "slug": "dien-tu-vien-thong",
+  "icon": "fa-solid fa-mobile-screen-button",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:41:45.243Z"
+  },
+  "image": "uploads/categories/1764189705241-97e0ce66-6eae-4ec2-a8b0-9713ad0af297.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Làm đẹp, chăm sóc cá nhân",
+  "slug": "lam-dep-cham-soc-ca-nhan",
+  "icon": "fa-solid fa-spa",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:42:32.983Z"
+  },
+  "banner": "uploads/categories/1764189740268-f05f7e1b-cd37-4256-a2cf-ae9423725744.jpg",
+  "image": "uploads/categories/1764189752981-dd30e991-35e7-420f-8117-7a44ec041237.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Đồ gia dụng",
+  "slug": "do-gia-dung",
+  "icon": "fa-solid fa-chair",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:42:44.231Z"
+  },
+  "image": "uploads/categories/1764189764230-4285262c-9fa3-42ad-a258-c15f03849d3c.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Phụ kiện",
+  "slug": "phu-kien",
+  "icon": "fa-solid fa-headphones",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:45:36.074Z"
+  },
+  "banner": "uploads/categories/1764189864868-644e8d5d-7977-4efc-ba74-5a30c9750a53.jpg",
+  "image": "uploads/categories/1764189936073-7bc22307-d816-483e-801f-ff38ea9ad98f.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a8"
+  },
+  "name": "Máy cũ, trưng bày",
+  "slug": "may-cu-trung-bay",
+  "icon": "fa-solid fa-laptop",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:45:41.818Z"
+  },
+  "image": "uploads/categories/1764189941817-658b541b-e5b4-4293-98f4-840c3c1fd902.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Sản phẩm khác",
+  "slug": "san-pham-khac",
+  "icon": "fa-solid fa-box",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:46:33.979Z"
+  },
+  "image": "uploads/categories/1764189993978-a5566351-699f-4264-901b-743942a88c61.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912aa"
+  },
+  "name": "Thông tin - Dịch vụ tiện ích",
+  "slug": "thong-tin-dich-vu-tien-ich",
+  "icon": "fa-solid fa-circle-info",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:53:55.186Z"
+  },
+  "image": "uploads/categories/1764190435184-ad0c3990-f45d-4d15-9216-71dae320b908.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Chương trình hot",
+  "slug": "chuong-trinh-hot",
+  "icon": "fa-solid fa-fire",
+  "sortOrder": 0,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:24:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:29:23.917Z"
+  },
+  "image": "uploads/categories/1764188963916-f37ef4ce-bb15-4bd6-b412-9decea69a26f.jpg",
+  "description": "Chuong trinh hot"
+}]

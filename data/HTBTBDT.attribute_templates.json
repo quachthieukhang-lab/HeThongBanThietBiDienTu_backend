@@ -1,0 +1,1076 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9140c"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912c1"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Máy lọc nước",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Kangaroo",
+        "Karofi",
+        "Sunhouse",
+        "A.O. Smith"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "type",
+      "label": "Kiểu lắp đặt",
+      "type": "enum",
+      "options": [
+        "Tủ đứng",
+        "Để bàn",
+        "Âm tủ"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "filters",
+      "label": "Số lõi lọc",
+      "type": "number",
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "technology",
+      "label": "Công nghệ lọc",
+      "type": "enum",
+      "options": [
+        "RO",
+        "Nano",
+        "UF"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9140d"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912c2"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Nồi cơm điện",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Sharp",
+        "Cuckoo",
+        "Toshiba",
+        "Panasonic"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "capacity_lit",
+      "label": "Dung tích (lít)",
+      "type": "enum",
+      "options": [
+        "Dưới 1L",
+        "1L - 1.5L",
+        "1.6L - 2L",
+        "Trên 2L"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "type",
+      "label": "Loại nồi",
+      "type": "enum",
+      "options": [
+        "Nắp gài",
+        "Nắp rời",
+        "Điện tử",
+        "Cao tần"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9140e"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912c3"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Nồi chiên không dầu",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Philips",
+        "LocknLock",
+        "Tefal",
+        "Sunhouse",
+        "BlueStone"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "capacity_lit",
+      "label": "Dung tích (lít)",
+      "type": "enum",
+      "options": [
+        "Dưới 5L",
+        "5L - 10L",
+        "Trên 10L"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "power_w",
+      "label": "Công suất (W)",
+      "type": "number",
+      "required": false,
+      "filterable": false
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9140f"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912c4"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Máy lọc không khí",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Sharp",
+        "Xiaomi",
+        "Daikin",
+        "Panasonic"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "area_m2",
+      "label": "Diện tích phòng (m2)",
+      "type": "enum",
+      "options": [
+        "Dưới 20m2",
+        "20m2 - 40m2",
+        "Trên 40m2"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91410"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912c6"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Robot hút bụi",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Xiaomi",
+        "Ecovacs",
+        "Roborock",
+        "iRobot"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "feature",
+      "label": "Tiện ích",
+      "type": "multienum",
+      "options": [
+        "Vừa hút vừa lau",
+        "Tự đổ rác",
+        "Bản đồ thông minh"
+      ],
+      "required": false,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91411"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912c8"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Bếp từ",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Sunhouse",
+        "Kangaroo",
+        "Midea",
+        "Bosch"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "zones",
+      "label": "Số vùng nấu",
+      "type": "enum",
+      "options": [
+        "1 vùng (bếp đơn)",
+        "2 vùng (bếp đôi)",
+        "3 vùng trở lên"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91412"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912cf"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Quạt",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Senko",
+        "Asia",
+        "Mitsubishi",
+        "Panasonic"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "type",
+      "label": "Loại quạt",
+      "type": "enum",
+      "options": [
+        "Quạt đứng",
+        "Quạt treo tường",
+        "Quạt bàn",
+        "Quạt hộp"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91413"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d3"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Điện thoại",
+      "type": "string",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": null,
+      "required": false,
+      "filterable": false,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Apple"
+      ],
+      "required": true,
+      "filterable": true,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "storage",
+      "label": "Dung lượng (ROM)",
+      "type": "enum",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "64GB",
+        "128GB",
+        "256GB",
+        "512GB",
+        "1TB"
+      ],
+      "required": true,
+      "filterable": true,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "ram",
+      "label": "RAM",
+      "type": "enum",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "4GB",
+        "6GB",
+        "8GB",
+        "12GB",
+        "16GB"
+      ],
+      "required": true,
+      "filterable": true,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "color",
+      "label": "Màu sắc",
+      "type": "string",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Red",
+        "Blue"
+      ],
+      "required": true,
+      "filterable": false,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91414"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d4"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Laptop",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Apple",
+        "Dell",
+        "HP",
+        "Asus",
+        "Lenovo",
+        "MSI",
+        "Acer"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "cpu",
+      "label": "CPU",
+      "type": "enum",
+      "options": [
+        "Core i3",
+        "Core i5",
+        "Core i7",
+        "Core i9",
+        "Ryzen 3",
+        "Ryzen 5",
+        "Ryzen 7"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "ram",
+      "label": "RAM",
+      "type": "enum",
+      "options": [
+        "8GB",
+        "16GB",
+        "32GB",
+        "64GB"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "disk",
+      "label": "Ổ cứng",
+      "type": "enum",
+      "options": [
+        "256GB SSD",
+        "512GB SSD",
+        "1TB SSD"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "screen",
+      "label": "Màn hình",
+      "type": "enum",
+      "options": [
+        "13.3 inch",
+        "14 inch",
+        "15.6 inch",
+        "16 inch"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91415"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d5"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Tablet",
+      "type": "string",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": null,
+      "required": false,
+      "filterable": false,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Apple",
+        "Samsung",
+        "Xiaomi",
+        "Lenovo"
+      ],
+      "required": true,
+      "filterable": true,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "screen_size",
+      "label": "Kích thước màn hình",
+      "type": "enum",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Dưới 8 inch",
+        "8 - 10 inch",
+        "Trên 10 inch"
+      ],
+      "required": true,
+      "filterable": true,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "connection",
+      "label": "Kết nối",
+      "type": "enum",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Wifi",
+        "Wifi + 4G/5G"
+      ],
+      "required": true,
+      "filterable": true,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91416"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d6"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Đồng hồ thông minh",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Apple",
+        "Samsung",
+        "Garmin",
+        "Xiaomi",
+        "Huawei"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "face_shape",
+      "label": "Mặt đồng hồ",
+      "type": "enum",
+      "options": [
+        "Tròn",
+        "Vuông",
+        "Chữ nhật"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "feature",
+      "label": "Tiện ích",
+      "type": "multienum",
+      "options": [
+        "Nghe gọi",
+        "Đo nhịp tim",
+        "GPS",
+        "Kháng nước"
+      ],
+      "required": false,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91417"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d8"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Màn hình máy tính",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Dell",
+        "LG",
+        "Samsung",
+        "Asus",
+        "ViewSonic",
+        "BenQ"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "size",
+      "label": "Kích thước",
+      "type": "enum",
+      "options": [
+        "24 inch",
+        "27 inch",
+        "32 inch",
+        "34 inch"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "resolution",
+      "label": "Độ phân giải",
+      "type": "enum",
+      "options": [
+        "Full HD",
+        "2K",
+        "4K"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "hz",
+      "label": "Tần số quét",
+      "type": "enum",
+      "options": [
+        "60Hz",
+        "75Hz",
+        "144Hz",
+        "165Hz",
+        "240Hz"
+      ],
+      "required": true,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91418"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912da"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Máy in",
+      "type": "string",
+      "required": false,
+      "filterable": false
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "options": [
+        "Canon",
+        "HP",
+        "Brother",
+        "Epson"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "type",
+      "label": "Loại máy",
+      "type": "enum",
+      "options": [
+        "In laser trắng đen",
+        "In phun màu",
+        "In đa năng"
+      ],
+      "required": true,
+      "filterable": true
+    },
+    {
+      "key": "wifi",
+      "label": "In qua Wifi",
+      "type": "boolean",
+      "required": false,
+      "filterable": true
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T07:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6927723223a9a14ac66ffac0"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912cc"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính bàn ủi",
+      "type": "string",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Philips",
+        "Panasonic",
+        "Tefal",
+        "Sunhouse",
+        "Bluestone",
+        "Xiaomi",
+        "Sokany"
+      ],
+      "required": true,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "type",
+      "label": "Loại bàn ủi ",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Bàn ủi khô",
+        "Bàn ủi hơi nước cầm tay",
+        "Bàn ủi hơi nước đứng",
+        "Bàn ủi du lịch"
+      ],
+      "required": true,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "power",
+      "label": "Công suất",
+      "type": "enum",
+      "unit": "W",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "1000W",
+        "1200W",
+        "1400W",
+        "2000W",
+        "2400W"
+      ],
+      "required": true,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "soleplate",
+      "label": "Chất liệu đế",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Ceramic (Gốm)",
+        "Nhôm chống dính",
+        "Thép không gỉ",
+        "SteamGlide",
+        "Titanium"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "tank_capacity",
+      "label": "Dung tích bình",
+      "type": "enum",
+      "unit": "ml",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "100ml",
+        "200ml",
+        "250ml",
+        "300ml",
+        "1.5L",
+        "2L"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "origin",
+      "label": "Xuất xứ",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Trung Quốc",
+        "Việt Nam",
+        "Indonesia",
+        "Malaysia",
+        "Thái Lan",
+        "Pháp"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    }
+  ],
+  "__v": 0
+}]

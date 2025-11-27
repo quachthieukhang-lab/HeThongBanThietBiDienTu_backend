@@ -1,0 +1,2629 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Máy lạnh",
+  "slug": "may-lanh",
+  "icon": "fa-solid fa-snowflake",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:12:10.659Z"
+  },
+  "image": "uploads/subcategories/1764187930658-65afd98f-f35a-4515-9d58-22bf0e91287e.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b2"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Máy giặt",
+  "slug": "may-giat",
+  "icon": "fa-solid fa-shirt",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:06:48.632Z"
+  },
+  "image": "uploads/subcategories/1764187608631-fa1efa51-f7ed-4b0f-a475-768bf2cfb4e0.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b3"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Tủ lạnh",
+  "slug": "tu-lanh",
+  "icon": "fa-solid fa-door-closed",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:18:48.966Z"
+  },
+  "image": "uploads/subcategories/1764188328965-03349aaa-240b-4a61-86ca-b3ba7beff5dd.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b4"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Tivi",
+  "slug": "tivi",
+  "icon": "fa-solid fa-tv",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:14:05.752Z"
+  },
+  "attributeTemplateId": {
+    "$oid": "672b111a9b01c38260b91400"
+  },
+  "image": "uploads/subcategories/1764188045750-1ad564a0-f0ee-461d-8cab-93014a1e108c.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b5"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Máy sấy quần áo",
+  "slug": "may-say-quan-ao",
+  "icon": "fa-solid fa-wind",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:13:20.882Z"
+  },
+  "image": "uploads/subcategories/1764188000881-8d377284-67f7-4c95-901d-38ce4432ab45.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b6"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Máy nước nóng",
+  "slug": "may-nuoc-nong",
+  "icon": "fa-solid fa-shower",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:12:35.714Z"
+  },
+  "image": "uploads/subcategories/1764187955714-2f55b5bb-a45e-42a6-b208-b26cddacdf81.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b7"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Tủ mát",
+  "slug": "tu-mat",
+  "icon": "fa-solid fa-temperature-arrow-down",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:19:07.064Z"
+  },
+  "image": "uploads/subcategories/1764188347062-38d279aa-ce2f-4091-a1ba-a588e3104122.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b8"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Tủ đông",
+  "slug": "tu-dong",
+  "icon": "fa-solid fa-icicles",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:14:48.349Z"
+  },
+  "image": "uploads/subcategories/1764188088347-6a0c00e0-73f3-47fe-ac7e-bda07d283313.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912b9"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Máy rửa chén",
+  "slug": "may-rua-chen",
+  "icon": "fa-solid fa-glass-water-droplet",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:12:55.256Z"
+  },
+  "image": "uploads/subcategories/1764187975255-6a57e5a2-22d4-4ffc-b454-f50bdc83e961.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ba"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Loa, Dàn âm thanh",
+  "slug": "loa-dan-am-thanh",
+  "icon": "fa-solid fa-volume-high",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:06:20.075Z"
+  },
+  "image": "uploads/subcategories/1764187580073-e1d6dcf9-d12f-4314-8f0c-fea13bbcd4e5.jfif"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912bb"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "name": "Micro",
+  "slug": "micro",
+  "icon": "fa-solid fa-microphone",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:13:45.043Z"
+  },
+  "image": "uploads/subcategories/1764188025042-8534997f-a49a-44d2-88c5-6b0556321907.jfif"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c1"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Máy lọc nước",
+  "slug": "may-loc-nuoc",
+  "icon": "fa-solid fa-faucet-drip",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:49:56.933Z"
+  },
+  "image": "uploads/subcategories/1764190196932-9ceb58d0-3b09-4b18-9b68-b7ab401d3753.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c2"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Nồi cơm điện",
+  "slug": "noi-com-dien",
+  "icon": "fa-solid fa-bowl-rice",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:55:12.095Z"
+  },
+  "image": "uploads/subcategories/1764190512093-3c5e0986-2083-4873-b914-30769a0eccf3.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c3"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Nồi chiên không dầu",
+  "slug": "noi-chien-khong-dau",
+  "icon": "fa-solid fa-air-fryer",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:54:56.497Z"
+  },
+  "image": "uploads/subcategories/1764190496496-090400ea-54bd-4117-8656-6d93de5e45e6.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c4"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Máy lọc không khí",
+  "slug": "may-loc-khong-khi",
+  "icon": "fa-solid fa-leaf",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:49:32.395Z"
+  },
+  "image": "uploads/subcategories/1764190172393-038b090f-2396-468d-833a-4b68d9a5d72f.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c5"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Máy hút ẩm",
+  "slug": "may-hut-am",
+  "icon": "fa-solid fa-droplet-slash",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:49:00.782Z"
+  },
+  "image": "uploads/subcategories/1764190140781-63217ab7-0688-4bf9-991b-057b7b6c8c26.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c6"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Robot hút bụi",
+  "slug": "robot-hut-bui",
+  "icon": "fa-solid fa-robot",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:57:43.180Z"
+  },
+  "image": "uploads/subcategories/1764190663179-e1ed8f8a-16c8-40e9-b4c0-de87d6acdaf0.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c7"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Máy hút bụi",
+  "slug": "may-hut-bui",
+  "icon": "fa-solid fa-vacuum",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:49:15.492Z"
+  },
+  "image": "uploads/subcategories/1764190155491-248a839e-34fc-439c-8219-a198ca6cb875.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c8"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Bếp từ",
+  "slug": "bep-tu",
+  "icon": "fa-solid fa-temperature-low",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:48:24.594Z"
+  },
+  "image": "uploads/subcategories/1764190104593-08230318-9350-4142-8db1-8e74a4d7f1e1.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912c9"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Bếp hồng ngoại",
+  "slug": "bep-hong-ngoai",
+  "icon": "fa-solid fa-fire-burner",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:48:06.003Z"
+  },
+  "image": "uploads/subcategories/1764190086002-78bbb161-735b-40fd-ba55-c8e61837c3cc.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ca"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Bếp ga",
+  "slug": "bep-ga",
+  "icon": "fa-solid fa-fire",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:47:52.339Z"
+  },
+  "image": "uploads/subcategories/1764190072338-dbdacee5-1349-48ef-bf46-f9e2be234156.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912cb"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Quạt sưởi",
+  "slug": "quat-suoi",
+  "icon": "fa-solid fa-temperature-high",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:56:51.236Z"
+  },
+  "image": "uploads/subcategories/1764190611234-930558fb-7a56-4f0f-b3e5-08a0dfabdb1e.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912cc"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Bàn ủi",
+  "slug": "ban-ui",
+  "icon": "fa-solid fa-shirt-steam",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:47:21.773Z"
+  },
+  "image": "uploads/subcategories/1764190041772-1f18e4cc-9e94-4c9c-9096-3543f6dd903e.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912cd"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Máy sấy tóc",
+  "slug": "may-say-toc",
+  "icon": "fa-solid fa-dryer",
+  "sortOrder": 13,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:54:39.786Z"
+  },
+  "image": "uploads/subcategories/1764190479785-f28a8c8a-ab39-4134-884d-692e65ff2f4e.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ce"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Máy sấy giày",
+  "slug": "may-say-giay",
+  "icon": "fa-solid fa-shoe-prints",
+  "sortOrder": 14,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:54:24.686Z"
+  },
+  "image": "uploads/subcategories/1764190464685-451c36e3-ade2-440d-b454-9795cff1b5fa.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912cf"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Quạt",
+  "slug": "quat",
+  "icon": "fa-solid fa-fan",
+  "sortOrder": 15,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:55:47.212Z"
+  },
+  "image": "uploads/subcategories/1764190547211-8876c18d-1b3c-4df1-91d9-8e37305b9622.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d0"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Quạt điều hòa",
+  "slug": "quat-dieu-hoa",
+  "icon": "fa-solid fa-fan",
+  "sortOrder": 16,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:56:06.475Z"
+  },
+  "image": "uploads/subcategories/1764190566474-55e9225a-4cac-4c33-82cb-eab1b7e7d5c4.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d1"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Quạt trần",
+  "slug": "quat-tran",
+  "icon": "fa-solid fa-fan",
+  "sortOrder": 17,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:57:21.887Z"
+  },
+  "image": "uploads/subcategories/1764190641886-66e30f6d-3fa8-427a-8a45-df004edd24cc.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d2"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "name": "Cây nước nóng lạnh",
+  "slug": "cay-nuoc-nong-lanh",
+  "icon": "fa-solid fa-bottle-water",
+  "sortOrder": 18,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:48:44.709Z"
+  },
+  "image": "uploads/subcategories/1764190124707-10c254ce-dda6-4c1e-8856-ce57b18074f2.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d3"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Điện thoại",
+  "slug": "dien-thoai",
+  "icon": "fa-solid fa-mobile-screen",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:52:07.041Z"
+  },
+  "image": "uploads/subcategories/1764190327040-2b279135-1151-4ce4-bf2a-f69a9d413a01.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d4"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Laptop",
+  "slug": "laptop",
+  "icon": "fa-solid fa-laptop",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:52:47.331Z"
+  },
+  "image": "uploads/subcategories/1764190367330-3b5b50ba-df57-4cc5-8d40-ad3e486f00d7.jfif"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d5"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Tablet",
+  "slug": "tablet",
+  "icon": "fa-solid fa-tablet-screen-button",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:53:33.359Z"
+  },
+  "image": "uploads/subcategories/1764190413358-6f2ba01e-c6de-4177-b1e3-e3e19cae6eda.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d6"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Đồng hồ thông minh",
+  "slug": "dong-ho-thong-minh",
+  "icon": "fa-solid fa-watch",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:58:30.969Z"
+  },
+  "image": "uploads/subcategories/1764190710968-6050b70e-0b66-489a-a2a3-4ec3869e2b09.jfif"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d7"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Máy tính để bàn",
+  "slug": "may-tinh-de-ban",
+  "icon": "fa-solid fa-desktop",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:59:50.009Z"
+  },
+  "image": "uploads/subcategories/1764190790007-1d6ccb54-e615-4dd1-af2d-20cd1f7205a5.webp"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d8"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Màn hình",
+  "slug": "man-hinh",
+  "icon": "fa-solid fa-display",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:53:08.643Z"
+  },
+  "image": "uploads/subcategories/1764190388641-0631eaa4-e52e-464c-9444-68c6e2e5b1a6.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912d9"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Máy chơi game",
+  "slug": "may-choi-game",
+  "icon": "fa-solid fa-gamepad",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:58:48.973Z"
+  },
+  "image": "uploads/subcategories/1764190728972-2cfe5684-0367-48c0-a114-e40e00ade58b.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912da"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Máy in",
+  "slug": "may-in",
+  "icon": "fa-solid fa-print",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:59:30.135Z"
+  },
+  "image": "uploads/subcategories/1764190770134-31bce2c7-8c2b-4183-afbc-b19b5ff844c3.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912db"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Mực in",
+  "slug": "muc-in",
+  "icon": "fa-solid fa-tint",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:00:05.257Z"
+  },
+  "image": "uploads/subcategories/1764190805256-3093a715-b304-46b8-83ef-bcdfcdb5d2dc.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912dc"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "name": "Bộ lưu điện",
+  "slug": "bo-luu-dien",
+  "icon": "fa-solid fa-car-battery",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:58:15.170Z"
+  },
+  "image": "uploads/subcategories/1764190695169-87d57ccf-f247-4aca-847f-dd9f9f11b909.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912de"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy cạo râu",
+  "slug": "may-cao-rau",
+  "icon": "fa-solid fa-razor",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912df"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Tông đơ cắt tóc",
+  "slug": "tong-do-cat-toc",
+  "icon": "fa-solid fa-scissors",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e0"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy tỉa lông mũi",
+  "slug": "may-tia-long-mui",
+  "icon": "fa-solid fa-nose",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e1"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy triệt lông",
+  "slug": "may-triet-long",
+  "icon": "fa-solid fa-wand-magic-sparkles",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e2"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy tạo kiểu tóc",
+  "slug": "may-tao-kieu-toc",
+  "icon": "fa-solid fa-hair",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e3"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy rửa mặt",
+  "slug": "may-rua-mat",
+  "icon": "fa-solid fa-face-smile-beam",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e4"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy mài gót chân",
+  "slug": "may-mai-got-chan",
+  "icon": "fa-solid fa-shoe-prints",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e5"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Mặt nạ chăm sóc da",
+  "slug": "mat-na-cham-soc-da",
+  "icon": "fa-solid fa-mask-face",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e6"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Bàn chải điện",
+  "slug": "ban-chai-dien",
+  "icon": "fa-solid fa-toothbrush",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e7"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy tăm nước",
+  "slug": "may-tam-nuoc",
+  "icon": "fa-solid fa-faucet",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e8"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy massage cá nhân",
+  "slug": "may-massage-ca-nhan",
+  "icon": "fa-solid fa-hand-sparkles",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912e9"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Bồn ngâm chân",
+  "slug": "bon-ngam-chan",
+  "icon": "fa-solid fa-bath",
+  "sortOrder": 13,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ea"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Cân sức khỏe",
+  "slug": "can-suc-khoe",
+  "icon": "fa-solid fa-weight-scale",
+  "sortOrder": 14,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912eb"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Súng massage cầm tay",
+  "slug": "sung-massage-cam-tay",
+  "icon": "fa-solid fa-hammer",
+  "sortOrder": 15,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ec"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy tạo ẩm xông tinh dầu",
+  "slug": "may-tao-am-xong-tinh-dau",
+  "icon": "fa-solid fa-fan",
+  "sortOrder": 16,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ed"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Ghế massage",
+  "slug": "ghe-massage",
+  "icon": "fa-solid fa-chair",
+  "sortOrder": 17,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ee"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Siêu sắc thuốc",
+  "slug": "sieu-sac-thuoc",
+  "icon": "fa-solid fa-mortar-pestle",
+  "sortOrder": 18,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ef"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy massage đầu",
+  "slug": "may-massage-dau",
+  "icon": "fa-solid fa-head-side-brain",
+  "sortOrder": 19,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f0"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy massage chân",
+  "slug": "may-massage-chan",
+  "icon": "fa-solid fa-socks",
+  "sortOrder": 20,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f1"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Máy massage mắt",
+  "slug": "may-massage-mat",
+  "icon": "fa-solid fa-eye",
+  "sortOrder": 21,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f2"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a5"
+  },
+  "name": "Bàn chải điện trẻ em",
+  "slug": "ban-chai-dien-tre-em",
+  "icon": "fa-solid fa-child",
+  "sortOrder": 22,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f3"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Bộ lau nhà",
+  "slug": "bo-lau-nha",
+  "icon": "fa-solid fa-mop",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f4"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Nồi, bộ nồi",
+  "slug": "noi-bo-noi",
+  "icon": "fa-solid fa-pot-food",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f5"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Chảo các loại",
+  "slug": "chao-cac-loai",
+  "icon": "fa-solid fa-pan",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f6"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Bình, ly giữ nhiệt",
+  "slug": "binh-ly-giu-nhiet",
+  "icon": "fa-solid fa-mug-hot",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f7"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Bình đựng nước",
+  "slug": "binh-dung-nuoc",
+  "icon": "fa-solid fa-bottle-water",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f8"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Hộp nhựa đựng đồ đa năng",
+  "slug": "hop-nhua-dung-do-da-nang",
+  "icon": "fa-solid fa-box",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912f9"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Hộp đựng thực phẩm",
+  "slug": "hop-dung-thuc-pham",
+  "icon": "fa-solid fa-box-archive",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912fa"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Kéo",
+  "slug": "keo",
+  "icon": "fa-solid fa-scissors",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-11T12:08:54.133Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912fb"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Dao",
+  "slug": "dao",
+  "icon": "fa-solid fa-knife",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912fc"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Thớt",
+  "slug": "thot",
+  "icon": "fa-solid fa-rectangle",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912fd"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Dụng cụ mài dao",
+  "slug": "dung-cu-mai-dao",
+  "icon": "fa-solid fa-sharpen",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912fe"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a6"
+  },
+  "name": "Vợt muỗi",
+  "slug": "vot-muoi",
+  "icon": "fa-solid fa-mosquito",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:50:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b912ff"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Đồng hồ thời trang",
+  "slug": "dong-ho-thoi-trang",
+  "icon": "fa-solid fa-clock",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91300"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Xe đạp",
+  "slug": "xe-dap",
+  "icon": "fa-solid fa-bicycle",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91301"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Camera",
+  "slug": "camera",
+  "icon": "fa-solid fa-camera",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91302"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Mũ bảo hiểm",
+  "slug": "mu-bao-hiem",
+  "icon": "fa-solid fa-helmet-safety",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91303"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Ổ cắm - Phích cắm",
+  "slug": "o-cam-phich-cam",
+  "icon": "fa-solid fa-plug",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91304"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Ổn áp",
+  "slug": "on-ap",
+  "icon": "fa-solid fa-bolt",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91305"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Máy khoan, vặn vít",
+  "slug": "may-khoan-van-vit",
+  "icon": "fa-solid fa-screwdriver-wrench",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91306"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Bộ dụng cụ đa năng",
+  "slug": "bo-dung-cu-da-nang",
+  "icon": "fa-solid fa-toolbox",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91307"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Máy thổi bụi, hơi nóng",
+  "slug": "may-thoi-bui-hoi-nong",
+  "icon": "fa-solid fa-wind",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91308"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Máy cưa",
+  "slug": "may-cua",
+  "icon": "fa-solid fa-saw",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91309"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Máy cắt tỉa cây",
+  "slug": "may-cat-tia-cay",
+  "icon": "fa-solid fa-leaf",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9130a"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Pin tiểu",
+  "slug": "pin-tieu",
+  "icon": "fa-solid fa-battery-half",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9130b"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Máy bơm nước",
+  "slug": "may-bom-nuoc",
+  "icon": "fa-solid fa-water",
+  "sortOrder": 13,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9130c"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a9"
+  },
+  "name": "Pin sạc",
+  "slug": "pin-sac",
+  "icon": "fa-solid fa-battery-bolt",
+  "sortOrder": 14,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T04:55:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9133d"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Sạc dự phòng",
+  "slug": "sac-du-phong",
+  "icon": "fa-solid fa-battery-bolt",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9133e"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Tai nghe",
+  "slug": "tai-nghe",
+  "icon": "fa-solid fa-headphones",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9133f"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Loa",
+  "slug": "loa",
+  "icon": "fa-solid fa-volume-high",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:45:16.257Z"
+  },
+  "image": "uploads/subcategories/1764189916256-9e37151b-6a3f-473e-b549-75fdf81e3c28.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91340"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Sạc, cáp",
+  "slug": "sac-cap",
+  "icon": "fa-solid fa-plug-circle-bolt",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91341"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Ốp lưng điện thoại",
+  "slug": "op-lung-dien-thoai",
+  "icon": "fa-solid fa-mobile-screen",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91342"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Ốp lưng máy tính bảng",
+  "slug": "op-lung-may-tinh-bang",
+  "icon": "fa-solid fa-tablet-screen-button",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91343"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Miếng dán",
+  "slug": "mieng-dan",
+  "icon": "fa-solid fa-display",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91344"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Miếng dán Camera",
+  "slug": "mieng-dan-camera",
+  "icon": "fa-solid fa-camera-retro",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91345"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "AirTag, Vỏ bảo vệ AirTag",
+  "slug": "airtag-vo-bao-ve-airtag",
+  "icon": "fa-solid fa-tag",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91346"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Bút tablet",
+  "slug": "but-tablet",
+  "icon": "fa-solid fa-pen-nib",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91348"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Chuột máy tính",
+  "slug": "chuot-may-tinh",
+  "icon": "fa-solid fa-mouse",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91349"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Bàn phím",
+  "slug": "ban-phim",
+  "icon": "fa-solid fa-keyboard",
+  "sortOrder": 13,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9134a"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Balo, túi chống sốc",
+  "slug": "balo-tui-chong-soc",
+  "icon": "fa-solid fa-bag-shopping",
+  "sortOrder": 14,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9134b"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Thiết bị mạng",
+  "slug": "thiet-bi-mang",
+  "icon": "fa-solid fa-wifi",
+  "sortOrder": 15,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9134c"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Ổ cứng di động",
+  "slug": "o-cung-di-dong",
+  "icon": "fa-solid fa-hard-drive",
+  "sortOrder": 16,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9134d"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "USB",
+  "slug": "usb",
+  "icon": "fa-solid fa-usb-drive",
+  "sortOrder": 17,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9134e"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Phần mềm",
+  "slug": "phan-mem",
+  "icon": "fa-solid fa-compact-disc",
+  "sortOrder": 18,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9134f"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Thẻ nhớ",
+  "slug": "the-nho",
+  "icon": "fa-solid fa-memory",
+  "sortOrder": 19,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91351"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Cáp HDMI, cáp tivi",
+  "slug": "cap-hdmi-cap-tivi",
+  "icon": "fa-solid fa-tv",
+  "sortOrder": 21,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91352"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Khung treo tivi",
+  "slug": "khung-treo-tivi",
+  "icon": "fa-solid fa-tv-retro",
+  "sortOrder": 22,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91353"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Điều khiển tivi",
+  "slug": "dieu-khien-tivi",
+  "icon": "fa-solid fa-tv",
+  "sortOrder": 23,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91354"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "name": "Giá đỡ máy giặt, máy lọc nước",
+  "slug": "gia-do-may-giat-may-loc-nuoc",
+  "icon": "fa-solid fa-square",
+  "sortOrder": 24,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91355"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Flash sale giảm đến 50%",
+  "slug": "flash-sale-giam-den-50",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91356"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Độc quyền Online Deal khủng nửa giá",
+  "slug": "doc-quyen-online-deal-khung-nua-gia",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91357"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Máy lọc nước giá chỉ từ 3.940k",
+  "slug": "may-loc-nuoc-gia-chi-tu-3-940k",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91358"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Cây nóng lạnh giảm giá đến 47%",
+  "slug": "cay-nong-lanh-giam-gia-den-47",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91359"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Xả kho giá sốc",
+  "slug": "xa-kho-gia-soc",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91360"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Dụng Cụ Cầm Tay Giảm 50%",
+  "slug": "dung-cu-cam-tay-giam-50",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91361"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Đồ bếp điện, trợ giá đến 1 triệu",
+  "slug": "do-bep-dien-tro-gia-den-1-trieu",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91362"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Mua nồi cơm tặng bàn ủi",
+  "slug": "mua-noi-com-tang-ban-ui",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91363"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Mua tủ lạnh tặng quà (tuỳ model)",
+  "slug": "mua-tu-lanh-tang-qua-tuy-model",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91364"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Mua tivi >55\" tặng quà (tuỳ model)",
+  "slug": "mua-tivi-lon-hon-55-tang-qua-tuy-model",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91365"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Chăm sóc sức khỏe - làm đẹp",
+  "slug": "cham-soc-suc-khoe-lam-dep",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91366"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Nhà bếp giảm đến 50%",
+  "slug": "nha-bep-giam-den-50",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91367"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Xay ép hàng hiệu Vượt Trội",
+  "slug": "xay-ep-hang-hieu-vuot-troi",
+  "sortOrder": 13,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91368"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Gia dụng lắp đặt giảm đến 50%",
+  "slug": "gia-dung-lap-dat-giam-den-50",
+  "sortOrder": 14,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91369"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "100% Mua robot tặng máy xay thịt",
+  "slug": "100-mua-robot-tang-may-xay-thit",
+  "sortOrder": 15,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9136a"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "100% Máy hút ẩm tặng quà",
+  "slug": "100-may-hut-am-tang-qua",
+  "sortOrder": 16,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9136b"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912ab"
+  },
+  "name": "Hàng cao cấp giảm đến 50%",
+  "slug": "hang-cao-cap-giam-den-50",
+  "sortOrder": 17,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9136c"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Sống thật trend, Nhà thật Bling",
+  "slug": "song-that-trend-nha-that-bling",
+  "sortOrder": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-11T12:17:11.759Z"
+  },
+  "image": "uploads/subcategories/1762863431759-64a00aeb-e718-4b9f-9243-7fb0277ab322.jfif"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9136d"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng AQUA",
+  "slug": "gia-dung-aqua",
+  "sortOrder": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:25:38.001Z"
+  },
+  "image": "uploads/subcategories/1764188738000-8ccab0db-46ee-41e1-9bbd-d795cb4ab824.jfif"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9136e"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Bình, ly giữ nhiệt GERM",
+  "slug": "binh-ly-giu-nhiet-germ",
+  "sortOrder": 3,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9136f"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Ti vi COOCAA",
+  "slug": "ti-vi-coocaa",
+  "sortOrder": 4,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:02:45.406Z"
+  },
+  "image": "uploads/subcategories/1764190965405-b6ef2b79-47b1-40d2-81aa-e1f1af8530f8.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91370"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Dụng cụ gia đình TOLSEN",
+  "slug": "dung-cu-gia-dinh-tolsen",
+  "sortOrder": 5,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:03:47.603Z"
+  },
+  "image": "uploads/subcategories/1764191027602-b931b346-c353-4ade-bd63-5ad3d27fcb37.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91371"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng LOCKNLOCK",
+  "slug": "gia-dung-locknlock",
+  "sortOrder": 6,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:03:04.775Z"
+  },
+  "image": "uploads/subcategories/1764190984774-5a213bc9-7361-4be1-9bb3-441c16f2020e.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91372"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng ELMICH",
+  "slug": "gia-dung-elmich",
+  "sortOrder": 7,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91373"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng LUMIAS",
+  "slug": "gia-dung-lumias",
+  "sortOrder": 8,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91374"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng TANAKA",
+  "slug": "gia-dung-tanaka",
+  "sortOrder": 9,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:03:31.130Z"
+  },
+  "image": "uploads/subcategories/1764191011129-214dfaec-6389-46b0-9311-48400fa876ff.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91375"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng HYUNDAI",
+  "slug": "gia-dung-hyundai",
+  "sortOrder": 10,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:01:22.943Z"
+  },
+  "image": "uploads/subcategories/1764190882941-79d7c1bb-4fb4-45a1-ad56-d76322165819.jpg"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91376"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng FUJIHOME",
+  "slug": "gia-dung-fujihome",
+  "sortOrder": 11,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:01:56.888Z"
+  },
+  "image": "uploads/subcategories/1764190916887-517a9f40-9afe-4d8b-94b0-de84c4c9f276.png"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91377"
+  },
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a1"
+  },
+  "name": "Gia dụng POVOS",
+  "slug": "gia-dung-povos",
+  "sortOrder": 12,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-11-06T05:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:02:27.030Z"
+  },
+  "image": "uploads/subcategories/1764190947028-1e5b4862-00ef-4b3a-81ea-087ecad2cbd2.avif",
+  "attributeTemplateId": {
+    "$oid": "672b111a9b01c38260b91401"
+  }
+}]

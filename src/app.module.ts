@@ -60,6 +60,7 @@ import { PromotionModule } from './promotion/promotion.module';
     ChatModule,
     ServicePackagesModule,
     PromotionModule,
+    
   ],
   controllers: [AppController],
   providers: [AppService],

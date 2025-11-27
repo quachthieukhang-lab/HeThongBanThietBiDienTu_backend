@@ -1,0 +1,444 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91501"
+  },
+  "name": "Máy lạnh Panasonic Inverter 1 HP CU/CS-PU9XKH-8M",
+  "slug": "may-lanh-panasonic-inverter-1-hp-pu9xkh",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91401"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Malaysia",
+    "warranty_months": 12
+  },
+  "thumbnail": "uploads/products/may-lanh-panasonic-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T14:58:38.899Z"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "691dd9dc5767e3acfb4c498f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91502"
+  },
+  "name": "Máy giặt LG Inverter 9 kg (Dòng FV1409S4W)",
+  "slug": "may-giat-lg-inverter-9-kg-fv1409s4w",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b2"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91402"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Việt Nam",
+    "warranty_months": 24
+  },
+  "thumbnail": "uploads/products/may-giat-lg-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:41:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:41:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91503"
+  },
+  "name": "Tủ lạnh Samsung Inverter 300L (Dòng RB30N4170BU/SV)",
+  "slug": "tu-lanh-samsung-inverter-300l",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b3"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91403"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Thái Lan",
+    "warranty_months": 24
+  },
+  "thumbnail": "uploads/products/tu-lanh-samsung-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:42:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:42:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91504"
+  },
+  "name": "Máy sấy quần áo Electrolux 8.5 kg (Dòng EDV854J3WB)",
+  "slug": "may-say-electrolux-8-5-kg-edv854j3wb",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b5"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91405"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Thái Lan",
+    "warranty_months": 24
+  },
+  "thumbnail": "uploads/products/may-say-electrolux-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:43:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:43:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91505"
+  },
+  "name": "Máy nước nóng Ariston 4500W (Dòng AURES SM45PE-VN)",
+  "slug": "may-nuoc-nong-ariston-sm45pe-vn",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b6"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91406"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Việt Nam",
+    "warranty_months": 24
+  },
+  "thumbnail": "uploads/products/may-nuoc-nong-ariston-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:44:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:44:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91506"
+  },
+  "name": "Tủ mát Sanaky 400L (Dòng VH-408K)",
+  "slug": "tu-mat-sanaky-400l-vh-408k",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b7"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91407"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Việt Nam",
+    "warranty_months": 24
+  },
+  "thumbnail": "uploads/products/tu-mat-sanaky-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91507"
+  },
+  "name": "Tủ đông Hòa Phát 205L (Dòng HCF 506S1Đ)",
+  "slug": "tu-dong-hoa-phat-205l-hcf-506s1d",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b8"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91408"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Việt Nam",
+    "warranty_months": 30
+  },
+  "thumbnail": "uploads/products/tu-dong-hoa-phat-1.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:46:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T05:46:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91508"
+  },
+  "name": "Máy rửa chén Bosch (Dòng SMS4IVI01P)",
+  "slug": "may-rua-chen-bosch-sms4ivi01p",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b9"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91409"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Đức",
+    "warranty_months": 36
+  },
+  "thumbnail": "uploads/products/1763566295836-6c46910a-8345-4b0d-8a23-c1e33ce4939a.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:47:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T15:31:35.843Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91509"
+  },
+  "name": "Loa thanh Soundbar Sony (Dòng HT-S20R)",
+  "slug": "loa-thanh-soundbar-sony-ht-s20r",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912ba"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b9140a"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Malaysia",
+    "warranty_months": 12
+  },
+  "thumbnail": "uploads/products/1763566274425-5102fa6f-4176-4e92-8c97-4ecfdb2427c3.jfif",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:48:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T15:31:14.427Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9150a"
+  },
+  "name": "Micro không dây JBL (Dòng VM300)",
+  "slug": "micro-khong-day-jbl-vm300",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912bb"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b9140b"
+  },
+  "templateVersion": 1,
+  "specs": {
+    "origin": "Trung Quốc",
+    "warranty_months": 12
+  },
+  "thumbnail": "uploads/products/1763566252565-ef2f414c-29ec-4baf-9e46-f3885236d3c5.jpg",
+  "isPublished": true,
+  "priceFrom": 990000,
+  "priceTo": 5490000,
+  "variantFacetSummary": {
+    "brand": [
+      "JBL",
+      "Shure"
+    ],
+    "type": [
+      "Không dây",
+      "Có dây"
+    ],
+    "connection": [
+      "Jack 6.3mm",
+      "XLR",
+      "Bluetooth"
+    ]
+  },
+  "createdAt": {
+    "$date": "2025-11-06T05:49:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T18:29:48.440Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91500"
+  },
+  "name": "Smart Tivi LG 4K (Dòng UR8050)",
+  "slug": "smart-tivi-lg-4k-dong-ur8050",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b4"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91001"
+  },
+  "specs": {
+    "origin": "Indonesia",
+    "warranty_months": 24,
+    "os": "webOS 23"
+  },
+  "templateId": {
+    "$oid": "672b111a9b01c38260b91400"
+  },
+  "templateVersion": 1,
+  "images": [
+    "uploads/products/tivi-lg-1.jpg",
+    "uploads/products/tivi-lg-2.jpg"
+  ],
+  "thumbnail": "uploads/products/tivi-lg-thumbnail.jpg",
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "variantFacetSummary": {},
+  "createdAt": {
+    "$date": "2025-11-06T05:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T17:57:56.884Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692202591a7b70ac98ec35fa"
+  },
+  "name": "Test",
+  "slug": "test",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "692201ea1a7b70ac98ec358e"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b9100f"
+  },
+  "servicePackageIds": [],
+  "templateId": {
+    "$oid": "692202081a7b70ac98ec35a3"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "createdAt": {
+    "$date": "2025-11-22T18:35:05.458Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T18:35:05.461Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1763836505459-508d7b08-4eee-43a9-a6d9-029c314facaa.jpg"
+},
+{
+  "_id": {
+    "$oid": "692772f423a9a14ac66ffc7a"
+  },
+  "name": "Bàn ủi nhiệt",
+  "slug": "bàn ủi nhiệt",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a3"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912cc"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b9102c"
+  },
+  "servicePackageIds": [],
+  "templateId": {
+    "$oid": "6927723223a9a14ac66ffac0"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 0,
+  "priceTo": 0,
+  "createdAt": {
+    "$date": "2025-11-26T21:36:52.930Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T21:48:20.888Z"
+  },
+  "__v": 0
+}]

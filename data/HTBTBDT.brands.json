@@ -1,0 +1,1486 @@
+[{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91001"
+  },
+  "name": "LG",
+  "slug": "lg",
+  "logoUrl": "uploads/brands/lg-logo.png",
+  "country": "Hàn Quốc",
+  "websiteUrl": "https://www.lg.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91002"
+  },
+  "name": "Samsung",
+  "slug": "samsung",
+  "logoUrl": "uploads/brands/samsung-logo.png",
+  "country": "Hàn Quốc",
+  "websiteUrl": "https://www.samsung.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91003"
+  },
+  "name": "Panasonic",
+  "slug": "panasonic",
+  "logoUrl": "uploads/brands/panasonic-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.panasonic.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91004"
+  },
+  "name": "Sony",
+  "slug": "sony",
+  "logoUrl": "uploads/brands/sony-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.sony.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91005"
+  },
+  "name": "Casper",
+  "slug": "casper",
+  "logoUrl": "uploads/brands/casper-logo.png",
+  "country": "Thái Lan",
+  "websiteUrl": "https://www.casper.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91006"
+  },
+  "name": "Electrolux",
+  "slug": "electrolux",
+  "logoUrl": "uploads/brands/electrolux-logo.png",
+  "country": "Thụy Điển",
+  "websiteUrl": "https://www.electrolux.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91007"
+  },
+  "name": "Daikin",
+  "slug": "daikin",
+  "logoUrl": "uploads/brands/daikin-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.daikin.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91008"
+  },
+  "name": "Hitachi",
+  "slug": "hitachi",
+  "logoUrl": "uploads/brands/hitachi-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.hitachi.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91009"
+  },
+  "name": "Sharp",
+  "slug": "sharp",
+  "logoUrl": "uploads/brands/sharp-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.sharp.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9100a"
+  },
+  "name": "Kangaroo",
+  "slug": "kangaroo",
+  "logoUrl": "uploads/brands/kangaroo-logo.png",
+  "country": "Việt Nam",
+  "websiteUrl": "https://www.kangaroo.vn/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9100b"
+  },
+  "name": "Sanaky",
+  "slug": "sanaky",
+  "logoUrl": "uploads/brands/sanaky-logo.png",
+  "country": "Việt Nam",
+  "websiteUrl": "https://www.sanaky.com.vn/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9100c"
+  },
+  "name": "Hòa Phát",
+  "slug": "hoa-phat",
+  "logoUrl": "uploads/brands/hoaphat-logo.png",
+  "country": "Việt Nam",
+  "websiteUrl": "https://www.hoaphat.com.vn/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9100d"
+  },
+  "name": "Bosch",
+  "slug": "bosch",
+  "logoUrl": "uploads/brands/bosch-logo.png",
+  "country": "Đức",
+  "websiteUrl": "https://www.bosch.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9100e"
+  },
+  "name": "JBL",
+  "slug": "jbl",
+  "logoUrl": "uploads/brands/jbl-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.jbl.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9100f"
+  },
+  "name": "AQUA",
+  "slug": "aqua",
+  "logoUrl": "uploads/brands/1762866083445-7f0fd0a3-6c90-4193-bf51-227b2164f076.webp",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.aqua.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-11T13:01:23.446Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91010"
+  },
+  "name": "LOCKNLOCK",
+  "slug": "locknlock",
+  "logoUrl": "uploads/brands/locknlock-logo.png",
+  "country": "Hàn Quốc",
+  "websiteUrl": "https://www.locknlock.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91011"
+  },
+  "name": "ELMICH",
+  "slug": "elmich",
+  "logoUrl": "uploads/brands/elmich-logo.png",
+  "country": "Cộng hòa Séc",
+  "websiteUrl": "https://www.elmich.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91012"
+  },
+  "name": "Apple",
+  "slug": "apple",
+  "logoUrl": "uploads/brands/1763836086092-012f6702-d4b7-4d19-8ab5-805acdd093e6.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.apple.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T18:28:06.094Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91013"
+  },
+  "name": "Xiaomi",
+  "slug": "xiaomi",
+  "logoUrl": "uploads/brands/xiaomi-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.mi.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91014"
+  },
+  "name": "Philips",
+  "slug": "philips",
+  "logoUrl": "uploads/brands/philips-logo.png",
+  "country": "Hà Lan",
+  "websiteUrl": "https://www.philips.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91015"
+  },
+  "name": "Toshiba",
+  "slug": "toshiba",
+  "logoUrl": "uploads/brands/toshiba-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.toshiba.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91016"
+  },
+  "name": "Cuckoo",
+  "slug": "cuckoo",
+  "logoUrl": "uploads/brands/1764188479166-00a0cd01-1e7d-475e-911b-dc69457bd76c.png",
+  "country": "Hàn Quốc",
+  "websiteUrl": "https://www.cuckoo.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:21:19.167Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91017"
+  },
+  "name": "Sunhouse",
+  "slug": "sunhouse",
+  "logoUrl": "uploads/brands/sunhouse-logo.png",
+  "country": "Việt Nam",
+  "websiteUrl": "https://www.sunhouse.com.vn/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91018"
+  },
+  "name": "Ecovacs",
+  "slug": "ecovacs",
+  "logoUrl": "uploads/brands/ecovacs-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.ecovacs.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91019"
+  },
+  "name": "Dell",
+  "slug": "dell",
+  "logoUrl": "uploads/brands/dell-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.dell.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9101a"
+  },
+  "name": "HP",
+  "slug": "hp",
+  "logoUrl": "uploads/brands/hp-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.hp.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9101b"
+  },
+  "name": "Asus",
+  "slug": "asus",
+  "logoUrl": "uploads/brands/1764188427944-114e33cb-11bb-40b7-887d-4d0e58c301c2.jpg",
+  "country": "Đài Loan",
+  "websiteUrl": "https://www.asus.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:20:27.945Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9101c"
+  },
+  "name": "Hikvision",
+  "slug": "hikvision",
+  "logoUrl": "uploads/brands/hikvision-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.hikvision.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9101d"
+  },
+  "name": "Anker",
+  "slug": "anker",
+  "logoUrl": "uploads/brands/1763836111848-730ca70a-1294-4213-9b77-2e53d5a42505.jpg",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.anker.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T18:28:31.849Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9101e"
+  },
+  "name": "Logitech",
+  "slug": "logitech",
+  "logoUrl": "uploads/brands/logitech-logo.png",
+  "country": "Thụy Sĩ",
+  "websiteUrl": "https://www.logitech.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9101f"
+  },
+  "name": "Kingston",
+  "slug": "kingston",
+  "logoUrl": "uploads/brands/kingston-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.kingston.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91020"
+  },
+  "name": "Sandisk",
+  "slug": "sandisk",
+  "logoUrl": "uploads/brands/sandisk-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.sandisk.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91021"
+  },
+  "name": "TCL",
+  "slug": "tcl",
+  "logoUrl": "uploads/brands/tcl-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.tcl.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91022"
+  },
+  "name": "Haier",
+  "slug": "haier",
+  "logoUrl": "uploads/brands/haier-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.haier.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91023"
+  },
+  "name": "Beko",
+  "slug": "beko",
+  "logoUrl": "uploads/brands/1764188586428-e856de19-1a38-4a73-afa5-0da106f768cf.png",
+  "country": "Thổ Nhĩ Kỳ",
+  "websiteUrl": "https://www.beko.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:23:06.428Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91024"
+  },
+  "name": "Midea",
+  "slug": "midea",
+  "logoUrl": "uploads/brands/midea-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.midea.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91025"
+  },
+  "name": "Gree",
+  "slug": "gree",
+  "logoUrl": "uploads/brands/gree-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.gree.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91026"
+  },
+  "name": "Oppo",
+  "slug": "oppo",
+  "logoUrl": "uploads/brands/oppo-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.oppo.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91027"
+  },
+  "name": "Vivo",
+  "slug": "vivo",
+  "logoUrl": "uploads/brands/vivo-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.vivo.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91028"
+  },
+  "name": "Realme",
+  "slug": "realme",
+  "logoUrl": "uploads/brands/realme-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.realme.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91029"
+  },
+  "name": "Canon",
+  "slug": "canon",
+  "logoUrl": "uploads/brands/canon-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.canon.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9102a"
+  },
+  "name": "Nikon",
+  "slug": "nikon",
+  "logoUrl": "uploads/brands/nikon-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.nikon.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9102b"
+  },
+  "name": "Dyson",
+  "slug": "dyson",
+  "logoUrl": "uploads/brands/dyson-logo.png",
+  "country": "Anh",
+  "websiteUrl": "https://www.dyson.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9102c"
+  },
+  "name": "Braun",
+  "slug": "braun",
+  "logoUrl": "uploads/brands/braun-logo.png",
+  "country": "Đức",
+  "websiteUrl": "https://www.braun.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9102d"
+  },
+  "name": "Oral-B",
+  "slug": "oral-b",
+  "logoUrl": "uploads/brands/oral-b-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.oralb.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9102e"
+  },
+  "name": "Tefal",
+  "slug": "tefal",
+  "logoUrl": "uploads/brands/tefal-logo.png",
+  "country": "Pháp",
+  "websiteUrl": "https://www.tefal.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9102f"
+  },
+  "name": "BlueStone",
+  "slug": "bluestone",
+  "logoUrl": "uploads/brands/1764188667492-3bd3a5c1-daaa-41fa-97fa-0f52dc8ae9bd.jpg",
+  "country": "Singapore",
+  "websiteUrl": "https://www.bluestone.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:24:27.493Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91030"
+  },
+  "name": "MSI",
+  "slug": "msi",
+  "logoUrl": "uploads/brands/msi-logo.png",
+  "country": "Đài Loan",
+  "websiteUrl": "https://www.msi.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91031"
+  },
+  "name": "Acer",
+  "slug": "acer",
+  "logoUrl": "uploads/brands/1762866188903-00d2c685-c607-45cd-9494-bccb976096b8.png",
+  "country": "Đài Loan",
+  "websiteUrl": "https://www.acer.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-11T13:03:08.904Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91032"
+  },
+  "name": "Lenovo",
+  "slug": "lenovo",
+  "logoUrl": "uploads/brands/lenovo-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.lenovo.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91033"
+  },
+  "name": "Garmin",
+  "slug": "garmin",
+  "logoUrl": "uploads/brands/garmin-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.garmin.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91034"
+  },
+  "name": "Fitbit",
+  "slug": "fitbit",
+  "logoUrl": "uploads/brands/fitbit-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.fitbit.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91035"
+  },
+  "name": "GoPro",
+  "slug": "gopro",
+  "logoUrl": "uploads/brands/gopro-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.gopro.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91036"
+  },
+  "name": "Bose",
+  "slug": "bose",
+  "logoUrl": "uploads/brands/bose-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.bose.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91037"
+  },
+  "name": "Sennheiser",
+  "slug": "sennheiser",
+  "logoUrl": "uploads/brands/sennheiser-logo.png",
+  "country": "Đức",
+  "websiteUrl": "https://www.sennheiser.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91038"
+  },
+  "name": "Corsair",
+  "slug": "corsair",
+  "logoUrl": "uploads/brands/corsair-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.corsair.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91039"
+  },
+  "name": "Western Digital",
+  "slug": "western-digital",
+  "logoUrl": "uploads/brands/wd-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.westerndigital.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9103a"
+  },
+  "name": "Seagate",
+  "slug": "seagate",
+  "logoUrl": "uploads/brands/seagate-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.seagate.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9103b"
+  },
+  "name": "TP-Link",
+  "slug": "tp-link",
+  "logoUrl": "uploads/brands/tp-link-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.tp-link.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9103c"
+  },
+  "name": "D-Link",
+  "slug": "d-link",
+  "logoUrl": "uploads/brands/1764188522286-0239263e-4afd-4e16-b8ad-b9175fed5ccd.png",
+  "country": "Đài Loan",
+  "websiteUrl": "https://www.dlink.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:22:02.287Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9103d"
+  },
+  "name": "Roborock",
+  "slug": "roborock",
+  "logoUrl": "uploads/brands/roborock-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.roborock.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9103e"
+  },
+  "name": "iRobot",
+  "slug": "irobot",
+  "logoUrl": "uploads/brands/irobot-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.irobot.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:15:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9103f"
+  },
+  "name": "Razer",
+  "slug": "razer",
+  "logoUrl": "uploads/brands/razer-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.razer.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91040"
+  },
+  "name": "SteelSeries",
+  "slug": "steelseries",
+  "logoUrl": "uploads/brands/steelseries-logo.png",
+  "country": "Đan Mạch",
+  "websiteUrl": "https://www.steelseries.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91041"
+  },
+  "name": "HyperX",
+  "slug": "hyperx",
+  "logoUrl": "uploads/brands/hyperx-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.hyperx.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91042"
+  },
+  "name": "Belkin",
+  "slug": "belkin",
+  "logoUrl": "uploads/brands/1764188621894-6f9543ae-3a0c-428a-87eb-a9f9d62aed81.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.belkin.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:23:41.895Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91043"
+  },
+  "name": "Ugreen",
+  "slug": "ugreen",
+  "logoUrl": "uploads/brands/ugreen-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.ugreen.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91044"
+  },
+  "name": "Baseus",
+  "slug": "baseus",
+  "logoUrl": "uploads/brands/1764188455097-92db21c8-d6b9-4c62-835a-13c418f8d902.jpg",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.baseus.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:20:55.098Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91045"
+  },
+  "name": "DJI",
+  "slug": "dji",
+  "logoUrl": "uploads/brands/dji-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.dji.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91046"
+  },
+  "name": "Nintendo",
+  "slug": "nintendo",
+  "logoUrl": "uploads/brands/nintendo-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.nintendo.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91047"
+  },
+  "name": "PlayStation",
+  "slug": "playstation",
+  "logoUrl": "uploads/brands/playstation-logo.png",
+  "country": "Nhật Bản (Sony)",
+  "websiteUrl": "https://www.playstation.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91048"
+  },
+  "name": "Xbox",
+  "slug": "xbox",
+  "logoUrl": "uploads/brands/xbox-logo.png",
+  "country": "Mỹ (Microsoft)",
+  "websiteUrl": "https://www.xbox.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91049"
+  },
+  "name": "Targus",
+  "slug": "targus",
+  "logoUrl": "uploads/brands/targus-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.targus.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9104a"
+  },
+  "name": "Epson",
+  "slug": "epson",
+  "logoUrl": "uploads/brands/epson-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.epson.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9104b"
+  },
+  "name": "Brother",
+  "slug": "brother",
+  "logoUrl": "uploads/brands/brother-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.brother.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9104c"
+  },
+  "name": "ViewSonic",
+  "slug": "viewsonic",
+  "logoUrl": "uploads/brands/viewsonic-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.viewsonic.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9104d"
+  },
+  "name": "BenQ",
+  "slug": "benq",
+  "logoUrl": "uploads/brands/1764188684919-811bfa57-668f-4f7f-a406-203107805436.png",
+  "country": "Đài Loan",
+  "websiteUrl": "https://www.benq.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:24:44.920Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9104e"
+  },
+  "name": "AMD",
+  "slug": "amd",
+  "logoUrl": "uploads/brands/1762866021046-c368609c-844f-4b61-97d2-66425786268f.jpg",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.amd.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-11T13:00:21.047Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9104f"
+  },
+  "name": "Intel",
+  "slug": "intel",
+  "logoUrl": "uploads/brands/intel-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.intel.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91050"
+  },
+  "name": "Nvidia",
+  "slug": "nvidia",
+  "logoUrl": "uploads/brands/nvidia-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.nvidia.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91051"
+  },
+  "name": "Makita",
+  "slug": "makita",
+  "logoUrl": "uploads/brands/makita-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.makita.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91052"
+  },
+  "name": "Dewalt",
+  "slug": "dewalt",
+  "logoUrl": "uploads/brands/dewalt-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.dewalt.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91053"
+  },
+  "name": "Stanley",
+  "slug": "stanley",
+  "logoUrl": "uploads/brands/stanley-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.stanleytools.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91054"
+  },
+  "name": "TOLSEN",
+  "slug": "tolsen",
+  "logoUrl": "uploads/brands/tolsen-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.tolsentools.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91055"
+  },
+  "name": "Ingco",
+  "slug": "ingco",
+  "logoUrl": "uploads/brands/ingco-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.ingco.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91056"
+  },
+  "name": "Laica",
+  "slug": "laica",
+  "logoUrl": "uploads/brands/laica-logo.png",
+  "country": "Ý",
+  "websiteUrl": "https://www.laica.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91057"
+  },
+  "name": "Omron",
+  "slug": "omron",
+  "logoUrl": "uploads/brands/omron-logo.png",
+  "country": "Nhật Bản",
+  "websiteUrl": "https://www.omron.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91058"
+  },
+  "name": "Beurer",
+  "slug": "beurer",
+  "logoUrl": "uploads/brands/beurer-logo.png",
+  "country": "Đức",
+  "websiteUrl": "https://www.beurer.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b91059"
+  },
+  "name": "Microlife",
+  "slug": "microlife",
+  "logoUrl": "uploads/brands/microlife-logo.png",
+  "country": "Thụy Sĩ",
+  "websiteUrl": "https://www.microlife.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9105a"
+  },
+  "name": "Intex",
+  "slug": "intex",
+  "logoUrl": "uploads/brands/intex-logo.png",
+  "country": "Mỹ",
+  "websiteUrl": "https://www.intexcorp.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9105b"
+  },
+  "name": "COOCAA",
+  "slug": "coocaa",
+  "logoUrl": "uploads/brands/coocaa-logo.png",
+  "country": "Trung Quốc",
+  "websiteUrl": "https://www.coocaa.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b9105c"
+  },
+  "name": "GERM",
+  "slug": "germ",
+  "logoUrl": "uploads/brands/germ-logo.png",
+  "country": "Đức",
+  "websiteUrl": "https://www.germ.com/",
+  "createdAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690edfadd9347be8e2cf1e8a"
+  },
+  "name": "asd",
+  "slug": "asdas",
+  "createdAt": {
+    "$date": "2025-11-08T06:14:05.948Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-08T06:14:05.948Z"
+  },
+  "__v": 0
+}]

@@ -1,18 +1,17 @@
 // src/chat/chat.controller.ts
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post, Req, UseGuards } from '@nestjs/common';
 import { ChatService } from './chat.service';
-
-class ChatMessageDto {
-  message: string;
-}
+import { CreateChatDto } from './dto/create-chat.dto';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 
 @Controller('chat')
 export class ChatController {
   constructor(private readonly chatService: ChatService) {}
 
-  @Post('message')
-  async handleMessage(@Body() chatMessageDto: ChatMessageDto) {
-    const reply = await this.chatService.generateResponse(chatMessageDto.message);
-    return { reply };
+  @Post()
+  @UseGuards(JwtAuthGuard)
+  async sendMessage(@Body() dto: CreateChatDto, @Req() req) {
+    // req.user.sub là userId lấy từ token (do JwtStrategy xử lý)
+    return this.chatService.chat(dto, req.user.sub);
   }
 }

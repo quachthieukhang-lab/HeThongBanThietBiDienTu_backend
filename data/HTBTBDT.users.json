@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "690b777f3479282984b6029c"
+  },
+  "name": "Khang",
+  "email": "quachthieukhang@gmail.com",
+  "passwordHash": "$2b$10$LjCBT3CyWckjlWHLRXJnc.zKtJ6e6oXFfLrsrqskui.yMF0lxSvMm",
+  "roles": [
+    "admin"
+  ],
+  "status": "active",
+  "phone": null,
+  "avatarUrl": null,
+  "defaultAddressId": null,
+  "createdAt": {
+    "$date": "2025-11-05T16:12:47.502Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-08T06:04:22.652Z"
+  },
+  "__v": 0,
+  "refreshTokenHash": "$2b$10$7zVJ8AdSfnGDc.OixV2u4eInNZzp45lT7SqtiNuoqMWHBOqEBUfCK"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b92001"
+  },
+  "name": "Nguyen Van Admin",
+  "email": "admin@httmdt.com",
+  "passwordHash": "$2b$10$f.T/WlR.2h.e5kI8/L10B.Q3P9YJ5pG1zVb.V1P.V3mS.Y2uO5c2u",
+  "roles": [
+    "admin",
+    "staff"
+  ],
+  "status": "active",
+  "phone": "0900000001",
+  "createdAt": {
+    "$date": "2025-11-06T06:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:30:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "name": "Tran Thi B",
+  "email": "customer@httmdt.com",
+  "passwordHash": "$2b$10$gA.Z/oX.L/gL.T8/L10B.Q3P9YJ5pG1zVb.V1P.V3mS.Y2uO5d4v",
+  "roles": [
+    "customer"
+  ],
+  "status": "active",
+  "phone": "0900000002",
+  "defaultAddressId": "672b111a9b01c38260b93001",
+  "createdAt": {
+    "$date": "2025-11-06T06:31:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:31:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b92003"
+  },
+  "name": "Dao Van Staff",
+  "email": "staff@httmdt.com",
+  "passwordHash": "$2b$10$T/k.0t/7eS.yT/L10B.Q3P9YJ5pG1zVb.V1P.V3mS.Y2uO5c2u",
+  "roles": [
+    "staff"
+  ],
+  "status": "active",
+  "phone": "0900000003",
+  "createdAt": {
+    "$date": "2025-11-06T06:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:40:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "name": "Le Minh Khang",
+  "email": "khang@httmdt.com",
+  "passwordHash": "$2b$10$wT/k.0t/7eS.yT/L10B.Q3P9YJ5pG1zVb.V1P.V3mS.Y2uO5d4v",
+  "roles": [
+    "customer"
+  ],
+  "status": "active",
+  "phone": "0900000004",
+  "defaultAddressId": "672b111a9b01c38260b93003",
+  "createdAt": {
+    "$date": "2025-11-06T06:41:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:41:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "name": "Nguyen Thuy Thao",
+  "email": "thao@httmdt.com",
+  "passwordHash": "$2b$10$fA.Z/oX.L/gL.T8/L10B.Q3P9YJ5pG1zVb.V1P.V3mS.Y2uO5e5w",
+  "roles": [
+    "customer"
+  ],
+  "status": "active",
+  "phone": "0900000005",
+  "defaultAddressId": "672b111a9b01c38260b93004",
+  "createdAt": {
+    "$date": "2025-11-06T06:42:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:42:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "name": "Admin",
+  "email": "admin123@gmail.com",
+  "passwordHash": "$2b$10$9N2de4Pjmr03z6ffiCN1cOq0kRK2FX4Pf7VodscT94SmcEO6SpYmO",
+  "roles": [
+    "admin"
+  ],
+  "status": "active",
+  "phone": "0942766191",
+  "avatarUrl": "uploads/avatars/1763697757843-47b27899-2df2-4a92-ab6f-e477eea8547e.jpg",
+  "defaultAddressId": null,
+  "createdAt": {
+    "$date": "2025-11-11T11:53:16.582Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T20:10:50.549Z"
+  },
+  "__v": 0,
+  "refreshTokenHash": "$2b$10$cH4iGVYIY441zwvJmHj2TO.4Y.5VWwiWRFkSGlG8QclveK.QCdWSC"
+},
+{
+  "_id": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "name": "customer",
+  "email": "customer123@gmail.com",
+  "passwordHash": "$2b$10$HpB5KQHeAOY0KBNutZtZGOzWy.A7SE4Ipax.LepuADYJ0rONbJWqa",
+  "roles": [
+    "customer"
+  ],
+  "status": "active",
+  "phone": "0942626536",
+  "avatarUrl": null,
+  "defaultAddressId": null,
+  "createdAt": {
+    "$date": "2025-11-21T04:05:33.363Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:05:33.416Z"
+  },
+  "__v": 0,
+  "refreshTokenHash": "$2b$10$3kvEWeKR/ZV4xiL6rNcqt.U3XXVpqETwW8h96llCEcX4P7gIeSFEK"
+},
+{
+  "_id": {
+    "$oid": "6921f9222e982939a41cb4c9"
+  },
+  "name": "asdg",
+  "email": "sd@gmail.com",
+  "passwordHash": "$2b$10$yBZIRqdDU1FqZ9rGEyjt0eWlqRbtA3T.otHGzOZAlLYCD6pQGGCYG",
+  "roles": [
+    "customer"
+  ],
+  "status": "active",
+  "phone": "0942766193",
+  "avatarUrl": null,
+  "defaultAddressId": null,
+  "createdAt": {
+    "$date": "2025-11-22T17:55:46.354Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T17:55:46.354Z"
+  },
+  "__v": 0
+}]

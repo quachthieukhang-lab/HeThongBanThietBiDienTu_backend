@@ -1,0 +1,318 @@
+[{
+  "_id": {
+    "$oid": "6909f7546f82d9c1792ab96f"
+  },
+  "userId": {
+    "$oid": "6909f7546f82d9c1792ab96c"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-11-04T12:53:40.946Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-04T12:53:40.946Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690b777f3479282984b6029f"
+  },
+  "userId": {
+    "$oid": "690b777f3479282984b6029c"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-11-05T16:12:47.505Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-05T16:12:47.505Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b94001"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92002"
+  },
+  "status": "active",
+  "items": [
+    {
+      "productId": {
+        "$oid": "672b111a9b01c38260b91500"
+      },
+      "variantId": {
+        "$oid": "672b111a9b01c38260b91601"
+      },
+      "name": "Smart Tivi LG 4K (Dòng UR8050)",
+      "thumbnail": "uploads/products/tivi-lg-55-1.jpg",
+      "price": 12990000,
+      "quantity": 1,
+      "facets": {
+        "brand": "LG",
+        "screen_size": 55,
+        "resolution": "4K",
+        "smart_tv": true
+      }
+    }
+  ],
+  "totalQuantity": 1,
+  "totalPrice": 12990000,
+  "createdAt": {
+    "$date": "2025-11-06T06:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T06:35:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b94002"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92004"
+  },
+  "status": "active",
+  "items": [
+    {
+      "productId": {
+        "$oid": "672b111a9b01c38260b91501"
+      },
+      "variantId": {
+        "$oid": "672b111a9b01c38260b91603"
+      },
+      "name": "Máy lạnh Panasonic Inverter 1 HP CU/CS-PU9XKH-8M",
+      "thumbnail": "uploads/products/may-lanh-panasonic-1.jpg",
+      "price": 8990000,
+      "quantity": 1
+    },
+    {
+      "productId": {
+        "$oid": "672b111a9b01c38260b9150a"
+      },
+      "variantId": {
+        "$oid": "672b111a9b01c38260b91620"
+      },
+      "name": "Micro không dây JBL (Dòng VM300)",
+      "thumbnail": "uploads/products/micro-jbl-1.jpg",
+      "price": 1990000,
+      "quantity": 2
+    }
+  ],
+  "totalQuantity": 3,
+  "totalPrice": 12970000,
+  "createdAt": {
+    "$date": "2025-11-06T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T10:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b94003"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "status": "ordered",
+  "items": [
+    {
+      "productId": {
+        "$oid": "672b111a9b01c38260b91508"
+      },
+      "variantId": {
+        "$oid": "672b111a9b01c38260b91618"
+      },
+      "name": "Máy rửa chén Bosch (Dòng SMS4IVI01P)",
+      "thumbnail": "uploads/products/may-rua-chen-bosch-1.jpg",
+      "price": 17990000,
+      "quantity": 1
+    }
+  ],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "createdAt": {
+    "$date": "2025-11-01T09:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-01T09:20:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b94004"
+  },
+  "userId": {
+    "$oid": "672b111a9b01c38260b92005"
+  },
+  "status": "active",
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "createdAt": {
+    "$date": "2025-11-01T09:20:01.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-01T09:20:01.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "691323ac0907d7526817fe57"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-11T11:53:16.588Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:11:19.555Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "691fe50d1d54cb1d10be140c"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-21T04:05:33.366Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:06:31.997Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "691fe57d1d54cb1d10be14ed"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-21T04:07:25.652Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:07:32.714Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "691fe5931d54cb1d10be153b"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "672b111a9b01c38260b9150a"
+      },
+      "variantId": {
+        "$oid": "672b111a9b01c38260b9161f"
+      },
+      "name": "Micro không dây JBL (Dòng VM300)",
+      "thumbnail": "uploads/products/1763566252565-ef2f414c-29ec-4baf-9e46-f3885236d3c5.jpg",
+      "price": 990000,
+      "quantity": 1,
+      "facets": {
+        "brand": "Shure",
+        "type": "Có dây",
+        "connection": "XLR"
+      }
+    }
+  ],
+  "totalQuantity": 1,
+  "totalPrice": 990000,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-11-21T04:07:47.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:07:47.408Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "691fe6741d54cb1d10be163f"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-21T04:11:32.724Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:11:37.294Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "691fe6f81d54cb1d10be16bf"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-21T04:13:44.807Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-21T04:14:06.163Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6921f9222e982939a41cb4cc"
+  },
+  "userId": {
+    "$oid": "6921f9222e982939a41cb4c9"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-11-22T17:55:46.404Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T17:55:46.404Z"
+  },
+  "__v": 0
+}]

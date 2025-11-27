@@ -1,0 +1,528 @@
+[{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd08"
+  },
+  "name": "Lắp đặt Tivi treo tường (< 55 inch)",
+  "description": "Khoan tường, bắt khung treo, dò kênh và hướng dẫn sử dụng (chưa gồm khung)",
+  "price": 150000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd09"
+  },
+  "name": "Lắp đặt Tivi khổ lớn (> 65 inch)",
+  "description": "Yêu cầu 2 kỹ thuật viên, gia cố tường chịu lực",
+  "price": 300000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd0a"
+  },
+  "name": "Lắp đặt Máy lạnh treo tường",
+  "description": "Công lắp đặt dàn nóng, dàn lạnh (miễn phí 3m ống đồng đầu tiên)",
+  "price": 350000,
+  "duration": "2-3 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd0b"
+  },
+  "name": "Lắp đặt Máy giặt cửa trước",
+  "description": "Cân chỉnh lồng giặt bằng thước thủy, đấu nối nước chống rò rỉ",
+  "price": 150000,
+  "duration": "1 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd0c"
+  },
+  "name": "Lắp đặt Máy nước nóng gián tiếp",
+  "description": "Khoan tường, đi dây tiếp địa an toàn, lắp CB chống giật",
+  "price": 250000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd0d"
+  },
+  "name": "Lắp đặt Máy lọc nước RO",
+  "description": "Đấu nối nguồn nước sinh hoạt, xả rửa lõi lọc lần đầu",
+  "price": 100000,
+  "duration": "1 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd0e"
+  },
+  "name": "Cài đặt Windows & Office bản quyền",
+  "description": "Cài Win 10/11, bộ Office 365 và các driver cần thiết",
+  "price": 200000,
+  "duration": "1-2 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd0f"
+  },
+  "name": "Lắp ráp PC Gaming cơ bản",
+  "description": "Lắp ráp linh kiện, đi dây gọn gàng (Cable management)",
+  "price": 300000,
+  "duration": "3-4 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd10"
+  },
+  "name": "Lắp ráp PC Custom Water Cooling",
+  "description": "Thi công tản nhiệt nước custom, uốn ống cứng",
+  "price": 1500000,
+  "duration": "2-3 ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd11"
+  },
+  "name": "Thiết lập hệ thống Camera (2 mắt)",
+  "description": "Đi dây, khoan lắp camera, cấu hình xem qua điện thoại",
+  "price": 500000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd12"
+  },
+  "name": "Lắp khóa cửa vân tay thông minh",
+  "description": "Đục đố cửa, lắp khóa, cài đặt vân tay chủ",
+  "price": 400000,
+  "duration": "2 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd13"
+  },
+  "name": "Cài đặt Macbook & MacOS",
+  "description": "Cài đặt hệ điều hành, bộ gõ tiếng Việt, phần mềm đồ họa",
+  "price": 150000,
+  "duration": "1 giờ",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd14"
+  },
+  "name": "Lắp đặt Quạt trần",
+  "description": "Gia cố móc treo trần bê tông/thạch cao, đấu điện",
+  "price": 250000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd15"
+  },
+  "name": "Lắp đặt Máy rửa bát âm tủ",
+  "description": "Cắt đá bếp, đi đường nước cấp/xả, ốp cánh gỗ",
+  "price": 550000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd16"
+  },
+  "name": "Setup Hệ thống âm thanh 5.1",
+  "description": "Bố trí loa vệ tinh, đi dây âm, cân chỉnh âm học",
+  "price": 450000,
+  "duration": "Trong ngày",
+  "type": "install",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd17"
+  },
+  "name": "Bảo hành Vàng iPhone (12 tháng)",
+  "description": "Bảo hành rơi vỡ, vào nước, đổi máy mới nếu không sửa được",
+  "price": 1200000,
+  "duration": "12 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd18"
+  },
+  "name": "Gia hạn bảo hành Laptop (+1 năm)",
+  "description": "Tăng tổng thời gian bảo hành lên 2 năm cho Laptop",
+  "price": 890000,
+  "duration": "12 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd19"
+  },
+  "name": "Bảo hiểm màn hình (6 tháng)",
+  "description": "Thay màn hình miễn phí 1 lần nếu nứt vỡ do tai nạn",
+  "price": 450000,
+  "duration": "6 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd1a"
+  },
+  "name": "Bảo hành 1 đổi 1 VIP (30 ngày)",
+  "description": "Lỗi phần cứng đổi ngay máy mới nguyên seal, không chờ sửa",
+  "price": 200000,
+  "duration": "30 ngày",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd1b"
+  },
+  "name": "AppleCare+ cho iPhone Pro Max",
+  "description": "Gói bảo hành chính hãng Apple toàn cầu",
+  "price": 4690000,
+  "duration": "24 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd1c"
+  },
+  "name": "AppleCare+ cho MacBook Air",
+  "description": "Gói bảo hành chính hãng Apple toàn cầu cho Mac",
+  "price": 5200000,
+  "duration": "36 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd1d"
+  },
+  "name": "Samsung Care+ (1 năm)",
+  "description": "Bảo vệ toàn diện cho thiết bị Galaxy",
+  "price": 1190000,
+  "duration": "12 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd1e"
+  },
+  "name": "Bảo hành Pin trọn đời máy",
+  "description": "Thay pin miễn phí khi dung lượng dưới 80% (chỉ áp dụng iPhone)",
+  "price": 500000,
+  "duration": "Vĩnh viễn",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd1f"
+  },
+  "name": "Bảo hành Tấm nền Tivi (+2 năm)",
+  "description": "Bảo hành sọc màn hình, chết điểm ảnh sau khi hết BH hãng",
+  "price": 1500000,
+  "duration": "24 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd20"
+  },
+  "name": "Gói cứu hộ dữ liệu ổ cứng",
+  "description": "Cam kết cứu dữ liệu 1 lần nếu ổ cứng lỗi cơ",
+  "price": 990000,
+  "duration": "12 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd21"
+  },
+  "name": "Bảo hành Máy nén tủ lạnh (10 năm)",
+  "description": "Mở rộng bảo hành riêng cho lốc máy lạnh/tủ lạnh",
+  "price": 600000,
+  "duration": "10 năm",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd22"
+  },
+  "name": "Bảo hiểm thiết bị điện tử gia đình",
+  "description": "Bồi thường khi cháy nổ do chập điện cho toàn bộ thiết bị",
+  "price": 2000000,
+  "duration": "12 tháng",
+  "type": "warranty",
+  "isActive": false
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd23"
+  },
+  "name": "Gia hạn bảo hành Robot hút bụi",
+  "description": "Bảo hành thêm 1 năm cho động cơ và pin",
+  "price": 650000,
+  "duration": "12 tháng",
+  "type": "warranty",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd24"
+  },
+  "name": "Vệ sinh Laptop toàn diện",
+  "description": "Thổi bụi, tra keo tản nhiệt MX4, vệ sinh bàn phím, màn hình",
+  "price": 150000,
+  "duration": "1 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd25"
+  },
+  "name": "Vệ sinh Máy lạnh (1HP - 1.5HP)",
+  "description": "Xịt rửa dàn nóng lạnh bằng bơm áp lực, kiểm tra gas",
+  "price": 200000,
+  "duration": "1 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd26"
+  },
+  "name": "Vệ sinh Lồng giặt (Cửa trên)",
+  "description": "Tháo lồng, vệ sinh cặn bẩn lâu ngày, khử khuẩn",
+  "price": 350000,
+  "duration": "2 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd27"
+  },
+  "name": "Vệ sinh Lồng giặt (Cửa ngang)",
+  "description": "Tháo lồng, vệ sinh gioăng cao su, kiểm tra bi bạc",
+  "price": 550000,
+  "duration": "3 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd28"
+  },
+  "name": "Sao chép & Đồng bộ dữ liệu",
+  "description": "Chuyển danh bạ, tin nhắn, ảnh từ máy cũ sang máy mới",
+  "price": 50000,
+  "duration": "30 phút",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd29"
+  },
+  "name": "Dán màn hình cường lực KingKong",
+  "description": "Kính full màn, chống nhìn trộm, chống vân tay",
+  "price": 150000,
+  "duration": "Vĩnh viễn",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd2a"
+  },
+  "name": "Dán PPF Full viền (Mặt sau)",
+  "description": "Dán film bảo vệ chống xước dăm, tự phục hồi vết xước",
+  "price": 250000,
+  "duration": "6 tháng",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd2b"
+  },
+  "name": "Gói quà Cao Cấp",
+  "description": "Hộp cứng, giấy gói nghệ thuật, nơ lụa & thiệp viết tay",
+  "price": 50000,
+  "duration": "1 lần",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd2c"
+  },
+  "name": "Giao hàng hỏa tốc 2H",
+  "description": "Giao hàng nội thành trong vòng 2 giờ",
+  "price": 60000,
+  "duration": "2 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd2d"
+  },
+  "name": "Nâng cấp RAM Laptop (Công thay)",
+  "description": "Tháo máy, lắp RAM, kiểm tra Dual channel (chưa gồm tiền RAM)",
+  "price": 50000,
+  "duration": "15 phút",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd2e"
+  },
+  "name": "Nâng cấp SSD & Clone Windows",
+  "description": "Thay ổ cứng, chuyển toàn bộ dữ liệu từ ổ cũ sang ổ mới",
+  "price": 100000,
+  "duration": "1-2 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd2f"
+  },
+  "name": "Thu cũ đổi mới (Trợ giá)",
+  "description": "Phiếu trợ giá khi thu máy cũ lên đời máy mới",
+  "price": 0,
+  "duration": "1 lần",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd30"
+  },
+  "name": "Khắc tên Laser lên thiết bị",
+  "description": "Khắc tên, số điện thoại lên vỏ nhôm/inox",
+  "price": 100000,
+  "duration": "15 phút",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd31"
+  },
+  "name": "Cân màu màn hình (Spyder)",
+  "description": "Cân chỉnh màu sắc chuẩn đồ họa cho màn hình máy tính",
+  "price": 200000,
+  "duration": "30 phút",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd32"
+  },
+  "name": "Phí cà thẻ trả góp 0%",
+  "description": "Phí chuyển đổi trả góp qua thẻ tín dụng (tham khảo)",
+  "price": 0,
+  "duration": "1 lần",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd33"
+  },
+  "name": "Hỗ trợ kỹ thuật tại nhà",
+  "description": "Kỹ thuật viên đến xử lý sự cố mạng, máy in, máy tính",
+  "price": 200000,
+  "duration": "1 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd34"
+  },
+  "name": "Tạo tài khoản Apple ID/Google",
+  "description": "Hỗ trợ tạo tài khoản, bảo mật 2 lớp",
+  "price": 0,
+  "duration": "1 lần",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd35"
+  },
+  "name": "Bơm gas máy lạnh R32",
+  "description": "Nạp bổ sung gas R32 thân thiện môi trường (tính theo PSI)",
+  "price": 150000,
+  "duration": "1 lần",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd36"
+  },
+  "name": "Bảo dưỡng quạt hơi nước",
+  "description": "Vệ sinh tấm làm mát, bể chứa nước, tra dầu motor",
+  "price": 120000,
+  "duration": "1 giờ",
+  "type": "addon",
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "692777a5d7e63f5c4595cd37"
+  },
+  "name": "Gói dịch vụ Test (Ẩn)",
+  "description": "Gói dùng để kiểm tra hệ thống",
+  "price": 1000,
+  "duration": "1 phút",
+  "type": "addon",
+  "isActive": false
+}]

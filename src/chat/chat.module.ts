@@ -2,13 +2,12 @@
 import { Module } from '@nestjs/common';
 import { ChatService } from './chat.service';
 import { ChatController } from './chat.controller';
+import { ConfigModule } from '@nestjs/config';
 import { ProductsModule } from '../products/products.module';
-import { SubcategoriesModule } from '../subcategories/subcategories.module';
-import { BrandsModule } from '../brands/brands.module';
 
 @Module({
-  imports: [ProductsModule, SubcategoriesModule, BrandsModule], // Thêm các module cần thiết
-  providers: [ChatService],
+  imports: [ConfigModule, ProductsModule], // Thêm ProductsModule để ChatService có thể dùng ProductsService
   controllers: [ChatController],
+  providers: [ChatService],
 })
 export class ChatModule {}
