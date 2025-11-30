@@ -269,10 +269,6 @@ export class ProductsService {
     const [items, total] = await Promise.all([
       this.productModel
         .find(filter)
-        .populate('brandId')
-        .populate('servicePackageIds')
-        .populate('categoryId')
-        .populate('subcategoryId')
         .sort(sort as any)
         .skip(skip)
         .limit(limit)
