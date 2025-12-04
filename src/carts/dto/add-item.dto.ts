@@ -17,4 +17,13 @@ export class AddItemDto {
   @IsInt()
   @Min(1)
   quantity: number
+
+  @IsOptional()
+  servicePackages?: {
+    _id: string;
+    name: string;
+    price: number;
+    duration?: string;
+    type?: string;
+  }[];
 }
