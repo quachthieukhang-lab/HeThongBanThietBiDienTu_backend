@@ -91,22 +91,14 @@ export class ProductsController {
   // Service Packages (nested under product)
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.Admin, UserRole.Staff)
-  @Post(':id/service-packages')
-  addServicePackages(
+  @Patch(':id/service-packages')
+  updateServicePackages(
     @Param('id') productId: string,
     @Body() dto: ManageServicePackagesDto,
   ) {
-    return this.products.addServicePackages(productId, dto.servicePackageIds);
-  }
-
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(UserRole.Admin, UserRole.Staff)
-  @Delete(':id/service-packages')
-  removeServicePackages(
-    @Param('id') productId: string,
-    @Body() dto: ManageServicePackagesDto,
-  ) {
-    return this.products.removeServicePackages(productId, dto.servicePackageIds);
+    // This assumes you have a method in your service to handle the update logic
+    // (e.g., replacing the old list of packages with the new one).
+    return this.products.updateServicePackages(productId, dto.servicePackageIds);
   }
 
 

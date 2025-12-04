@@ -153,25 +153,16 @@ export class ProductsService {
 
   // ---------------- Products ----------------
 
-  async addServicePackages(productId: string, servicePackageIds: string[]) {
-    const product = await this.productModel.findByIdAndUpdate(
-      productId,
-      { $addToSet: { servicePackageIds: { $each: servicePackageIds } } },
-      { new: true },
-    ).lean();
+  async updateServicePackages(productId: string, servicePackageIds: string[]) {
+    const productObjectId = this.toId(productId);
+    // Optional: Validate each service package ID
+    const servicePackageObjectIds = servicePackageIds.map(id => this.toId(id));
 
-    if (!product) {
-      throw new NotFoundException(`Product with ID "${productId}" not found`);
-    }
-    return product;
-  }
-
-  async removeServicePackages(productId: string, servicePackageIds: string[]) {
     const product = await this.productModel.findByIdAndUpdate(
-      productId,
-      { $pullAll: { servicePackageIds: servicePackageIds } },
+      productObjectId,
+      { $set: { servicePackageIds: servicePackageObjectIds } },
       { new: true },
-    ).lean();
+    ).populate('servicePackageIds').lean();
 
     if (!product) {
       throw new NotFoundException(`Product with ID "${productId}" not found`);

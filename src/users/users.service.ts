@@ -174,7 +174,7 @@ export class UsersService {
 
   async remove(id: string) {
     const doc = await this.userModel
-      .findByIdAndUpdate(this.toId(id), { $set: { status: UserStatus.Deleted } }, { new: true })
+      .findByIdAndUpdate(this.toId(id), { $set: { status: UserStatus.Blocked } }, { new: true })
       .select('-passwordHash')
       .lean()
     if (!doc) throw new NotFoundException('User not found')
