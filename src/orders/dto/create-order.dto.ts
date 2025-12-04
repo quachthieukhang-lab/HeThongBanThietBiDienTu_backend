@@ -1,14 +1,22 @@
-import { IsEnum, IsMongoId, IsOptional, IsString } from 'class-validator'
-import { PaymentMethod } from '../schemas/order.schema'
+import { IsEnum, IsMongoId, IsOptional, IsString, IsNumber } from 'class-validator';
+import { PaymentMethod } from '../schemas/order.schema';
 
 export class CreateOrderDto {
   @IsMongoId()
-  addressId: string
+  addressId: string;
 
   @IsEnum(PaymentMethod)
-  paymentMethod: PaymentMethod
+  paymentMethod: PaymentMethod;
 
   @IsOptional()
   @IsString()
-  notes?: string
+  notes?: string;
+
+  @IsOptional()
+  @IsString()
+  promoCode?: string; // tên mã giảm giá
+
+  @IsOptional()
+  @IsNumber()
+  totalPrice?: number; // giá đã giảm
 }

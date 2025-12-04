@@ -24,7 +24,10 @@ export class CartsService {
   private recomputeTotals(cart: Cart) {
     const items = cart.items || [];
     cart.totalQuantity = items.reduce((s, it) => s + (it.quantity || 0), 0);
-    cart.totalPrice = items.reduce((s, it) => s + (it.quantity * it.price || 0), 0);
+    cart.totalPrice = items.reduce((s, it) => {
+      const serviceCost = (it.servicePackages || []).reduce((a, sp) => a + sp.price, 0);
+      return s + it.quantity * (it.price + serviceCost);
+    }, 0);
   }
   private async loadSnapshot(productId: Types.ObjectId, variantId?: Types.ObjectId) {
     if (variantId) {
@@ -90,32 +93,24 @@ export class CartsService {
   }
 
   /** POST /carts/items (thêm/merge) */
-  async addItem(payload: {
-    userId?: string
-    sessionId?: string
-    productId: string
-    variantId?: string
-    quantity: number
-  }) {
-    const uid = this.toId(payload.userId);
+  async addItem(payload) {
+    const uid = this.toId(payload.userId)
     const pid = this.toId(payload.productId)!;
     const vid = this.toId(payload.variantId);
-
-    if (!payload.quantity || payload.quantity < 1) {
-      throw new BadRequestException('Quantity must be >= 1');
-    }
+    const servicePackages = payload.servicePackages || [];
 
     const cart = await this.findOrCreateActiveCart(uid, payload.sessionId);
 
-    // Tìm item cùng khoá productId + variantId
-    const key = (it: any) =>
-      it.productId.equals(pid) && String(it.variantId || '') === String(vid || '')
-    const idx = cart.items.findIndex(key);
+    const idx = cart.items.findIndex(
+      (it) => it.productId.equals(pid) && String(it.variantId || '') === String(vid || ''),
+    );
 
     if (idx >= 0) {
+      cart.items[idx].servicePackages = servicePackages; // Ghi đè gói dịch vụ
       cart.items[idx].quantity += payload.quantity;
     } else {
       const snap = await this.loadSnapshot(pid, vid);
+
       cart.items.push({
         productId: pid,
         variantId: vid,
@@ -123,14 +118,16 @@ export class CartsService {
         thumbnail: snap.thumbnail,
         price: snap.price,
         quantity: payload.quantity,
+        servicePackages,
         facets: snap.facets,
-      } as any);
+      });
     }
 
     this.recomputeTotals(cart);
     await cart.save();
     return cart.toObject();
   }
+
 
   /** PATCH /carts/items (set số lượng; =0 thì xoá) */
   async setItemQty(payload: {
@@ -210,9 +207,10 @@ export class CartsService {
         const idx = user.items.findIndex(
           (ui) =>
             ui.productId.equals(gi.productId) &&
-            String(ui.variantId || '') === String(gi.variantId || ''),
+            String(ui.variantId || '') === String(gi.variantId || '')
         )
         if (idx >= 0) {
+          user.items[idx].servicePackages = gi.servicePackages;
           user.items[idx].quantity += gi.quantity;
         } else {
           user.items.push(gi as any);

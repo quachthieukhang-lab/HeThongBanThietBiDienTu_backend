@@ -26,44 +26,47 @@ export class OrdersService {
   ) {}
 
   async create(dto: CreateOrderDto, user: UserPayload) {
-    const userId = new Types.ObjectId(user.sub)
+    const userId = new Types.ObjectId(user.sub);
 
-    // 1. Lấy giỏ hàng và địa chỉ
     const [cart, address] = await Promise.all([
       this.cartModel.findOne({ userId, status: 'active' }).exec(),
       this.addressModel.findOne({ _id: dto.addressId, userId }).exec(),
-    ])
+    ]);
 
-    if (!cart || cart.items.length === 0) {
-      throw new BadRequestException('Your cart is empty.')
-    }
-    if (!address) {
-      throw new NotFoundException('Address not found or does not belong to you.')
-    }
+    if (!cart || cart.items.length === 0) throw new BadRequestException('Your cart is empty.');
+    if (!address) throw new NotFoundException('Address not found or does not belong to you.');
 
     // 2. Kiểm tra tồn kho và giảm số lượng
     for (const item of cart.items) {
       if (item.variantId) {
-        const variant = await this.variantModel.findById(item.variantId)
+        const variant = await this.variantModel.findById(item.variantId);
         if (!variant || variant.stock < item.quantity) {
-          throw new BadRequestException(`Product "${item.name}" is out of stock.`)
+          throw new BadRequestException(`Product "${item.name}" is out of stock.`);
         }
-        variant.stock -= item.quantity
-        await variant.save() // Cần transaction ở đây cho production
+        variant.stock -= item.quantity;
+        await variant.save();
       }
     }
-
     // 3. Tạo đơn hàng
-    const subTotal = cart.totalPrice
-    const shippingFee = 30000 // Logic tính phí vận chuyển có thể phức tạp hơn
-    const totalPrice = subTotal + shippingFee
+    const subTotal = cart.totalPrice;
+    const shippingFee = 30000;
+    const totalPrice = dto.totalPrice ?? subTotal + shippingFee;
 
     const newOrder = new this.orderModel({
       userId,
-      code: `DH-${Date.now()}`, // Cần cơ chế tạo mã tốt hơn
-      items: cart.items, // Snapshot
+      code: `DH-${Date.now()}`,
+      // Map items để đảm bảo có servicePackages
+      items: cart.items.map((item) => ({
+        productId: item.productId,
+        variantId: item.variantId,
+        name: item.name,
+        thumbnail: item.thumbnail,
+        price: item.price,
+        quantity: item.quantity,
+        servicePackages: item.servicePackages || [], // ĐẢM BẢO COPY SERVICE PACKAGES
+        facets: item.facets,
+      })),
       shippingAddress: {
-        // Snapshot
         fullName: address.fullName,
         phone: address.phone,
         line1: address.line1,
@@ -76,19 +79,20 @@ export class OrdersService {
       totalPrice,
       paymentMethod: dto.paymentMethod,
       notes: dto.notes,
-      status: OrderStatus.Processing, // Giả sử thanh toán thành công
-    })
+      promoCode: dto.promoCode || null,
+      status: OrderStatus.Processing,
+    });
 
-    // 4. Đánh dấu giỏ hàng là đã hoàn thành
-    cart.status = 'ordered'
-    cart.items = []
-    cart.totalPrice = 0
-    cart.totalQuantity = 0
+    // Cập nhật cart
+    cart.status = 'ordered';
+    cart.items = [];
+    cart.totalPrice = 0;
+    cart.totalQuantity = 0;
 
-    await Promise.all([newOrder.save(), cart.save()])
-
-    return newOrder.toObject()
+    await Promise.all([newOrder.save(), cart.save()]);
+    return newOrder.toObject();
   }
+
 
   async findAll(user: UserPayload, query: any) {
     const filter: any = {}

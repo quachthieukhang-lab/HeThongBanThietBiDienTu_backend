@@ -2,19 +2,40 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { Document, Types } from 'mongoose'
 
 export enum OrderStatus {
-  Pending = 'pending', // Chờ xác nhận thanh toán
-  Processing = 'processing', // Đã xác nhận, đang xử lý
-  Shipped = 'shipped', // Đang giao hàng
-  Delivered = 'delivered', // Đã giao thành công
-  Cancelled = 'cancelled', // Đã hủy
-  Refunded = 'refunded', // Đã hoàn tiền
+  Pending = 'pending',
+  Processing = 'processing', 
+  Shipped = 'shipped',
+  Delivered = 'delivered',
+  Cancelled = 'cancelled',
+  Refunded = 'refunded',
 }
 
 export enum PaymentMethod {
-  COD = 'cod', // Trả tiền khi nhận hàng
-  CreditCard = 'credit_card', // Thẻ tín dụng
-  PayPal = 'paypal', // PayPal
+  COD = 'cod',
+  CreditCard = 'credit_card',
+  PayPal = 'paypal',
 }
+
+// Sub-schema cho Service Package
+@Schema({ _id: false })
+class ServicePackage {
+  @Prop({ required: true })
+  _id: string;
+
+  @Prop({ required: true })
+  name: string;
+
+  @Prop({ required: true })
+  price: number;
+
+  @Prop()
+  description?: string;
+
+  @Prop()
+  duration?: string;
+}
+
+const ServicePackageSchema = SchemaFactory.createForClass(ServicePackage);
 
 // Snapshot của một item trong giỏ hàng tại thời điểm đặt hàng
 @Schema({ _id: false })
@@ -37,9 +58,14 @@ class OrderItem {
   @Prop({ required: true })
   quantity: number
 
+  // THÊM FIELD SERVICE PACKAGES VÀO ĐÂY
+  @Prop({ type: [ServicePackageSchema], default: [] })
+  servicePackages?: ServicePackage[];
+
   @Prop({ type: Object })
   facets?: Record<string, any>
 }
+
 const OrderItemSchema = SchemaFactory.createForClass(OrderItem)
 
 // Snapshot của địa chỉ giao hàng
@@ -72,6 +98,7 @@ class ShippingAddress {
   @Prop({ required: true, default: 'VN' })
   country: string
 }
+
 const ShippingAddressSchema = SchemaFactory.createForClass(ShippingAddress)
 
 @Schema({ timestamps: true })
@@ -80,7 +107,7 @@ export class Order extends Document {
   userId: Types.ObjectId
 
   @Prop({ required: true, unique: true, index: true })
-  code: string // Mã đơn hàng, ví dụ: 'DH-123456'
+  code: string
 
   @Prop({ type: [OrderItemSchema], required: true })
   items: OrderItem[]
@@ -89,13 +116,13 @@ export class Order extends Document {
   shippingAddress: ShippingAddress
 
   @Prop({ required: true })
-  subTotal: number // Tổng tiền hàng
+  subTotal: number
 
   @Prop({ default: 0 })
-  shippingFee: number // Phí vận chuyển
+  shippingFee: number
 
   @Prop({ required: true })
-  totalPrice: number // Tổng cộng
+  totalPrice: number
 
   @Prop({ type: String, enum: PaymentMethod, required: true })
   paymentMethod: PaymentMethod
@@ -105,7 +132,17 @@ export class Order extends Document {
 
   @Prop()
   notes?: string
+  
+  // Có thể thêm promotion fields nếu cần
+  @Prop()
+  promoCode?: string
+  
+  @Prop({ type: Object })
+  promotion?: {
+    code: string;
+    discountAmount: number;
+    discountType: string;
+  };
 }
 
 export const OrderSchema = SchemaFactory.createForClass(Order)
-

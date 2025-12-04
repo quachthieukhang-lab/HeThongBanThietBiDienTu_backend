@@ -23,6 +23,7 @@ export class ChatService {
     let contextData = 'Không tìm thấy thông tin sản phẩm phù hợp trong hệ thống.';
     try {
       // Sử dụng phương thức search đã có trong ProductsService
+      
       const products = await this.productsService.search({ keyword: dto.message });
 
       if (products && products.length > 0) {

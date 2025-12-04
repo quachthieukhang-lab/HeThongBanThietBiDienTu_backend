@@ -362,7 +362,7 @@ export class ProductsService {
         { slug: regex },
       ];
     }
-    return this.productModel
+    const results = await this.productModel
       .find(filter)
       .populate('brandId')
       .populate('servicePackageIds')
@@ -370,6 +370,10 @@ export class ProductsService {
       .populate('subcategoryId')
       .populate('templateId')
       .lean();
+
+    console.log('Search results:', results);
+
+    return results;
   }
 
   async removeHard(id: string) {

@@ -44,6 +44,7 @@ export class ReviewsService {
   async create(dto: CreateReviewDto, user: UserPayload, files?: Express.Multer.File[]) {
     const userId = new Types.ObjectId(user.sub)
     const productId = new Types.ObjectId(dto.productId)
+    const orderId = new Types.ObjectId(dto.orderId)
 
     // 1. Kiểm tra xem user đã mua sản phẩm này chưa
     const order = await this.orderModel.findOne({
@@ -65,6 +66,8 @@ export class ReviewsService {
       const newReview = await this.reviewModel.create({
         ...dto,
         userId,
+        productId,
+        orderId,
         images: imageUrls,
         status: ReviewStatus.Pending, // Mặc định chờ duyệt
       })

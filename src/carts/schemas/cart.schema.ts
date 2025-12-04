@@ -23,6 +23,27 @@ export class CartItem {
 
   @Prop({ type: Object })
   facets?: Record<string, any>
+
+  @Prop({
+    type: [
+      {
+        _id: { type: Types.ObjectId, required: true },
+        name: { type: String, required: true },
+        price: { type: Number, required: true },
+        duration: { type: String },
+        type: { type: String },
+      },
+    ],
+    default: [],
+  })
+  servicePackages?: {
+    _id: Types.ObjectId;
+    name: string;
+    price: number;
+    duration?: string;
+    type?: string; 
+  }[];
+
 }
 
 export const CartItemSchema = SchemaFactory.createForClass(CartItem)
