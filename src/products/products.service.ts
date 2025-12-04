@@ -14,6 +14,7 @@ export class SearchChatDto {
 }
 
 import { UploadService } from '../upload/upload.service';
+import { StringUtil } from '@common/utils/string.util';
 
 // Tối thiểu hoá AttributeTemplate để lấy rules
 type AttrType = 'string' | 'number' | 'boolean' | 'enum' | 'multienum';
@@ -53,13 +54,6 @@ export class ProductsService {
     return new Types.ObjectId(id);
   }
 
-  private slugify(input: string) {
-    return input
-      .toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/(^-|-$)+/g, '');
-  }
 
   /** Lấy template đang active theo subcategory */
   private async getActiveTemplate(subcategoryId: Types.ObjectId) {
@@ -193,7 +187,8 @@ export class ProductsService {
     const subcategoryId = this.toId(dto.subcategoryId);
     const brandId = dto.brandId ? this.toId(dto.brandId) : undefined;
 
-    const slug = dto.slug?.trim() || this.slugify(dto.name);
+    const slug = dto.slug?.trim() || StringUtil.slugify(dto.name);
+    console.log(slug)
     const dup = await this.productModel.exists({ slug });
     if (dup) throw new BadRequestException('Slug already exists');
 
@@ -297,7 +292,7 @@ export class ProductsService {
     const update: any = {};
     if (dto.name !== undefined) update.name = dto.name.trim();
     if (dto.slug !== undefined) {
-      const slug = dto.slug.trim() || this.slugify(dto.name ?? '');
+      const slug = dto.slug.trim() || StringUtil.slugify(dto.name ?? '');
       const dup = await this.productModel.exists({ _id: { $ne: _id }, slug });
       if (dup) throw new BadRequestException('Slug already exists');
       update.slug = slug;

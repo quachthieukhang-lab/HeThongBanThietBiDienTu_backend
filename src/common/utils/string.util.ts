@@ -11,6 +11,7 @@ export class StringUtil {
 
     return input
       .toLowerCase()
+      .replace(/đ/g, 'd')
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '') // Remove accents
       .replace(/[^a-z0-9\s-]+/g, '') // Remove invalid chars

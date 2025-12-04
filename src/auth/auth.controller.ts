@@ -1,5 +1,5 @@
 // src/auth/auth.controller.ts
-import { Body, Controller, Get, Post, Req, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Req, UseGuards, NotFoundException } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
 import { LocalAuthGuard } from './guards/local-auth.guard';
@@ -7,10 +7,14 @@ import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { JwtRefreshGuard } from './guards/jwt-refresh.guard';
 import { LoginDto } from './dto/login.dto';
 import { ChangePasswordDto } from './dto/change-password.dto';
+import { UsersService } from '@users/users.service';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private auth: AuthService) {}
+  constructor(
+    private auth: AuthService,
+    private usersService: UsersService, // Giả sử bạn có UsersService
+  ) {}
 
   @Post('register')
   register(@Body() dto: RegisterDto) {
@@ -27,9 +31,14 @@ export class AuthController {
   // Lấy profile nhanh từ access token
   @UseGuards(JwtAuthGuard)
   @Get('me')
-  me(@Req() req: any) {
+  async me(@Req() req: any) {
     // req.user là payload của access token
-    return req.user;
+    const userId = req.user.sub;
+    const user = await this.usersService.findOne(userId); // Giả sử có phương thức findOne(id)
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+    return user; // Trả về toàn bộ thông tin user, bao gồm cả 'name'
   }
 
   @UseGuards(JwtAuthGuard)
