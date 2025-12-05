@@ -33,7 +33,7 @@ export class ChatHistoryService {
 
   async getConversationHistory(
     userId: string,
-    limit: number = 10, // Giới hạn số lượng tin nhắn lịch sử để tránh vượt quá token limit của AI
+    limit: number = 20, // Giới hạn số lượng tin nhắn lịch sử để tránh vượt quá token limit của AI
   ): Promise<ChatCompletionMessageParam[]> {
     try {
       const history = await this.chatHistoryModel
