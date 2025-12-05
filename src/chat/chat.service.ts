@@ -26,12 +26,6 @@ export class ChatService {
     });
   }
 
-  /**
-   * BƯỚC 1: Phân tích ý định của người dùng bằng AI.
-   * AI sẽ phân tích câu hỏi và trả về một đối tượng JSON chứa từ khóa và bộ lọc.
-   * @param userMessage - Tin nhắn của người dùng.
-   * @returns - Một đối tượng JSON đã được phân tích.
-   */
   private async analyzeUserIntent(userMessage: string): Promise<AnalyzedQuery> {
     const analysisPrompt = `Bạn là một hệ thống phân tích truy vấn thông minh. Nhiệm vụ của bạn là đọc tin nhắn của người dùng và chuyển đổi nó thành một đối tượng JSON để tìm kiếm sản phẩm trong cơ sở dữ liệu.
 Đối tượng JSON phải có cấu trúc: { "keywords": "string", "filters": { "brand": "string", "price_range": "string" } }.
@@ -58,7 +52,7 @@ Ví dụ:
           { role: 'system', content: analysisPrompt },
           { role: 'user', content: userMessage },
         ],
-        response_format: { type: 'json_object' }, // Yêu cầu AI trả về JSON
+        response_format: { type: 'json_object' },
       });
 
       const result = completion.choices[0].message.content;
@@ -66,7 +60,6 @@ Ví dụ:
         this.logger.log(`Analyzed user intent for "${userMessage}": ${result}`);
         return JSON.parse(result);
       }
-      // If result is null, throw an error to be caught by the catch block below.
       throw new Error('AI analysis returned empty content.');
     } catch (error) {
       this.logger.error('Failed to analyze user intent. Falling back to basic search.', error);
@@ -75,11 +68,6 @@ Ví dụ:
     }
   }
 
-  /**
-   * BƯỚC 2: Truy xuất dữ liệu từ DB dựa trên kết quả phân tích.
-   * @param query - Kết quả phân tích từ `analyzeUserIntent`.
-   * @returns - Chuỗi ngữ cảnh chứa thông tin sản phẩm hoặc thông báo không tìm thấy.
-   */
   private async getContextFromDb(query: AnalyzedQuery): Promise<string> {
     try {
       // TODO: Nâng cấp `productsService.search` để xử lý các bộ lọc phức tạp hơn từ `query.filters`
@@ -114,13 +102,6 @@ Ví dụ:
     }
   }
 
-  /**
-   * BƯỚC 3: Gọi AI lần 2 với ngữ cảnh đã được chuẩn bị để sinh câu trả lời.
-   * @param userId - ID của người dùng để lấy lịch sử trò chuyện.
-   * @param contextData - Dữ liệu ngữ cảnh từ DB.
-   * @param userMessage - Câu hỏi gốc của người dùng.
-   * @returns - Phản hồi từ AI.
-   */
   private async callAI(userId: string, contextData: string, userMessage: string) {
     const systemPrompt = `Bạn là một trợ lý ảo bán hàng chuyên nghiệp và thân thiện của cửa hàng điện máy.
 NGUYÊN TẮC VÀNG:
@@ -134,20 +115,19 @@ ${contextData}
 --- KẾT THÚC DỮ LIỆU ---
 `;
 
-    // Lấy lịch sử trò chuyện của người dùng
+    // get user history
     const conversationHistory = await this.chatHistoryService.getConversationHistory(userId);
 
-    // Xây dựng mảng messages cho AI, bao gồm system prompt, lịch sử và câu hỏi hiện tại
     const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
       { role: 'system', content: systemPrompt },
-      ...conversationHistory, // Thêm lịch sử trò chuyện
-      { role: 'user', content: userMessage }, // Thêm câu hỏi hiện tại của người dùng
+      ...conversationHistory,
+      { role: 'user', content: userMessage },
     ];
 
     try {
       const completion = await this.client.chat.completions.create({
         model: 'deepseek/deepseek-chat',
-        messages: messages, // Sử dụng mảng messages đã có lịch sử
+        messages: messages,
       });
 
       return completion;
@@ -157,22 +137,12 @@ ${contextData}
     }
   }
 
-  /**
-   * Luồng chat chính, điều phối 2 bước: lấy ngữ cảnh và gọi AI.
-   */
   async chat(dto: CreateChatDto, userId: string) {
-    // BƯỚC 1: AI phân tích ý định của người dùng
     const analyzedQuery = await this.analyzeUserIntent(dto.message);
-
-    // BƯỚC 2: Truy xuất dữ liệu từ DB làm ngữ cảnh
     const contextData = await this.getContextFromDb(analyzedQuery);
-
-    // BƯỚC 3: Gọi AI lần 2 để sinh câu trả lời hoàn chỉnh, truyền userId để lấy lịch sử
     const completion = await this.callAI(userId, contextData, dto.message);
-
     const aiResponseContent = completion.choices[0]?.message?.content || 'Xin lỗi, tôi chưa thể xử lý yêu cầu của bạn lúc này.';
 
-    // LƯU LỊCH SỬ TRÒ CHUYỆN (USER & ASSISTANT) ĐỒNG THỜI
     await Promise.all([
       this.chatHistoryService.saveMessage(userId, 'user', dto.message),
       this.chatHistoryService.saveMessage(userId, 'assistant', aiResponseContent),
