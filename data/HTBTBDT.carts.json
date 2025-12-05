@@ -229,35 +229,17 @@
   "userId": {
     "$oid": "691fe50d1d54cb1d10be1409"
   },
-  "items": [
-    {
-      "productId": {
-        "$oid": "672b111a9b01c38260b9150a"
-      },
-      "variantId": {
-        "$oid": "672b111a9b01c38260b9161f"
-      },
-      "name": "Micro không dây JBL (Dòng VM300)",
-      "thumbnail": "uploads/products/1763566252565-ef2f414c-29ec-4baf-9e46-f3885236d3c5.jpg",
-      "price": 990000,
-      "quantity": 1,
-      "facets": {
-        "brand": "Shure",
-        "type": "Có dây",
-        "connection": "XLR"
-      }
-    }
-  ],
-  "totalQuantity": 1,
-  "totalPrice": 990000,
-  "status": "active",
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
   "createdAt": {
     "$date": "2025-11-21T04:07:47.405Z"
   },
   "updatedAt": {
-    "$date": "2025-11-21T04:07:47.408Z"
+    "$date": "2025-12-05T06:50:26.936Z"
   },
-  "__v": 1
+  "__v": 6
 },
 {
   "_id": {
@@ -315,4 +297,132 @@
     "$date": "2025-11-22T17:55:46.404Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69281ccc16a953322f7818ec"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-27T09:41:32.570Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-27T09:41:47.985Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69281cf816a953322f781976"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-27T09:42:16.715Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-27T09:42:34.396Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69281e2016a953322f781c6e"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-11-27T09:47:12.895Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-27T09:47:18.345Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "693148cb98e00dd767672cc6"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-04T08:39:39.227Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T15:08:23.670Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "6931dec14bde1a7389b793ec"
+  },
+  "userId": {
+    "$oid": "6931dec14bde1a7389b793e9"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-12-04T19:19:29.514Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T19:19:29.514Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69327b861ce81a6092725b78"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "693283421ce81a6092726665"
+      },
+      "variantId": {
+        "$oid": "693284161ce81a6092726786"
+      },
+      "name": "Máy giặt Samsung AI Ecobubble (Dòng AI-2024)",
+      "thumbnail": "uploads/products/1764918082663-b57d48e0-d42d-4e2c-ba92-166c333e6f96.webp",
+      "price": 11000000,
+      "quantity": 1,
+      "servicePackages": []
+    }
+  ],
+  "totalQuantity": 1,
+  "totalPrice": 11000000,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-12-05T06:28:22.463Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:12:22.619Z"
+  },
+  "__v": 5
 }]

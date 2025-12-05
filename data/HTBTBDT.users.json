@@ -16,7 +16,7 @@
     "$date": "2025-11-05T16:12:47.502Z"
   },
   "updatedAt": {
-    "$date": "2025-11-08T06:04:22.652Z"
+    "$date": "2025-12-04T15:29:50.160Z"
   },
   "__v": 0,
   "refreshTokenHash": "$2b$10$7zVJ8AdSfnGDc.OixV2u4eInNZzp45lT7SqtiNuoqMWHBOqEBUfCK"
@@ -38,7 +38,7 @@
     "$date": "2025-11-06T06:30:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:30:00.000Z"
+    "$date": "2025-12-04T15:29:16.453Z"
   }
 },
 {
@@ -138,10 +138,10 @@
     "$date": "2025-11-11T11:53:16.582Z"
   },
   "updatedAt": {
-    "$date": "2025-11-26T20:10:50.549Z"
+    "$date": "2025-12-05T06:50:59.550Z"
   },
   "__v": 0,
-  "refreshTokenHash": "$2b$10$cH4iGVYIY441zwvJmHj2TO.4Y.5VWwiWRFkSGlG8QclveK.QCdWSC"
+  "refreshTokenHash": "$2b$10$djmQVoRFSMsgpsryn2Ba5elws4IVHQz.JNBW7jh1Bj0sG4dSFJMu6"
 },
 {
   "_id": {
@@ -161,10 +161,10 @@
     "$date": "2025-11-21T04:05:33.363Z"
   },
   "updatedAt": {
-    "$date": "2025-11-21T04:05:33.416Z"
+    "$date": "2025-12-05T06:50:14.661Z"
   },
   "__v": 0,
-  "refreshTokenHash": "$2b$10$3kvEWeKR/ZV4xiL6rNcqt.U3XXVpqETwW8h96llCEcX4P7gIeSFEK"
+  "refreshTokenHash": "$2b$10$LF6dmPeorrLZs4QrUDSfku6sEH3FFN90rDHh5c8.nKRGf6W76zgfC"
 },
 {
   "_id": {
@@ -176,7 +176,7 @@
   "roles": [
     "customer"
   ],
-  "status": "active",
+  "status": "blocked",
   "phone": "0942766193",
   "avatarUrl": null,
   "defaultAddressId": null,
@@ -184,7 +184,7 @@
     "$date": "2025-11-22T17:55:46.354Z"
   },
   "updatedAt": {
-    "$date": "2025-11-22T17:55:46.354Z"
+    "$date": "2025-12-04T19:14:41.068Z"
   },
   "__v": 0
 }]

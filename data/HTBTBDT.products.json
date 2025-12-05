@@ -1,444 +1,492 @@
 [{
   "_id": {
-    "$oid": "672b111a9b01c38260b91501"
+    "$oid": "692eaafae7797c7ea379c24d"
   },
-  "name": "Máy lạnh Panasonic Inverter 1 HP CU/CS-PU9XKH-8M",
-  "slug": "may-lanh-panasonic-inverter-1-hp-pu9xkh",
+  "name": "Máy lạnh Samsung Inverter AR10TYHYCWKNSV",
+  "slug": "may-lanh-samsung-inverter-ar10tyhycwknsv",
   "categoryId": {
     "$oid": "672b111a9b01c38260b912a2"
   },
   "subcategoryId": {
     "$oid": "672b111a9b01c38260b912b1"
   },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91401"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Malaysia",
-    "warranty_months": 12
-  },
-  "thumbnail": "uploads/products/may-lanh-panasonic-1.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:40:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-19T14:58:38.899Z"
-  },
   "servicePackageIds": [
     {
-      "$oid": "691dd9dc5767e3acfb4c498f"
+      "$oid": "69328e501ce81a609272776a"
+    },
+    {
+      "$oid": "69328e781ce81a609272777d"
     }
-  ]
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 4300000,
+  "priceTo": 5300000,
+  "createdAt": {
+    "$date": "2025-12-02T09:01:46.310Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:49:59.833Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764666139450-c5fe7367-ca31-426b-bb48-f92a5eccbe1a.jpg",
+  "variantFacetSummary": {},
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91002"
+  }
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91502"
+    "$oid": "692eafd6e7797c7ea379c7b1"
   },
-  "name": "Máy giặt LG Inverter 9 kg (Dòng FV1409S4W)",
-  "slug": "may-giat-lg-inverter-9-kg-fv1409s4w",
+  "name": "Máy lạnh Panasonic Inverter Cao Cấp Dòng XU (Model 2024)",
+  "slug": "may-lanh-panasonic-inverter-cao-cap-dong-xu-model-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e501ce81a609272776a"
+    },
+    {
+      "$oid": "69328e781ce81a609272777d"
+    }
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 3460000,
+  "priceTo": 5200000,
+  "createdAt": {
+    "$date": "2025-12-02T09:22:30.275Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:50:04.313Z"
+  },
+  "__v": 0,
+  "variantFacetSummary": {},
+  "thumbnail": "uploads/products/1764667585366-2404aa54-e8a7-41b5-9fc4-1815380a1b92.webp",
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91003"
+  }
+},
+{
+  "_id": {
+    "$oid": "692eb17ce7797c7ea379ca24"
+  },
+  "name": "Máy lạnh LG Dual Inverter Dòng V-WIN (Model 2024)",
+  "slug": "may-lang-lg-dual-inverter-dong-v-vwin-model-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 3200000,
+  "priceTo": 6300000,
+  "createdAt": {
+    "$date": "2025-12-02T09:29:32.155Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:50:07.677Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764667821944-4969b228-f215-4997-9264-418c10bac443.jpg",
+  "variantFacetSummary": {},
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91001"
+  }
+},
+{
+  "_id": {
+    "$oid": "693278a11ce81a609272599c"
+  },
+  "name": "Máy lạnh Daikin Inverter Cao Cấp Dòng FTKY (Model 2024)",
+  "slug": "may-lanh-daikin-cao-cap-dong-ftky-model-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91007"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 13000000,
+  "priceTo": 24000000,
+  "createdAt": {
+    "$date": "2025-12-05T06:16:01.843Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:50:17.671Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764915427735-8eb17597-29c8-4daf-9317-073596dee831.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "69327e191ce81a6092726022"
+  },
+  "name": "Máy lạnh Toshiba Inverter Daiseikai (Model 2024)",
+  "slug": "may-lanh-toshiba-inventer-daiseikai-model-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91015"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 12000000,
+  "priceTo": 12000000,
+  "createdAt": {
+    "$date": "2025-12-05T06:39:21.546Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:50:10.278Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764916761548-4886c650-573a-4c96-b12c-cd79fec0cdf8.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "69327efa1ce81a6092726197"
+  },
+  "name": "Máy lạnh AQUA Inverter Cao Cấp Dòng AQA-KCRV (Model 2024)",
+  "slug": "may-lanh-aqua-inventer-cao-cap-dong-aqa-kcrv-model-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b9100f"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 16000000,
+  "priceTo": 16000000,
+  "createdAt": {
+    "$date": "2025-12-05T06:43:06.089Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:49:55.400Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764916986091-446a7eda-4bf8-4842-97c7-4294251d9f9d.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "69327fc21ce81a6092726296"
+  },
+  "name": "Máy lạnh Casper Inverter Dòng GC (Model 2024)",
+  "slug": "may-lanh-casper-inventer-dong-gc-model-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b1"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91005"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
+  "templateId": {
+    "$oid": "692817b216a953322f78107b"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 13200000,
+  "priceTo": 21300000,
+  "createdAt": {
+    "$date": "2025-12-05T06:46:26.991Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:49:53.231Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764917203645-7f75e264-edbf-4b5e-b7e8-f6f4459921fb.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "693283421ce81a6092726665"
+  },
+  "name": "Máy giặt Samsung AI Ecobubble (Dòng AI-2024)",
+  "slug": "may-giac-samsung-ai-ecobuble-dong-ai-2024",
   "categoryId": {
     "$oid": "672b111a9b01c38260b912a2"
   },
   "subcategoryId": {
     "$oid": "672b111a9b01c38260b912b2"
   },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91002"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
   "templateId": {
-    "$oid": "672b111a9b01c38260b91402"
+    "$oid": "693281d21ce81a6092726526"
   },
   "templateVersion": 1,
-  "specs": {
-    "origin": "Việt Nam",
-    "warranty_months": 24
-  },
-  "thumbnail": "uploads/products/may-giat-lg-1.jpg",
+  "images": [],
   "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
+  "priceFrom": 9490000,
+  "priceTo": 11000000,
   "createdAt": {
-    "$date": "2025-11-06T05:41:00.000Z"
+    "$date": "2025-12-05T07:01:22.662Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:41:00.000Z"
-  }
+    "$date": "2025-12-05T07:50:25.962Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764918082663-b57d48e0-d42d-4e2c-ba92-166c333e6f96.webp",
+  "variantFacetSummary": {}
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91503"
+    "$oid": "693284941ce81a6092726870"
   },
-  "name": "Tủ lạnh Samsung Inverter 300L (Dòng RB30N4170BU/SV)",
-  "slug": "tu-lanh-samsung-inverter-300l",
+  "name": "Máy giặt Electrolux UltimateCare 500",
+  "slug": "may-giac-electrolux-ultimatecare-500",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b2"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91006"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e501ce81a609272776a"
+    },
+    {
+      "$oid": "69328e781ce81a609272777d"
+    }
+  ],
+  "templateId": {
+    "$oid": "693281d21ce81a6092726526"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 9500000,
+  "priceTo": 11500000,
+  "createdAt": {
+    "$date": "2025-12-05T07:07:00.229Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:49:50.870Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764918420231-91470630-c379-4419-be30-f7d76e08d8f6.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "6932857d1ce81a60927269f3"
+  },
+  "name": "Máy giặt Toshiba The Greatwaves (Lồng đứng)",
+  "slug": "may-giac-toshiba-the-greatwares-long-dung",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a2"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912b2"
+  },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91015"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
+  "templateId": {
+    "$oid": "693281d21ce81a6092726526"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 5690000,
+  "priceTo": 5690000,
+  "createdAt": {
+    "$date": "2025-12-05T07:10:53.158Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:49:47.900Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764918653159-f474ec6a-d23e-4922-8880-523b701c916a.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "69328cb21ce81a60927272e7"
+  },
+  "name": "Tủ lạnh Samsung Inverter 400L Multidoor (RF40A4010B4)",
+  "slug": "tu-lanh-samsung-inventer-400l-multidoor-rf40a010b4",
   "categoryId": {
     "$oid": "672b111a9b01c38260b912a2"
   },
   "subcategoryId": {
     "$oid": "672b111a9b01c38260b912b3"
   },
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91002"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "69328e781ce81a609272777d"
+    },
+    {
+      "$oid": "69328e501ce81a609272776a"
+    }
+  ],
   "templateId": {
-    "$oid": "672b111a9b01c38260b91403"
+    "$oid": "693287a91ce81a6092726d16"
   },
   "templateVersion": 1,
-  "specs": {
-    "origin": "Thái Lan",
-    "warranty_months": 24
-  },
-  "thumbnail": "uploads/products/tu-lanh-samsung-1.jpg",
+  "images": [],
   "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
+  "priceFrom": 21300000,
+  "priceTo": 21300000,
   "createdAt": {
-    "$date": "2025-11-06T05:42:00.000Z"
+    "$date": "2025-12-05T07:41:38.334Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:42:00.000Z"
-  }
+    "$date": "2025-12-05T07:49:39.710Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764920524975-9e5913e5-4edd-451a-8eb5-6dce373752ba.jpg",
+  "variantFacetSummary": {}
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91504"
+    "$oid": "69328d861ce81a609272754d"
   },
-  "name": "Máy sấy quần áo Electrolux 8.5 kg (Dòng EDV854J3WB)",
-  "slug": "may-say-electrolux-8-5-kg-edv854j3wb",
+  "name": "Tủ lạnh LG Inverter 519L Side by Side (GR-B256BL)",
+  "slug": "tu-lanh-lg-inverter-519l-side-by-side-gr-b256bl",
   "categoryId": {
     "$oid": "672b111a9b01c38260b912a2"
   },
   "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912b5"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91405"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Thái Lan",
-    "warranty_months": 24
-  },
-  "thumbnail": "uploads/products/may-say-electrolux-1.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:43:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:43:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91505"
-  },
-  "name": "Máy nước nóng Ariston 4500W (Dòng AURES SM45PE-VN)",
-  "slug": "may-nuoc-nong-ariston-sm45pe-vn",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912b6"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91406"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Việt Nam",
-    "warranty_months": 24
-  },
-  "thumbnail": "uploads/products/may-nuoc-nong-ariston-1.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:44:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:44:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91506"
-  },
-  "name": "Tủ mát Sanaky 400L (Dòng VH-408K)",
-  "slug": "tu-mat-sanaky-400l-vh-408k",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912b7"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91407"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Việt Nam",
-    "warranty_months": 24
-  },
-  "thumbnail": "uploads/products/tu-mat-sanaky-1.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:45:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:45:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91507"
-  },
-  "name": "Tủ đông Hòa Phát 205L (Dòng HCF 506S1Đ)",
-  "slug": "tu-dong-hoa-phat-205l-hcf-506s1d",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912b8"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91408"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Việt Nam",
-    "warranty_months": 30
-  },
-  "thumbnail": "uploads/products/tu-dong-hoa-phat-1.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:46:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:46:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91508"
-  },
-  "name": "Máy rửa chén Bosch (Dòng SMS4IVI01P)",
-  "slug": "may-rua-chen-bosch-sms4ivi01p",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912b9"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91409"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Đức",
-    "warranty_months": 36
-  },
-  "thumbnail": "uploads/products/1763566295836-6c46910a-8345-4b0d-8a23-c1e33ce4939a.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:47:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-19T15:31:35.843Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91509"
-  },
-  "name": "Loa thanh Soundbar Sony (Dòng HT-S20R)",
-  "slug": "loa-thanh-soundbar-sony-ht-s20r",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912ba"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b9140a"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Malaysia",
-    "warranty_months": 12
-  },
-  "thumbnail": "uploads/products/1763566274425-5102fa6f-4176-4e92-8c97-4ecfdb2427c3.jfif",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:48:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-19T15:31:14.427Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9150a"
-  },
-  "name": "Micro không dây JBL (Dòng VM300)",
-  "slug": "micro-khong-day-jbl-vm300",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912bb"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b9140b"
-  },
-  "templateVersion": 1,
-  "specs": {
-    "origin": "Trung Quốc",
-    "warranty_months": 12
-  },
-  "thumbnail": "uploads/products/1763566252565-ef2f414c-29ec-4baf-9e46-f3885236d3c5.jpg",
-  "isPublished": true,
-  "priceFrom": 990000,
-  "priceTo": 5490000,
-  "variantFacetSummary": {
-    "brand": [
-      "JBL",
-      "Shure"
-    ],
-    "type": [
-      "Không dây",
-      "Có dây"
-    ],
-    "connection": [
-      "Jack 6.3mm",
-      "XLR",
-      "Bluetooth"
-    ]
-  },
-  "createdAt": {
-    "$date": "2025-11-06T05:49:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-22T18:29:48.440Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91500"
-  },
-  "name": "Smart Tivi LG 4K (Dòng UR8050)",
-  "slug": "smart-tivi-lg-4k-dong-ur8050",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912b4"
+    "$oid": "672b111a9b01c38260b912b3"
   },
   "brandId": {
     "$oid": "672b111a9b01c38260b91001"
   },
-  "specs": {
-    "origin": "Indonesia",
-    "warranty_months": 24,
-    "os": "webOS 23"
-  },
-  "templateId": {
-    "$oid": "672b111a9b01c38260b91400"
-  },
-  "templateVersion": 1,
-  "images": [
-    "uploads/products/tivi-lg-1.jpg",
-    "uploads/products/tivi-lg-2.jpg"
+  "servicePackageIds": [
+    {
+      "$oid": "69328e501ce81a609272776a"
+    },
+    {
+      "$oid": "69328e781ce81a609272777d"
+    }
   ],
-  "thumbnail": "uploads/products/tivi-lg-thumbnail.jpg",
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "variantFacetSummary": {},
-  "createdAt": {
-    "$date": "2025-11-06T05:20:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-19T17:57:56.884Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692202591a7b70ac98ec35fa"
-  },
-  "name": "Test",
-  "slug": "test",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a2"
-  },
-  "subcategoryId": {
-    "$oid": "692201ea1a7b70ac98ec358e"
-  },
-  "brandId": {
-    "$oid": "672b111a9b01c38260b9100f"
-  },
-  "servicePackageIds": [],
   "templateId": {
-    "$oid": "692202081a7b70ac98ec35a3"
+    "$oid": "693287a91ce81a6092726d16"
   },
   "templateVersion": 1,
   "images": [],
   "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
+  "priceFrom": 14100000,
+  "priceTo": 14100000,
   "createdAt": {
-    "$date": "2025-11-22T18:35:05.458Z"
+    "$date": "2025-12-05T07:45:10.626Z"
   },
   "updatedAt": {
-    "$date": "2025-11-22T18:35:05.461Z"
+    "$date": "2025-12-05T07:49:22.526Z"
   },
   "__v": 0,
-  "thumbnail": "uploads/products/1763836505459-508d7b08-4eee-43a9-a6d9-029c314facaa.jpg"
-},
-{
-  "_id": {
-    "$oid": "692772f423a9a14ac66ffc7a"
-  },
-  "name": "Bàn ủi nhiệt",
-  "slug": "bàn ủi nhiệt",
-  "categoryId": {
-    "$oid": "672b111a9b01c38260b912a3"
-  },
-  "subcategoryId": {
-    "$oid": "672b111a9b01c38260b912cc"
-  },
-  "brandId": {
-    "$oid": "672b111a9b01c38260b9102c"
-  },
-  "servicePackageIds": [],
-  "templateId": {
-    "$oid": "6927723223a9a14ac66ffac0"
-  },
-  "templateVersion": 1,
-  "images": [],
-  "isPublished": true,
-  "priceFrom": 0,
-  "priceTo": 0,
-  "createdAt": {
-    "$date": "2025-11-26T21:36:52.930Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-26T21:48:20.888Z"
-  },
-  "__v": 0
+  "thumbnail": "uploads/products/1764920710627-561925c6-d026-4032-82db-67933c080e81.jpg",
+  "variantFacetSummary": {}
 }]

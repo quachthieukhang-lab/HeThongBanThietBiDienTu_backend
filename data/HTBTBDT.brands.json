@@ -68,14 +68,14 @@
   },
   "name": "Casper",
   "slug": "casper",
-  "logoUrl": "uploads/brands/casper-logo.png",
+  "logoUrl": "uploads/brands/1764916621438-4714302c-023e-4f00-b45f-ae233d180da5.png",
   "country": "Thái Lan",
   "websiteUrl": "https://www.casper.com/",
   "createdAt": {
     "$date": "2025-11-06T06:00:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:00:00.000Z"
+    "$date": "2025-12-05T06:37:01.439Z"
   }
 },
 {
@@ -183,22 +183,6 @@
   "logoUrl": "uploads/brands/hoaphat-logo.png",
   "country": "Việt Nam",
   "websiteUrl": "https://www.hoaphat.com.vn/",
-  "createdAt": {
-    "$date": "2025-11-06T06:00:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T06:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9100d"
-  },
-  "name": "Bosch",
-  "slug": "bosch",
-  "logoUrl": "uploads/brands/bosch-logo.png",
-  "country": "Đức",
-  "websiteUrl": "https://www.bosch.com/",
   "createdAt": {
     "$date": "2025-11-06T06:00:00.000Z"
   },
@@ -644,14 +628,14 @@
   },
   "name": "Canon",
   "slug": "canon",
-  "logoUrl": "uploads/brands/canon-logo.png",
+  "logoUrl": "uploads/brands/1764916598064-8ba0774b-7f9e-4142-ba0d-0cf33a61cd6d.png",
   "country": "Nhật Bản",
   "websiteUrl": "https://www.canon.com/",
   "createdAt": {
     "$date": "2025-11-06T06:15:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:15:00.000Z"
+    "$date": "2025-12-05T06:36:38.066Z"
   }
 },
 {
@@ -692,14 +676,14 @@
   },
   "name": "Braun",
   "slug": "braun",
-  "logoUrl": "uploads/brands/braun-logo.png",
+  "logoUrl": "uploads/brands/1764916425589-c523a85b-759e-4fa4-9e6a-57c068f1f907.png",
   "country": "Đức",
   "websiteUrl": "https://www.braun.com/",
   "createdAt": {
     "$date": "2025-11-06T06:15:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:15:00.000Z"
+    "$date": "2025-12-05T06:33:45.589Z"
   }
 },
 {
@@ -852,14 +836,14 @@
   },
   "name": "Bose",
   "slug": "bose",
-  "logoUrl": "uploads/brands/bose-logo.png",
+  "logoUrl": "uploads/brands/1764916400259-a477db03-b27d-4fc3-b322-4267423bd65d.png",
   "country": "Mỹ",
   "websiteUrl": "https://www.bose.com/",
   "createdAt": {
     "$date": "2025-11-06T06:15:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:15:00.000Z"
+    "$date": "2025-12-05T06:33:20.260Z"
   }
 },
 {
@@ -884,14 +868,14 @@
   },
   "name": "Corsair",
   "slug": "corsair",
-  "logoUrl": "uploads/brands/corsair-logo.png",
+  "logoUrl": "uploads/brands/1764916561961-da127a32-549e-45e2-b65a-16a93192fcff.png",
   "country": "Mỹ",
   "websiteUrl": "https://www.corsair.com/",
   "createdAt": {
     "$date": "2025-11-06T06:15:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:15:00.000Z"
+    "$date": "2025-12-05T06:36:01.961Z"
   }
 },
 {
@@ -1188,14 +1172,14 @@
   },
   "name": "Brother",
   "slug": "brother",
-  "logoUrl": "uploads/brands/brother-logo.png",
+  "logoUrl": "uploads/brands/1764916456907-5294b991-18f3-4891-99dd-b7948b988907.png",
   "country": "Nhật Bản",
   "websiteUrl": "https://www.brother.com/",
   "createdAt": {
     "$date": "2025-11-06T06:20:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:20:00.000Z"
+    "$date": "2025-12-05T06:34:16.907Z"
   }
 },
 {
@@ -1396,14 +1380,14 @@
   },
   "name": "Beurer",
   "slug": "beurer",
-  "logoUrl": "uploads/brands/beurer-logo.png",
+  "logoUrl": "uploads/brands/1764916327922-0d160ba1-93c2-44c1-b0bb-f1239dd529a1.png",
   "country": "Đức",
   "websiteUrl": "https://www.beurer.com/",
   "createdAt": {
     "$date": "2025-11-06T06:20:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:20:00.000Z"
+    "$date": "2025-12-05T06:32:07.934Z"
   }
 },
 {
@@ -1444,14 +1428,14 @@
   },
   "name": "COOCAA",
   "slug": "coocaa",
-  "logoUrl": "uploads/brands/coocaa-logo.png",
+  "logoUrl": "uploads/brands/1764916482365-50562ae5-55fe-4588-af61-46d8c3717cd0.png",
   "country": "Trung Quốc",
   "websiteUrl": "https://www.coocaa.com/",
   "createdAt": {
     "$date": "2025-11-06T06:20:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T06:20:00.000Z"
+    "$date": "2025-12-05T06:34:42.366Z"
   }
 },
 {
@@ -1483,4 +1467,19 @@
     "$date": "2025-11-08T06:14:05.948Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69327c871ce81a6092725d2a"
+  },
+  "name": "Bosch",
+  "slug": "bosch",
+  "createdAt": {
+    "$date": "2025-12-05T06:32:39.716Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:32:39.717Z"
+  },
+  "__v": 0,
+  "logoUrl": "uploads/brands/1764916359717-e110d092-bb63-4744-934f-e7840013e861.png"
 }]

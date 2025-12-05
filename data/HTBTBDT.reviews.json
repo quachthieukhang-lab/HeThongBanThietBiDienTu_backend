@@ -43,12 +43,12 @@
     "uploads/reviews/review-bosch-1.jpg",
     "uploads/reviews/review-bosch-2.jpg"
   ],
-  "status": "pending",
+  "status": "approved",
   "createdAt": {
     "$date": "2025-11-03T11:00:00.000Z"
   },
   "updatedAt": {
-    "$date": "2025-11-03T11:00:00.000Z"
+    "$date": "2025-12-02T09:44:26.986Z"
   }
 },
 {
@@ -301,30 +301,5 @@
   },
   "updatedAt": {
     "$date": "2025-10-25T19:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9600d"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91506"
-  },
-  "userId": {
-    "$oid": "672b111a9b01c38260b92004"
-  },
-  "orderId": {
-    "$oid": "672b111a9b01c38260b9500d"
-  },
-  "rating": 4,
-  "title": "Giao hàng nhanh",
-  "content": "Tủ mát Sanaky giao hàng nhanh, giữ lạnh tốt, đựng được nhiều đồ.",
-  "images": [],
-  "status": "pending",
-  "createdAt": {
-    "$date": "2025-10-29T20:00:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-10-29T20:00:00.000Z"
   }
 }]

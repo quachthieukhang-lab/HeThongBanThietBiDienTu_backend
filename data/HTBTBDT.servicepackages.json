@@ -525,4 +525,40 @@
   "duration": "1 phút",
   "type": "addon",
   "isActive": false
+},
+{
+  "_id": {
+    "$oid": "69328e501ce81a609272776a"
+  },
+  "name": "Gói tiêu chuẩn",
+  "description": "Gói dịch vụ tiêu chuẩn",
+  "price": 0,
+  "duration": "",
+  "type": "other",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T07:48:32.774Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:48:32.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69328e781ce81a609272777d"
+  },
+  "name": "Gói bảo hành 1",
+  "description": "Bảo hành 4 năm (2 năm chính hãng, 2 năm DMX)",
+  "price": 1100000,
+  "duration": "4 năm",
+  "type": "warranty",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T07:49:12.580Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:49:12.580Z"
+  },
+  "__v": 0
 }]

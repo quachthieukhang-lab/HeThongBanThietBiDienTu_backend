@@ -1,934 +1,664 @@
 [{
   "_id": {
-    "$oid": "672b111a9b01c38260b91601"
+    "$oid": "692eabe1e7797c7ea379c3a4"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91500"
+    "$oid": "692eaafae7797c7ea379c24d"
   },
-  "sku": "LG-UR8050-55",
+  "sku": "Samsung-1HP-Inventer-2ways-R32-5star",
+  "barcode": "",
   "attributes": {
-    "brand": "LG",
-    "screen_size": 55,
-    "resolution": "4K",
-    "smart_tv": true,
-    "model_year": 2024
+    "brand": "Samsung",
+    "capacity_hp": "1 HP (9.000 BTU)",
+    "inverter": true,
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
   },
-  "facets": {
-    "brand": "LG",
-    "screen_size": 55,
-    "resolution": "4K",
-    "smart_tv": true
-  },
-  "price": 12990000,
-  "compareAtPrice": 14990000,
-  "stock": 50,
-  "images": [
-    "uploads/products/tivi-lg-55-1.jpg"
-  ],
+  "price": 4800000,
+  "stock": 10,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:25:00.000Z"
+    "$date": "2025-12-02T09:05:37.380Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:25:00.000Z"
-  }
+    "$date": "2025-12-04T15:08:23.665Z"
+  },
+  "__v": 0,
+  "facets": {},
+  "compareAtPrice": 5200000
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91602"
+    "$oid": "692eac64e7797c7ea379c44e"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91500"
+    "$oid": "692eaafae7797c7ea379c24d"
   },
-  "sku": "LG-UR8050-65",
+  "sku": "Samsung-2HP-Inventer-2ways-R32-4star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Samsung",
+    "capacity_hp": "2 HP (18.000 BTU)",
+    "inverter": true,
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "gas_type": "R-410A",
+    "energy_label": "4 sao"
+  },
+  "price": 5300000,
+  "stock": 8,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-02T09:07:48.229Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T09:15:26.475Z"
+  },
+  "__v": 0,
+  "compareAtPrice": 6200000,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "692ead2ce7797c7ea379c4b5"
+  },
+  "productId": {
+    "$oid": "692eaafae7797c7ea379c24d"
+  },
+  "sku": "Samsung-1.5HP-Inventer-1ways-R410A-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Samsung",
+    "capacity_hp": "1.5 HP (12.000 BTU)",
+    "inverter": true,
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-410A",
+    "energy_label": "5 sao"
+  },
+  "price": 4300000,
+  "stock": 6,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-02T09:11:08.821Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T09:11:47.590Z"
+  },
+  "__v": 0,
+  "compareAtPrice": 4700000,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "692eb027e7797c7ea379c82c"
+  },
+  "productId": {
+    "$oid": "692eafd6e7797c7ea379c7b1"
+  },
+  "sku": "Panasonic-1HP-Inventer-1ways-R410A-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Panasonic",
+    "capacity_hp": "1 HP (9.000 BTU)",
+    "inverter": true,
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 3460000,
+  "compareAtPrice": 4200000,
+  "stock": 7,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-02T09:23:51.896Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T09:24:57.566Z"
+  },
+  "__v": 0,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "692eb064e7797c7ea379c84a"
+  },
+  "productId": {
+    "$oid": "692eafd6e7797c7ea379c7b1"
+  },
+  "sku": "Panasonic-1.5HP-Inventer-1ways-R410A-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Panasonic",
+    "capacity_hp": "1.5 HP (12.000 BTU)",
+    "inverter": true,
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 4000000,
+  "compareAtPrice": 5000000,
+  "stock": 5,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-02T09:24:52.508Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T09:24:58.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692eb092e7797c7ea379c867"
+  },
+  "productId": {
+    "$oid": "692eafd6e7797c7ea379c7b1"
+  },
+  "sku": "Panasonic-2HP-Inventer-1ways-R410A-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Panasonic",
+    "capacity_hp": "1 HP (9.000 BTU)",
+    "inverter": false,
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 5200000,
+  "compareAtPrice": 5499999.99,
+  "stock": 6,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-02T09:25:38.852Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T09:25:38.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692eb20de7797c7ea379ca9a"
+  },
+  "productId": {
+    "$oid": "692eb17ce7797c7ea379ca24"
+  },
+  "sku": "LG-1HP-Inventer-1ways-R32-5star",
+  "barcode": "",
   "attributes": {
     "brand": "LG",
-    "screen_size": 65,
-    "resolution": "4K",
-    "smart_tv": true,
-    "model_year": 2024
+    "capacity_hp": "1 HP (9.000 BTU)",
+    "inverter": true,
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
   },
-  "facets": {
+  "price": 3200000,
+  "compareAtPrice": 3500000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-02T09:31:57.229Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T09:31:57.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692eb23ae7797c7ea379caaf"
+  },
+  "productId": {
+    "$oid": "692eb17ce7797c7ea379ca24"
+  },
+  "sku": "LG-2HP-Inventer-2ways-R32-5star",
+  "barcode": "",
+  "attributes": {
     "brand": "LG",
-    "screen_size": 65,
-    "resolution": "4K",
-    "smart_tv": true
+    "capacity_hp": "2 HP (18.000 BTU)",
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "inverter": false,
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
   },
-  "price": 17990000,
-  "compareAtPrice": 19990000,
-  "stock": 30,
-  "images": [
-    "uploads/products/tivi-lg-65-1.jpg"
-  ],
+  "price": 6300000,
+  "compareAtPrice": 6800000,
+  "stock": 19,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:26:00.000Z"
+    "$date": "2025-12-02T09:32:42.335Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:26:00.000Z"
-  }
+    "$date": "2025-12-02T09:32:42.335Z"
+  },
+  "__v": 0
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91603"
+    "$oid": "693279961ce81a60927259d6"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91501"
+    "$oid": "693278a11ce81a609272599c"
   },
-  "sku": "PANA-PU9XKH-8M",
-  "attributes": {
-    "brand": "Panasonic",
-    "capacity_btu": 9000,
-    "inverter": true,
-    "type": "1 chiều (chỉ làm lạnh)"
-  },
-  "facets": {
-    "brand": "Panasonic",
-    "capacity_btu": 9000,
-    "inverter": true,
-    "type": "1 chiều (chỉ làm lạnh)"
-  },
-  "price": 8990000,
-  "stock": 100,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:50:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:50:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91604"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91501"
-  },
-  "sku": "PANA-PU12XKH-8M",
-  "attributes": {
-    "brand": "Panasonic",
-    "capacity_btu": 12000,
-    "inverter": true,
-    "type": "1 chiều (chỉ làm lạnh)"
-  },
-  "facets": {
-    "brand": "Panasonic",
-    "capacity_btu": 12000,
-    "inverter": true,
-    "type": "1 chiều (chỉ làm lạnh)"
-  },
-  "price": 10990000,
-  "stock": 80,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:50:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:50:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91605"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91501"
-  },
-  "sku": "DAIKIN-FTKY25WMVMV",
+  "sku": "Daikin-3HP-Inventer-2ways-R32-5star",
+  "barcode": "",
   "attributes": {
     "brand": "Daikin",
-    "capacity_btu": 9000,
+    "capacity_hp": "3HP ( 30000 BTU )",
     "inverter": true,
-    "type": "1 chiều (chỉ làm lạnh)"
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
   },
-  "facets": {
+  "price": 24000000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:20:06.381Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:23:46.573Z"
+  },
+  "__v": 0,
+  "compareAtPrice": 25000000,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "69327b0c1ce81a6092725ad9"
+  },
+  "productId": {
+    "$oid": "693278a11ce81a609272599c"
+  },
+  "sku": "Daikin-2.5HP-Inventer-2ways-R32-5star",
+  "barcode": "",
+  "attributes": {
     "brand": "Daikin",
-    "capacity_btu": 9000,
+    "capacity_hp": "2.5 HP (24.000 BTU)",
     "inverter": true,
-    "type": "1 chiều (chỉ làm lạnh)"
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 16000000,
+  "compareAtPrice": 16999999,
+  "stock": 0,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:26:20.720Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:26:20.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69327c231ce81a6092725c6c"
+  },
+  "productId": {
+    "$oid": "693278a11ce81a609272599c"
+  },
+  "sku": "Daikin-2HP-Inventer-2ways-R32-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Daikin",
+    "capacity_hp": "2 HP (18.000 BTU)",
+    "inverter": true,
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 13000000,
+  "compareAtPrice": 14000000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:30:59.524Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:30:59.524Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69327e4e1ce81a609272605b"
+  },
+  "productId": {
+    "$oid": "69327e191ce81a6092726022"
+  },
+  "sku": "Toshiba-2HP-Inventer-2ways-R32-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Toshiba",
+    "capacity_hp": "2 HP (18.000 BTU)",
+    "inverter": true,
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 12000000,
+  "compareAtPrice": 13900000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:40:14.281Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:40:14.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69327f371ce81a60927261bf"
+  },
+  "productId": {
+    "$oid": "69327efa1ce81a6092726197"
+  },
+  "sku": "Aqua-2.5HP-Inventer-2ways-R32-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Aqua",
+    "capacity_hp": "2.5 HP (24.000 BTU)",
+    "type": "2 chiều (làm lạnh - sưởi ấm)",
+    "inverter": true,
+    "energy_label": "5 sao",
+    "gas_type": "R-32"
+  },
+  "price": 16000000,
+  "compareAtPrice": 16900000,
+  "stock": 5,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:44:07.285Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:44:07.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693280081ce81a60927262e4"
+  },
+  "productId": {
+    "$oid": "69327fc21ce81a6092726296"
+  },
+  "sku": "Casper-2HP-Inventer-1ways-R32-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Casper",
+    "capacity_hp": "2 HP (18.000 BTU)",
+    "inverter": true,
+    "type": "1 chiều (chỉ làm lạnh)",
+    "gas_type": "R-32",
+    "energy_label": "5 sao"
+  },
+  "price": 13200000,
+  "compareAtPrice": 14100000,
+  "stock": 2,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:47:36.767Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:50:26.932Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693280591ce81a609272634f"
+  },
+  "productId": {
+    "$oid": "69327fc21ce81a6092726296"
+  },
+  "sku": "Casper-3HP-Inventer-1ways-R32-5star",
+  "barcode": "",
+  "attributes": {
+    "brand": "Casper",
+    "capacity_hp": "3HP ( 30000 BTU )",
+    "inverter": true,
+    "gas_type": "R-32",
+    "type": "1 chiều (chỉ làm lạnh)",
+    "energy_label": "5 sao"
+  },
+  "price": 21300000,
+  "compareAtPrice": 23000000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T06:48:57.199Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T06:48:57.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693283a31ce81a609272671e"
+  },
+  "productId": {
+    "$oid": "693283421ce81a6092726665"
+  },
+  "sku": "WW10DB7U34GBSV",
+  "barcode": "",
+  "attributes": {
+    "brand": "Samsung",
+    "type": "Cửa trước (Lồng ngang)",
+    "capacity_kg": "10 Kg",
+    "inverter": true,
+    "drive_type": "Truyền động gián tiếp (Dây Curoa)"
   },
   "price": 9490000,
-  "stock": 70,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:50:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:50:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91606"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91502"
-  },
-  "sku": "LG-FV1409S4W-9KG",
-  "attributes": {
-    "brand": "LG",
-    "capacity_kg": 9,
-    "type": "Cửa trước",
-    "inverter": true
-  },
-  "facets": {
-    "brand": "LG",
-    "capacity_kg": 9,
-    "type": "Cửa trước",
-    "inverter": true
-  },
-  "price": 7990000,
-  "stock": 50,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:51:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:51:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91607"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91502"
-  },
-  "sku": "LG-FV1410S4W-10KG",
-  "attributes": {
-    "brand": "LG",
-    "capacity_kg": 10,
-    "type": "Cửa trước",
-    "inverter": true
-  },
-  "facets": {
-    "brand": "LG",
-    "capacity_kg": 10,
-    "type": "Cửa trước",
-    "inverter": true
-  },
-  "price": 8990000,
-  "stock": 40,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:51:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:51:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91608"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91502"
-  },
-  "sku": "SAMSUNG-WW90T634DLE-9KG",
-  "attributes": {
-    "brand": "Samsung",
-    "capacity_kg": 9,
-    "type": "Cửa trước",
-    "inverter": true
-  },
-  "facets": {
-    "brand": "Samsung",
-    "capacity_kg": 9,
-    "type": "Cửa trước",
-    "inverter": true
-  },
-  "price": 8290000,
-  "stock": 45,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:51:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:51:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91609"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91503"
-  },
-  "sku": "SAM-RB30N4170BU-300L",
-  "attributes": {
-    "brand": "Samsung",
-    "capacity_lit": "150L - 300L",
-    "type": "Ngăn đá dưới",
-    "inverter": true
-  },
-  "facets": {
-    "brand": "Samsung",
-    "capacity_lit": "150L - 300L",
-    "type": "Ngăn đá dưới",
-    "inverter": true
-  },
-  "price": 10990000,
-  "stock": 30,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:52:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:52:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9160a"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91503"
-  },
-  "sku": "LG-GR-D382BL-382L",
-  "attributes": {
-    "brand": "LG",
-    "capacity_lit": "301L - 400L",
-    "type": "Ngăn đá dưới",
-    "inverter": true
-  },
-  "facets": {
-    "brand": "LG",
-    "capacity_lit": "301L - 400L",
-    "type": "Ngăn đá dưới",
-    "inverter": true
-  },
-  "price": 13990000,
-  "stock": 25,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:52:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:52:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9160b"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91503"
-  },
-  "sku": "SAM-RS62R5001M9-650L",
-  "attributes": {
-    "brand": "Samsung",
-    "capacity_lit": "Trên 550L",
-    "type": "Side by Side",
-    "inverter": true
-  },
-  "facets": {
-    "brand": "Samsung",
-    "capacity_lit": "Trên 550L",
-    "type": "Side by Side",
-    "inverter": true
-  },
-  "price": 20990000,
-  "stock": 15,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:52:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:52:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9160c"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91504"
-  },
-  "sku": "ELEX-EDH804H5WB-8KG",
-  "attributes": {
-    "brand": "Electrolux",
-    "capacity_kg": 8,
-    "type": "Bơm nhiệt (Heatpump)"
-  },
-  "facets": {
-    "brand": "Electrolux",
-    "capacity_kg": 8,
-    "type": "Bơm nhiệt (Heatpump)"
-  },
-  "price": 13990000,
-  "stock": 30,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:53:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:53:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9160d"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91504"
-  },
-  "sku": "ELEX-EDH904H5WB-9KG",
-  "attributes": {
-    "brand": "Electrolux",
-    "capacity_kg": 9,
-    "type": "Bơm nhiệt (Heatpump)"
-  },
-  "facets": {
-    "brand": "Electrolux",
-    "capacity_kg": 9,
-    "type": "Bơm nhiệt (Heatpump)"
-  },
-  "price": 15990000,
-  "stock": 25,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:53:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:53:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9160e"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91504"
-  },
-  "sku": "ELEX-EDV854J3WB-8.5KG",
-  "attributes": {
-    "brand": "Electrolux",
-    "capacity_kg": 8,
-    "type": "Ngưng tụ"
-  },
-  "facets": {
-    "brand": "Electrolux",
-    "capacity_kg": 8,
-    "type": "Ngưng tụ"
-  },
-  "price": 9990000,
-  "stock": 35,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:53:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:53:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9160f"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91505"
-  },
-  "sku": "ARI-SM45PE-VN-PUMP",
-  "attributes": {
-    "brand": "Ariston",
-    "type": "Trực tiếp",
-    "pump": true
-  },
-  "facets": {
-    "brand": "Ariston",
-    "type": "Trực tiếp",
-    "pump": true
-  },
-  "price": 3190000,
-  "stock": 60,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:54:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:54:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91610"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91505"
-  },
-  "sku": "ARI-SM45E-VN-NOPUMP",
-  "attributes": {
-    "brand": "Ariston",
-    "type": "Trực tiếp",
-    "pump": false
-  },
-  "facets": {
-    "brand": "Ariston",
-    "type": "Trực tiếp",
-    "pump": false
-  },
-  "price": 2590000,
-  "stock": 50,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:54:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:54:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91611"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91505"
-  },
-  "sku": "FER-VERDI-30L",
-  "attributes": {
-    "brand": "Ferroli",
-    "type": "Gián tiếp",
-    "pump": false
-  },
-  "facets": {
-    "brand": "Ferroli",
-    "type": "Gián tiếp",
-    "pump": false
-  },
-  "price": 2890000,
-  "stock": 40,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:54:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:54:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91612"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91506"
-  },
-  "sku": "SANAKY-VH-408K-400L",
-  "attributes": {
-    "brand": "Sanaky",
-    "capacity_lit": "300L - 500L",
-    "doors": "1 cửa"
-  },
-  "facets": {
-    "brand": "Sanaky",
-    "capacity_lit": "300L - 500L",
-    "doors": "1 cửa"
-  },
-  "price": 9890000,
-  "stock": 20,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:55:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:55:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91613"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91506"
-  },
-  "sku": "SANAKY-VH-308K-300L",
-  "attributes": {
-    "brand": "Sanaky",
-    "capacity_lit": "Dưới 300L",
-    "doors": "1 cửa"
-  },
-  "facets": {
-    "brand": "Sanaky",
-    "capacity_lit": "Dưới 300L",
-    "doors": "1 cửa"
-  },
-  "price": 8590000,
-  "stock": 22,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:55:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:55:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91614"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91506"
-  },
-  "sku": "SANAKY-VH-1008K-1000L",
-  "attributes": {
-    "brand": "Sanaky",
-    "capacity_lit": "Trên 500L",
-    "doors": "2 cửa"
-  },
-  "facets": {
-    "brand": "Sanaky",
-    "capacity_lit": "Trên 500L",
-    "doors": "2 cửa"
-  },
-  "price": 19990000,
+  "compareAtPrice": 10000000,
   "stock": 10,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:55:00.000Z"
+    "$date": "2025-12-05T07:02:59.420Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:55:00.000Z"
-  }
+    "$date": "2025-12-05T07:05:45.453Z"
+  },
+  "__v": 0,
+  "facets": {}
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91615"
+    "$oid": "693284161ce81a6092726786"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91507"
+    "$oid": "693283421ce81a6092726665"
   },
-  "sku": "HOAPHAT-HCF-506S1D-205L",
+  "sku": "WW12DB7U34GBSV",
+  "barcode": "",
   "attributes": {
-    "brand": "Hòa Phát",
-    "capacity_lit": "200L - 300L",
-    "type": "2 ngăn (đông, mát)"
+    "brand": "Samsung",
+    "type": "Cửa trước (Lồng ngang)",
+    "capacity_kg": "Trên 12 Kg",
+    "drive_type": "Truyền động gián tiếp (Dây Curoa)",
+    "inverter": true
   },
-  "facets": {
-    "brand": "Hòa Phát",
-    "capacity_lit": "200L - 300L",
-    "type": "2 ngăn (đông, mát)"
-  },
-  "price": 5490000,
-  "stock": 30,
+  "price": 11000000,
+  "compareAtPrice": 11800000,
+  "stock": 11,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:56:00.000Z"
+    "$date": "2025-12-05T07:04:54.159Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:56:00.000Z"
-  }
+    "$date": "2025-12-05T07:05:27.032Z"
+  },
+  "__v": 0
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b91616"
+    "$oid": "693284e41ce81a60927268ba"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91507"
+    "$oid": "693284941ce81a6092726870"
   },
-  "sku": "HOAPHAT-HCF-106S1D-100L",
+  "sku": "EWF9023P5WC",
+  "barcode": "",
   "attributes": {
-    "brand": "Hòa Phát",
-    "capacity_lit": "Dưới 200L",
-    "type": "1 ngăn đông"
+    "brand": "Electrolux",
+    "type": "Cửa trước (Lồng ngang)",
+    "capacity_kg": "9 Kg",
+    "inverter": true,
+    "drive_type": "Truyền động gián tiếp (Dây Curoa)"
   },
-  "facets": {
-    "brand": "Hòa Phát",
-    "capacity_lit": "Dưới 200L",
-    "type": "1 ngăn đông"
-  },
-  "price": 3990000,
-  "stock": 40,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:56:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:56:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91617"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91507"
-  },
-  "sku": "SANAKY-VH-2899A3-280L",
-  "attributes": {
-    "brand": "Sanaky",
-    "capacity_lit": "200L - 300L",
-    "type": "2 ngăn (đông, mát)"
-  },
-  "facets": {
-    "brand": "Sanaky",
-    "capacity_lit": "200L - 300L",
-    "type": "2 ngăn (đông, mát)"
-  },
-  "price": 5990000,
-  "stock": 25,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:56:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:56:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91618"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91508"
-  },
-  "sku": "BOSCH-SMS4IVI01P-13SET",
-  "attributes": {
-    "brand": "Bosch",
-    "type": "Độc lập",
-    "capacity_set": 13
-  },
-  "facets": {
-    "brand": "Bosch",
-    "type": "Độc lập",
-    "capacity_set": 13
-  },
-  "price": 17990000,
-  "stock": 15,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:57:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:57:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91619"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91508"
-  },
-  "sku": "BOSCH-SMS6ECI07E-14SET",
-  "attributes": {
-    "brand": "Bosch",
-    "type": "Độc lập",
-    "capacity_set": 14
-  },
-  "facets": {
-    "brand": "Bosch",
-    "type": "Độc lập",
-    "capacity_set": 14
-  },
-  "price": 21990000,
+  "price": 9500000,
+  "compareAtPrice": 9800000,
   "stock": 10,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:57:00.000Z"
+    "$date": "2025-12-05T07:08:20.441Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:57:00.000Z"
-  }
+    "$date": "2025-12-05T07:08:20.441Z"
+  },
+  "__v": 0
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b9161a"
+    "$oid": "693285101ce81a6092726922"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91508"
+    "$oid": "693284941ce81a6092726870"
   },
-  "sku": "ELEX-ESF6010B-8SET",
+  "sku": "EWF12023P5WC",
+  "barcode": "",
   "attributes": {
     "brand": "Electrolux",
-    "type": "Để bàn",
-    "capacity_set": 8
+    "type": "Cửa trước (Lồng ngang)",
+    "capacity_kg": "Trên 12 Kg",
+    "inverter": true,
+    "drive_type": "Truyền động gián tiếp (Dây Curoa)"
   },
-  "facets": {
-    "brand": "Electrolux",
-    "type": "Để bàn",
-    "capacity_set": 8
-  },
-  "price": 7990000,
-  "stock": 20,
+  "price": 11500000,
+  "compareAtPrice": 12300000,
+  "stock": 10,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:57:00.000Z"
+    "$date": "2025-12-05T07:09:04.259Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:57:00.000Z"
-  }
+    "$date": "2025-12-05T07:09:04.259Z"
+  },
+  "__v": 0
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b9161b"
+    "$oid": "693285bd1ce81a6092726a41"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91509"
+    "$oid": "6932857d1ce81a60927269f3"
   },
-  "sku": "SONY-HT-S20R-400W",
+  "sku": "AW-M1100JV(MK)",
+  "barcode": "",
   "attributes": {
-    "brand": "Sony",
-    "type": "Dàn âm thanh 5.1",
-    "power_w": 400
+    "brand": "Toshiba",
+    "type": "Cửa trên (Lồng đứng)",
+    "capacity_kg": "10 Kg",
+    "inverter": true,
+    "drive_type": "Truyền động trực tiếp (Bền & Êm)"
   },
-  "facets": {
-    "brand": "Sony",
-    "type": "Dàn âm thanh 5.1",
-    "power_w": 400
-  },
-  "price": 3990000,
-  "stock": 30,
+  "price": 5690000,
+  "compareAtPrice": 6100000,
+  "stock": 10,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:58:00.000Z"
+    "$date": "2025-12-05T07:11:57.390Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:58:00.000Z"
-  }
+    "$date": "2025-12-05T07:11:57.390Z"
+  },
+  "__v": 0
 },
 {
   "_id": {
-    "$oid": "672b111a9b01c38260b9161c"
+    "$oid": "69328d031ce81a60927273c4"
   },
   "productId": {
-    "$oid": "672b111a9b01c38260b91509"
+    "$oid": "69328cb21ce81a60927272e7"
   },
-  "sku": "LG-S40Q-300W",
+  "sku": "RF48A4010B4",
+  "barcode": "",
+  "attributes": {
+    "brand": "Samsung",
+    "capacity_lit": "Từ 301 - 400 lít",
+    "type": "Multi Door",
+    "feature": "Khử mùi, diệt khuẩn",
+    "inverter": true,
+    "energy_label": "5 sao",
+    "cooling_technology": "Làm lạnh đa chiều"
+  },
+  "price": 21300000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T07:42:59.990Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T07:43:46.477Z"
+  },
+  "__v": 0,
+  "compareAtPrice": 22100000,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "69328dbc1ce81a609272758d"
+  },
+  "productId": {
+    "$oid": "69328d861ce81a609272754d"
+  },
+  "sku": "",
+  "barcode": "",
   "attributes": {
     "brand": "LG",
-    "type": "Loa thanh (Soundbar)",
-    "power_w": 300
+    "capacity_lit": "Từ 401 - 550 lít",
+    "inverter": true,
+    "feature": "Bảng điều khiển ngoài",
+    "cooling_technology": "Làm lạnh vòm",
+    "type": "Multi Door",
+    "energy_label": "5 sao"
   },
-  "facets": {
-    "brand": "LG",
-    "type": "Loa thanh (Soundbar)",
-    "power_w": 300
-  },
-  "price": 2990000,
-  "stock": 40,
+  "price": 14100000,
+  "compareAtPrice": 14900000,
+  "stock": 10,
+  "images": [],
   "isActive": true,
   "createdAt": {
-    "$date": "2025-11-06T05:58:00.000Z"
+    "$date": "2025-12-05T07:46:04.869Z"
   },
   "updatedAt": {
-    "$date": "2025-11-06T05:58:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9161d"
+    "$date": "2025-12-05T07:46:04.869Z"
   },
-  "productId": {
-    "$oid": "672b111a9b01c38260b91509"
-  },
-  "sku": "JBL-BAR-5-1-510W",
-  "attributes": {
-    "brand": "JBL",
-    "type": "Loa thanh (Soundbar)",
-    "power_w": 510
-  },
-  "facets": {
-    "brand": "JBL",
-    "type": "Loa thanh (Soundbar)",
-    "power_w": 510
-  },
-  "price": 11990000,
-  "stock": 15,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:58:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-06T05:58:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9161e"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b9150a"
-  },
-  "sku": "JBL-VM300-WIRELESS",
-  "attributes": {
-    "brand": "JBL",
-    "type": "Không dây",
-    "connection": "Jack 6.3mm"
-  },
-  "facets": {
-    "brand": "JBL",
-    "type": "Không dây",
-    "connection": "Jack 6.3mm"
-  },
-  "price": 5490000,
-  "stock": 17,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:59:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-21T04:14:06.161Z"
-  },
-  "__v": 1,
-  "images": []
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b9161f"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b9150a"
-  },
-  "sku": "SHURE-PGA48-XLR-WIRED",
-  "attributes": {
-    "brand": "Shure",
-    "type": "Có dây",
-    "connection": "XLR"
-  },
-  "facets": {
-    "brand": "Shure",
-    "type": "Có dây",
-    "connection": "XLR"
-  },
-  "price": 990000,
-  "stock": 49,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:59:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-21T04:06:31.994Z"
-  },
-  "__v": 1,
-  "images": []
-},
-{
-  "_id": {
-    "$oid": "672b111a9b01c38260b91620"
-  },
-  "productId": {
-    "$oid": "672b111a9b01c38260b9150a"
-  },
-  "sku": "JBL-KMC300-BLUETOOTH",
-  "attributes": {
-    "brand": "JBL",
-    "type": "Không dây",
-    "connection": "Bluetooth"
-  },
-  "facets": {
-    "brand": "JBL",
-    "type": "Không dây",
-    "connection": "Bluetooth"
-  },
-  "price": 1990000,
-  "stock": 25,
-  "isActive": true,
-  "createdAt": {
-    "$date": "2025-11-06T05:59:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-22T18:29:48.438Z"
-  },
-  "__v": 1,
-  "images": []
+  "__v": 0
 }]
