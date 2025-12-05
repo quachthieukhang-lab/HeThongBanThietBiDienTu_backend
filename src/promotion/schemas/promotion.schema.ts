@@ -29,6 +29,9 @@ export class Promotion {
 
   @Prop({ required: true })
   end_date: Date;
+  
+  @Prop({ required: true})
+  status: boolean;
 }
 
 export const PromotionSchema = SchemaFactory.createForClass(Promotion);

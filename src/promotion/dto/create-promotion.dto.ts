@@ -41,11 +41,12 @@ export class CreatePromotionDto {
   @Min(0)
   discount_amount: number;
 
-  @IsDateString()
   @IsNotEmpty()
   start_date: Date;
 
-  @IsDateString()
   @IsNotEmpty()
   end_date: Date;
+
+  @IsNotEmpty()
+  status: boolean;
 }
