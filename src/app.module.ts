@@ -24,6 +24,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
 import { ChatModule } from './chat/chat.module';
 import { ServicePackagesModule } from './service-packages/service-packages.module';
 import { PromotionModule } from './promotion/promotion.module';
+import { ChatHistoryModule } from './chat-history/chat-history.module';
 
 @Module({
   imports: [
@@ -60,6 +61,7 @@ import { PromotionModule } from './promotion/promotion.module';
     ChatModule,
     ServicePackagesModule,
     PromotionModule,
+    ChatHistoryModule,
     
   ],
   controllers: [AppController],

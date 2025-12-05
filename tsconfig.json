@@ -37,7 +37,8 @@
       "@subcategories/*": ["subcategories/*"],
       "@users/*": ["users/*"],
       "@upload/*": ["uploads/*"],
-      "@promotion/*": ["promotion/*"]
+      "@promotion/*": ["promotion/*"],
+      "@chat-history/*": ["chat-history/*"]
     }
   }
 }
