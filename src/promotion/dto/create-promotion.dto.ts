@@ -31,6 +31,15 @@ export class CreatePromotionDto {
   @IsPositive()
   @Min(0)
   discount_value: number;
+  
+  @IsString()
+  @IsNotEmpty()
+  code: string;
+
+  @IsNumber()
+  @IsPositive()
+  @Min(0)
+  discount_amount: number;
 
   @IsDateString()
   @IsNotEmpty()

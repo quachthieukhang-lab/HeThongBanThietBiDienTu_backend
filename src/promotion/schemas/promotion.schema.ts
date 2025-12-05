@@ -16,6 +16,12 @@ export class Promotion {
   discount_type: DiscountType;
 
   @Prop({ required: true })
+  discount_amount: number;
+
+  @Prop({ required: true })
+  code: string;
+
+  @Prop({ required: true })
   discount_value: number;
 
   @Prop({ required: true })
