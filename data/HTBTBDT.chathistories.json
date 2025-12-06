@@ -1,0 +1,408 @@
+[{
+  "_id": {
+    "$oid": "6932ea75f21368f62ab6f0fd"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "user",
+  "content": "có máy lạnh nào không?",
+  "createdAt": {
+    "$date": "2025-12-05T14:21:41.952Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:21:41.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ea75f21368f62ab6f0ff"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "assistant",
+  "content": "Chào bạn! Dạ có nhiều mẫu máy lạnh đang ưu đãi tại cửa hàng mình ạ 🥰. Mình sẽ tóm tắt giúp bạn vài sản phẩm nổi bật nhé:\n\n✨ **Máy lạnh AQUA Inverter Cao Cấp AQA-KCRV**: \n- Thương hiệu: AQUA \n- Giá từ: 16.000.000 VNĐ \n\n✨ **Máy lạnh Casper Inverter dòng GC**: \n- Thương hiệu: Casper \n- Giá từ: 13.200.000 VNĐ \n\n✨ **Máy lạnh Panasonic Inverter Cao Cấp dòng XU**: \n- Thương hiệu: Panasonic \n- Giá từ: 3.460.000 VNĐ \n\nTất cả đều có gói bảo hành 1 và dịch vụ tiêu chuẩn ạ. Bạn có thể tham khảo thêm trên trang web hoặc đến cửa hàng để được tư vấn chi tiết hơn nhé 🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:21:41.956Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:21:41.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932eb888f7f0531c0781217"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "user",
+  "content": "có máy lạnh nào không?",
+  "createdAt": {
+    "$date": "2025-12-05T14:26:16.758Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:26:16.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932eb888f7f0531c0781219"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "assistant",
+  "content": "Chào bạn! Dạ có nhiều mẫu máy lạnh đang ưu đãi tại cửa hàng mình ạ 🥰. Mình sẽ tóm tắt giúp bạn vài sản phẩm nổi bật nhé:\n\n✨ **Máy lạnh AQUA Inverter Cao Cấp AQA-KCRV**: \n- Thương hiệu: AQUA \n- Giá từ: 16.000.000 VNĐ \n\n✨ **Máy lạnh Casper Inverter dòng GC**: \n- Thương hiệu: Casper \n- Giá từ: 13.200.000 VNĐ \n\n✨ **Máy lạnh Panasonic Inverter Cao Cấp dòng XU**: \n- Thương hiệu: Panasonic \n- Giá từ: 3.460.000 VNĐ \n\nTất cả đều có gói bảo hành 1 và dịch vụ tiêu chuẩn ạ. Bạn có thể tham khảo thêm trên trang web hoặc đến cửa hàng để được tư vấn chi tiết hơn nhé 🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:26:16.762Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:26:16.762Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ec3a8f7f0531c0781222"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "user",
+  "content": "máy lạnh aqua thì sao, có gói dịch vụ nào tốt không?",
+  "createdAt": {
+    "$date": "2025-12-05T14:29:14.341Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:29:14.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ec3a8f7f0531c0781224"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "assistant",
+  "content": "Chào bạn!  😊 Máy lạnh **AQUA Inverter Cao Cấp dòng AQA-KCRV (2024)** đang là sản phẩm HOT với nhiều ưu đãi hấp dẫn đây ạ:\n\n🔹 **Thông tin nổi bật**:  \n- **Giá từ**: 16.000.000 VNĐ  \n- **Dịch vụ kèm theo**:  \n  ✅ Gói bảo hành 1 năm  \n  ✅ Gói tiêu chuẩn (vệ sinh định kỳ + hỗ trợ lắp đặt)  \n\n🔹 **Ưu điểm**:  \n- Công nghệ Inverter tiết kiệm điện  \n- Thiết kế sang trọng, phù hợp không gian hiện đại  \n- Làm lạnh nhanh và êm ái  \n\nBạn cần tư vấn thêm về chế độ bảo hành mở rộng hoặc lắp đặt thì c cứ nhắn mình nhé!  💙 Mình có thể kết nối bạn với chuyên viên kỹ thuật của AQUA để hỗ trợ chi tiết hơn ạ!  \n\nHoặc bạn muốn so sánh với các dòng khác như **Panasonic, Daikin** mình cũng sẵn sàng tư vấn luôn ạ ",
+  "createdAt": {
+    "$date": "2025-12-05T14:29:14.342Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:29:14.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ec668f7f0531c078122d"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "user",
+  "content": "so sánh với máy lạnh panasonic",
+  "createdAt": {
+    "$date": "2025-12-05T14:29:58.651Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:29:58.651Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ec668f7f0531c078122f"
+  },
+  "userId": {
+    "$oid": "691323ac0907d7526817fe54"
+  },
+  "role": "assistant",
+  "content": "Dưới đây là bảng so sánh chi tiết giữa **Máy lạnh AQUA Inverter** và **Máy lạnh Panasonic Inverter** để bạn dễ lựa chọn nhé:  \n\n| **Tiêu chí**       | **AQUA Inverter (AQA-KCRV)**       | **Panasonic Inverter (Dòng XU)**       |\n|---------------------|------------------------------------|----------------------------------------|\n| **Giá**            | 16.000.000 VNĐ                    | 3.460.000 VNĐ                         |\n| **Công nghệ**      | Inverter tiết kiệm điện           | Inverter + Nanoe-G (khử khuẩn không khí) |\n| **Độ ồn**          | ~19dB (siêu êm)                   | ~22dB (êm)                            |\n| **Tiện ích**       | Làm lạnh nhanh, chế độ ngủ        | Khử mùi, chống nấm mốc                |\n| **Dịch vụ**        | Bảo hành 1 năm + h hỗ trợ lắp đặt   | Bảo hành 1 năm + tặng gói vệ sinh     |\n\n### Gợi  ý lựa chọn:  \n- **Nếu bạn cần máy cao cấp, làm lạnh mạnh**: Chọn **AQUA** (giá cao hơn nhưng bền và êm ái).  \n- **Nếu bạn ưu tiên giá tốt + khử khuẩn**: **Panasonic** phù hợp hơn (giá rẻ hơn, tích hợp công nghệ Nanoe-G).  \n\nBạn muốn tìm hiểu thêm về chính sách trả góp hoặc khuyến mãi kèm theo không ạ? 💳 Mình h hỗ trợ ngay nhé!",
+  "createdAt": {
+    "$date": "2025-12-05T14:29:58.654Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:29:58.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ef80b74d74904209802e"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "Có máy lạnh nào không?",
+  "createdAt": {
+    "$date": "2025-12-05T14:43:12.747Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:43:12.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ef80b74d74904209802f"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ có ạ! Em xin giới thiệu đến anh/chị một số dòng máy lạnh inverter đang bán chạy nhất hiện nay ạ  💨:\n\n1. **AQUA AQA-KCRV (2024)**  \n   - Giá: 16.000.000₫  \n   - Thương hiệu Nhật Bản, công nghệ Inverter tiết kiệm điện    \n\n2. **Casper GC Inverter (2024)**  \n   - Giá: 13.200.000₫  \n   - Thiết kế sang trọng, vận hành êm ái  \n\n3. **Daikin FTKY (2024)**  \n   - Giá: 13.000.000₫  \n   - Thương hiệu hàng đầu Nhật Bản, bền bỉ  \n\n4. **LG V-WIN Dual Inverter**  \n   - Giá: 3.200.000₫ (ưu đãi tốt)  \n   - Công nghệ làm lạnh kép  \n\n5. **Panasonic XU Inverter**  \n   - Giá: 3.460.000₫  \n   - Kháng khuẩn, lọc không khí ưu việt  \n\n6. **Samsung AR10TYHYCWKNSV**  \n   - Giá: 4.300.000₫  \n   - Thiết kế tối giản, thông minh  \n\n7. **Toshiba Daiseikai (2024)**  \n   - Giá: 12.000.000₫  \n   - Cân bằng độ ẩm hoàn hảo  \n\nAnh/chị quan tâm đến model nào ạ? Em có thể tư vấn thêm về công suất phù hợp với diện tích phòng hoặc chương trình khuyến mãi đang có nhé  🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:43:12.748Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:43:12.748Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ef9db74d74904209804b"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, em xin được cung cấp thông số chi tiết của máy lạnh **Panasonic XU Inverter** để anh/chị tham khảo ạ 💨:\n\n### **Thông số kỹ thuật Panasonic XU Inverter**:\n1️⃣ **Công suất làm lạnh**:  \n- 1.0 HP hoặc 1.5 HP, phù hợp phòng 15-20m² hoặc 20-25m²  \n\n2️⃣ **Công nghệ**:  \n- Inverter tiết kiệm điện đến 60%  \n- Chế độ làm lạnh nhanh Powerful Mode  \n\n3️⃣ **Tính năng đặc biệt**:  \n- Kháng khuẩn Nanoe-G  \n- Lọc không khí PM2.5  \n- Tự động làm sạch cánh tản nhiệt  \n\n4️⃣ **Độ ồn**:  \n- Vận hành êm ái, chỉ từ 19 dB  \n\n5️⃣ **Gas sử dụng**: R32 thân thiện môi trường  \n\n6️⃣ **Bảo hành**:  \n- Chính hãng 1 năm  \n\nGiá bán hiện tại là **3.460.000₫**, anh/chị đang cân nhắc lắp đặt cho phòng bao nhiêu m² ạ? Em có thể tư vấn thêm công suất phù hợp hoặc hỗ trợ đặt hàng ngay nhé  🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:43:41.588Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:43:41.588Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932ef9db74d74904209804a"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "thông số Panasonic XU Inverter",
+  "createdAt": {
+    "$date": "2025-12-05T14:43:41.588Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:43:41.588Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932efe0b74d749042098082"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, với diện tích **24m²**, em khuyên anh/chị nên chọn **máy lạnh Panasonic XU Inverter 1.5 HP** (mã thường là **CU/CS-XU12XKH-8**) để đảm bảo hiệu suất làm lạnh tối ưu ạ! 💨  \n\n### **Lý do nên chọn 1.5 HP cho 24m²**:\n1️⃣ **Công suất phù hợp**:  \n   - 1.5 HP (12.000 BTU) đủ làm mát nhanh và duy trì nhiệt độ ổn định cho phòng 20-25m².  \n   - Tránh tình trạng máy hoạt động quá tải (nếu chọn 1.0 HP) hoặc lãng phí điện (nếu chọn 2.0 HP).  \n\n2️⃣ **Tiết kiệm điện**:  \n   - Công nghệ Inverter giúp tiết kiệm **30-60% điện năng** so với máy thường.  \n\n3️⃣ **Tính năng h hỗ trợ**:  \n   - **Nanoe-G**: Khử khuẩn, khử mùi hiệu quả.  \n   - **Chế độ Powerful**: Làm lạnh nhanh chỉ trong 5 phút.  \n   - **Tự động vệ sinh**: Giảm bụi bẩn bám dàn lạnh.  \n\n### **Giá tham khảo**:  \n- **Panasonic XU 1.5 HP Inverter**: Khoảng **9.500.000₫ - 11.000.000₫** (tùy thời điểm khuyến mãi).  \n\nAnh/chị cần em tư vấn thêm về chế độ bảo hành hoặc lắp đặt không ạ?  🛒 Hoặc anh/chị muốn so sánh với dòng khác như **Daikin FTKY** (cùng công suất) để có thêm lựa chọn?  😊",
+  "createdAt": {
+    "$date": "2025-12-05T14:44:48.649Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:44:48.649Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932efe0b74d749042098081"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "24m2 thì sao?",
+  "createdAt": {
+    "$date": "2025-12-05T14:44:48.649Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:44:48.649Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f0dc50c879df1ccd8b3c"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "Có tủ lạnh tốt không?",
+  "createdAt": {
+    "$date": "2025-12-05T14:49:00.379Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:49:00.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f0dc50c879df1ccd8b3d"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, với diện tích **24m²**, em khuyên anh/chị nên chọn **máy lạnh Panasonic XU Inverter 1.5 HP** (mã thường là **CU/CS-XU12XKH-8**) để đảm bảo hiệu suất làm lạnh tối ưu ạ! 💨  \n\n### **Lý do nên chọn 1.5 HP cho 24m²**:\n1️⃣ **Công suất phù hợp**:  \n   - 1.5 HP (12.000 BTU) đủ làm mát nhanh và duy trì nhiệt độ ổn định cho phòng 20-25m².  \n   - Tránh tình trạng máy hoạt động quá tải (nếu chọn 1.0 HP) hoặc lãng phí điện (nếu chọn 2.0 HP).  \n\n2️⃣ **Tiết kiệm điện**:  \n   - Công nghệ Inverter giúp tiết kiệm **30-60% điện năng** so với máy thường.  \n\n3️⃣ **Tính năng h hỗ trợ**:  \n   - **Nanoe-G**: Khử khuẩn, khử mùi hiệu quả.  \n   - **Chế độ Powerful**: Làm lạnh nhanh chỉ trong 5 phút.  \n   - **Tự động vệ sinh**: Giảm bụi bẩn bám dàn lạnh.  \n\n### **Giá tham khảo**:  \n- **Panasonic XU 1.5 HP Inverter**: Khoảng **9.500.000₫ - 11.000.000₫** (tùy thời điểm khuyến mãi).  \n\nAnh/chị cần em tư vấn thêm về chế độ bảo hành hoặc lắp đặt không ạ?  🛒 Hoặc anh/chị muốn so sánh với dòng khác như **Daikin FTKY** (cùng công suất) để có thêm lựa chọn?  😊",
+  "createdAt": {
+    "$date": "2025-12-05T14:49:00.379Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:49:00.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f14550c879df1ccd8b73"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "tủ lạnh",
+  "createdAt": {
+    "$date": "2025-12-05T14:50:45.722Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:50:45.722Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f14550c879df1ccd8b74"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, em xin giới thiệu đến anh/chị một số mẫu tủ lạnh tốt nhất hiện đang có tại cửa hàng ạ 🥶:\n\n1️⃣ **Tủ lạnh LG Inverter 519L Side by Side (GR-B256BL)**  \n   - **Thương hiệu**: LG  \n   - **Dung tích**: 519L (lớn phù hợp gia đình đông người)  \n   - **Công nghệ**: Inverter tiết kiệm điện  \n   - **Giá**: 14.100.000₫  \n\n2️⃣ **Tủ lạnh Samsung Inverter 400L Multidoor (RF40A4010B4)**  \n   - **Thương hiệu**: Samsung  \n   - **Dung tích**: 400L (thiết kế đa cửa tiện lợi)  \n   - **Công nghệ**: Inverter cùng tính năng kháng khuẩn  \n   - **Giá**: 21.300.000₫  \n\nAnh/chị đang tìm tủ lạnh với dung tích bao nhiêu hoặc có yêu cầu cụ thể gì khác không ạ? Em sẽ tư vấn thêm để giúp anh/chị chọn được sản phẩm phù hợp nhất ạ 🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:50:45.722Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:50:45.722Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f15f50c879df1ccd8b7e"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "thông số tủ Tủ lạnh LG Inverter 519L",
+  "createdAt": {
+    "$date": "2025-12-05T14:51:11.076Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:51:11.076Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f15f50c879df1ccd8b7f"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, em xin cung cấp thông số chi tiết của tủ lạnh **LG Side by Side Inverter 519L GR-B256BL** để anh/chị tham khảo nhé ạ 🥶:\n\n### **Thông số kỹ thuật**:\n1️⃣ **Dung tích tổng**:  \n   - **519 lít** (Ngăn đá: 175 lít, Ngăn mát: 344 lít)  \n\n2️⃣ **Công nghệ**:  \n   - **Inverter**: Tiết kiệm điện đến 30% so với công nghệ thường.  \n   - **DoorCooling+**: Làm lạnh đều khắp các ngăn.  \n   - **Linea Ice**: Tạo đá trong, không dính.  \n\n3️⃣ **Tính năng đặc biệt**:  \n   - **Hệ thống kháng khuẩn Hygiene Fresh+**: Khử mùi và kháng khuẩn hiệu quả.  \n   - **Ngăn đa năng FlexZone**: Điều chỉnh nhiệt độ linh hoạt, từ -23°C đến 7°C.  \n\n4️⃣ **Tiện ích**:  \n   - **Màn hình cảm ứng LCD**: Dễ dàng điều chỉnh.  \n   - **Chế độ nghỉ Holiday**: Tiết kiệm điện khi không sử dụng.  \n\n### **Kích thước & Trọng lượng**:  \n   - **Kích thước (C x R x S)**: 908 x 1790 x 734 mm  \n   - **Trọng lượng**: 122 kg  \n\n### **Giá bán**:  \n   - **14.100.000₫** (Giá có thể thay đổi theo chương trình khuyến mãi)  \n\n### **Bảo hành**:  \n   - **Chính hãng LG**: 12 tháng cho tủ lạnh và 10 năm cho máy nén.  \n\nAnh/chị cần em tư vấn thêm về cách sử dụng hoặc hỗ trợ đặt hàng không ạ? 🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:51:11.076Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:51:11.076Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f1c62ff350253321e847"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "Tủ lạnh Samsung Inverter 400L",
+  "createdAt": {
+    "$date": "2025-12-05T14:52:54.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:52:54.706Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f1c62ff350253321e848"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, em xin giới thiệu thông tin chi tiết về tủ lạnh **Samsung Inverter 400L Multidoor (RF40A4010B4)** để anh/chị tham khảo ạ 🥶:\n\n### **Thông số kỹ thuật**:\n1️⃣ **Dung tích tổng**:  \n   - **400 lít** (Ngăn đá: 97 lít, Ngăn mát: 303 lít)  \n\n2️⃣ **Công nghệ**:  \n   - **Inverter**: Tiết kiệm điện hiệu quả, hoạt động êm ái.  \n   - **Multi Flow**: Làm lạnh đều khắp các ngăn.  \n\n3️⃣ **Tính năng đặc biệt**:  \n   - **Ngăn Fresh Zone**: Bảo quản thực phẩm tươi lâu hơn.  \n   - **Power Cool & Power Freeze**: Làm lạnh và đông đá nhanh chóng.  \n\n4️⃣ **Tiện ích**:  \n   - **Màn hình điều khiển tích hợp**: Dễ dàng điều chỉnh nhiệt độ và chế độ.  \n\n### **Kích thước & Trọng lượng**:  \n   - **Kích thước (C x R x S)**: 726 x 1790 x 664 mm  \n   - **Trọng lượng**: 85 kg  \n\n### **Giá bán**:  \n   - **21.300.000₫** (Giá có thể thay đổi theo chương trình khuyến mãi)  \n\n### **Bảo hành**:  \n   - **Chính hãng Samsung**: 12 tháng cho tủ lạnh và 10 năm cho máy nén.  \n\nAnh/chị cần em tư vấn thêm về cách sử dụng hoặc hỗ trợ đặt hàng không ạ? 🛒!",
+  "createdAt": {
+    "$date": "2025-12-05T14:52:54.707Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:52:54.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f1f72ff350253321e87a"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "assistant",
+  "content": "Dạ, em xin hướng dẫn chi tiết **cách sử dụng t tủ lạnh Samsung Inverter 400L (RF40A4010B4)** để anh/chị tận dụng tối đa tính năng nhé ạ! ❄️  \n\n### **1. Cài đặt ban đầu**  \n- **Đặt t tủ cách tường 10cm** để đảm bảo thoát nhiệt.  \n- **Cắm điện 2-4 tiếng trước khi dùng** để hệ thống ổn định nhiệt độ.  \n- **Chỉnh chân t tủ cân bằng** (dùng tuốc-nơ-vít điều chỉnh ở đế chân).  \n\n### **2. Điều chỉnh nhiệt độ**  \n- **Ngăn mát**: **2-4°C** (dùng nút điều chỉnh trên màn hình).  \n- **Ngăn đá**: **-18°C đến -23°C**.  \n- **Ngăn Fresh Zone**: **0-3°C** (bảo quản rau c củ/đồ tươi sống).  \n\n### **3. Sắp xếp thực phẩm thông minh**  \n- **Ngăn mát trên cùng**: Đồ  ăn sẵn, nước uống.  \n- **Ngăn Fresh Zone**: Thịt cá tươi (dùng trong 1-2 ngày), rau c củ.  \n- **Ngăn đá**: Thực phẩm trữ đông lâu ngày.  \n\n### **4. Tính năng đặc biệt**  \n- **Power Cool**: Nhấn giữ nút \"Power Cool\" 3 giây để làm lạnh nhanh (dùng khi cho nhiều đồ mới vào).  \n- **Power Freeze**: Tương tự cho ngăn đá (đông đá nhanh).  \n- **Holiday Mode**: Bật khi đi vắng dài ngày để tiết kiệm điện.  \n\n### **5. Vệ sinh & bảo dưưỡng**  \n- **Rút điện trước khi lau chùi**.  \n- **Vệ sinh khay thoát nước** (phía sau ngăn mát) 1 tháng/lần.  \n- **Xả tuyết ngăn đá** khi lớp tuyết dày quá 5mm.  \n\n### **Lưu ý quan trọng**  \n-  ✖️ **Không chất đồ chắn quạt gió** (gây lạnh không đều).  \n- ✔️ **Đóng kín cửa t tủ** để tránh thất thoát nhiệt.  \n\nAnh/chị cần em giải đáp thêm điểm nào không ạ? Em sẵn sàng h hỗ trợ ngay!  🛒💙",
+  "createdAt": {
+    "$date": "2025-12-05T14:53:43.477Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:53:43.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f1f72ff350253321e879"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "role": "user",
+  "content": "cách sử dụng",
+  "createdAt": {
+    "$date": "2025-12-05T14:53:43.477Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:53:43.477Z"
+  },
+  "__v": 0
+}]

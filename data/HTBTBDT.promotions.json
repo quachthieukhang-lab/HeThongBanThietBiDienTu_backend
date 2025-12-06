@@ -1,110 +1,197 @@
 [{
   "_id": {
-    "$oid": "693304344d9d7f8418c18832"
+    "$oid": "672b111a9b01c38260b97001"
   },
-  "name": "LAPTOP15",
-  "description": "Giảm 15% cho các dòng laptop chính hãng",
+  "name": "Flash Sale Giờ Vàng - Giảm 50%",
+  "description": "Giảm giá cực sốc cho các sản phẩm điện tử trong khung giờ vàng 12h - 14h.",
   "discount_type": "PERCENTAGE",
-  "discount_value": 15,
-  "start_date": "2025-01-01T00:00:00.000Z",
-  "end_date": "2025-06-30T00:00:00.000Z"
+  "discount_value": 50,
+  "start_date": {
+    "$date": "2025-11-09T17:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2025-11-10T16:59:59.999Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-01T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T19:20:02.626Z"
+  },
+  "code": "asdasdxc",
+  "discount_amount": 5,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "693304344d9d7f8418c18833"
+    "$oid": "672b111a9b01c38260b97002"
   },
-  "name": "IPHONE500K",
-  "description": "Giảm 500.000đ khi mua iPhone từ iPhone 13 trở lên",
+  "name": "Chào Bạn Mới - Tặng 50K",
+  "description": "Voucher giảm giá 50.000đ cho đơn hàng đầu tiên của khách hàng mới.",
   "discount_type": "FIXED_AMOUNT",
-  "discount_value": 500000,
-  "start_date": "2025-02-01T00:00:00.000Z",
-  "end_date": "2025-12-31T00:00:00.000Z"
+  "discount_value": 50000,
+  "start_date": {
+    "$date": "2025-12-04T17:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2026-12-11T16:59:59.999Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-02T08:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T19:20:47.908Z"
+  },
+  "code": "asdzxc",
+  "discount_amount": 10,
+  "status": true
 },
 {
   "_id": {
-    "$oid": "693304344d9d7f8418c18834"
+    "$oid": "672b111a9b01c38260b97004"
   },
-  "name": "PCBUILD10",
-  "description": "Giảm 10% cho combo build PC gaming",
-  "discount_type": "PERCENTAGE",
-  "discount_value": 10,
-  "start_date": "2025-03-15T00:00:00.000Z",
-  "end_date": "2025-09-15T00:00:00.000Z"
-},
-{
-  "_id": {
-    "$oid": "693304344d9d7f8418c18835"
-  },
-  "name": "HEADSET100K",
-  "description": "Giảm 100.000đ cho tai nghe gaming",
-  "discount_type": "FIXED_AMOUNT",
+  "name": "Trợ Giá Mùa Hè - Giảm 100K",
+  "description": "Giảm ngay 100.000đ khi mua Máy lạnh hoặc Quạt điều hòa.",
+  "discount_type": "fixed_amount",
   "discount_value": 100000,
-  "start_date": "2025-04-01T00:00:00.000Z",
-  "end_date": "2025-10-01T00:00:00.000Z"
+  "start_date": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2025-08-31T23:59:59.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-06T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T10:00:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "693304344d9d7f8418c18836"
+    "$oid": "672b111a9b01c38260b97005"
   },
-  "name": "MONITOR20",
-  "description": "Giảm 20% cho màn hình từ 144Hz trở lên",
+  "name": "Black Friday - Sale Sập Sàn 30%",
+  "description": "Cơ hội săn hàng hiệu giá rẻ, giảm 30% tối đa 500k.",
   "discount_type": "PERCENTAGE",
+  "discount_value": 30,
+  "start_date": {
+    "$date": "2025-11-27T17:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2025-12-01T16:59:59.999Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-07T11:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T19:09:46.988Z"
+  },
+  "code": "dasdad"
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b97006"
+  },
+  "name": "Voucher Tết 2026 - Lì Xì 200K",
+  "description": "Lì xì đầu năm 200.000đ cho đơn hàng từ 2 triệu.",
+  "discount_type": "fixed_amount",
+  "discount_value": 200000,
+  "start_date": {
+    "$date": "2026-02-10T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2026-02-20T23:59:59.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-20T12:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-20T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b97007"
+  },
+  "name": "Ưu Đãi Cuối Tuần - Giảm 10%",
+  "description": "Mua sắm thả ga cuối tuần, giảm 10% cho mọi đơn hàng.",
+  "discount_type": "percentage",
+  "discount_value": 10,
+  "start_date": {
+    "$date": "2025-11-15T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2025-11-16T23:59:59.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-14T13:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-14T13:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "672b111a9b01c38260b97008"
+  },
+  "name": "Cyber Monday - Giảm 20%",
+  "description": "Giảm giá đặc biệt cho các thiết bị công nghệ (Laptop, Điện thoại).",
+  "discount_type": "percentage",
   "discount_value": 20,
-  "start_date": "2025-01-01T00:00:00.000Z",
-  "end_date": "2025-12-31T00:00:00.000Z"
+  "start_date": {
+    "$date": "2025-12-01T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2025-12-01T23:59:59.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-25T14:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-25T14:00:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "693304344d9d7f8418c18837"
+    "$oid": "672b111a9b01c38260b97009"
   },
-  "name": "SSD250K",
-  "description": "Giảm 250.000đ cho SSD NVMe từ 1TB",
-  "discount_type": "FIXED_AMOUNT",
-  "discount_value": 250000,
-  "start_date": "2025-05-01T00:00:00.000Z",
-  "end_date": "2025-08-31T00:00:00.000Z"
+  "name": "Freeship Xtra - Giảm 25K",
+  "description": "Hỗ trợ phí vận chuyển 25.000đ cho đơn hàng ngoại tỉnh.",
+  "discount_type": "fixed_amount",
+  "discount_value": 25000,
+  "start_date": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2025-06-30T23:59:59.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-06T15:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-06T15:00:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "693304344d9d7f8418c18838"
+    "$oid": "672b111a9b01c38260b97010"
   },
-  "name": "GAMINGGEAR15",
-  "description": "Giảm 15% cho bàn phím và chuột gaming",
+  "name": "Tri Ân Khách Hàng Thân Thiết - Giảm 5%",
+  "description": "Giảm thêm 5% cho khách hàng đã mua trên 3 đơn hàng.",
   "discount_type": "PERCENTAGE",
-  "discount_value": 15,
-  "start_date": "2025-06-01T00:00:00.000Z",
-  "end_date": "2025-12-31T00:00:00.000Z"
-},
-{
-  "_id": {
-    "$oid": "693304344d9d7f8418c18839"
+  "discount_value": 5,
+  "start_date": {
+    "$date": "2024-12-31T17:00:00.000Z"
   },
-  "name": "SMARTTV1M",
-  "description": "Giảm 1.000.000đ cho TV thông minh 4K",
-  "discount_type": "FIXED_AMOUNT",
-  "discount_value": 1000000,
-  "start_date": "2025-07-01T00:00:00.000Z",
-  "end_date": "2025-12-31T00:00:00.000Z"
-},
-{
-  "_id": {
-    "$oid": "693304344d9d7f8418c1883a"
+  "end_date": {
+    "$date": "2026-01-16T16:59:59.999Z"
   },
-  "name": "TABLET12",
-  "description": "Giảm 12% cho máy tính bảng",
-  "discount_type": "PERCENTAGE",
-  "discount_value": 12,
-  "start_date": "2025-02-10T00:00:00.000Z",
-  "end_date": "2026-02-10T00:00:00.000Z"
-},
-{
-  "_id": {
-    "$oid": "693304344d9d7f8418c1883b"
+  "createdAt": {
+    "$date": "2025-11-06T16:00:00.000Z"
   },
-  "name": "POWERBANK80K",
-  "description": "Giảm 80.000đ cho pin sạc dự phòng",
-  "discount_type": "FIXED_AMOUNT",
-  "discount_value": 80000,
-  "start_date": "2025-01-10T00:00:00.000Z",
-  "end_date": "2025-12-31T00:00:00.000Z"
+  "updatedAt": {
+    "$date": "2025-12-05T19:10:11.641Z"
+  },
+  "code": "KHACHHANGTHANTHIET"
 }]

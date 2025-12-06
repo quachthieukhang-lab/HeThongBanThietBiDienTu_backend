@@ -82,6 +82,33 @@ export class ReviewsService {
       throw error
     }
   }
+  
+  async findAllByProductId(productId: string, query: any) {
+    const { page = 1, limit = 20, status } = query
+    const filter: any = {
+      productId: new Types.ObjectId(productId),
+    }
+
+    // Mặc định chỉ lấy review đã duyệt, trừ khi có status khác được chỉ định
+    if (status) {
+      filter.status = status
+    } else {
+      filter.status = ReviewStatus.Approved
+    }
+
+    const [items, total] = await Promise.all([
+      this.reviewModel
+        .find(filter)
+        .sort({ createdAt: -1 })
+        .skip((page - 1) * limit)
+        .limit(limit)
+        .populate('userId', 'name avatarUrl')
+        .lean(),
+      this.reviewModel.countDocuments(filter),
+    ])
+
+    return { items, page, limit, total, pages: Math.ceil(total / limit) }
+  }
 
   async findAll(query: any) {
     const { page = 1, limit = 20, productId, userId, status } = query

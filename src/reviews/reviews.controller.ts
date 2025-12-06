@@ -39,6 +39,12 @@ export class ReviewsController {
     return this.reviewsService.create(createReviewDto, user, files)
   }
 
+  @Get('product/:productId')
+  findAllByProduct(
+    @Param('productId') productId: string,
+    @Query() query: any,
+  ) { return this.reviewsService.findAllByProductId(productId, query) }
+
   @Get()
   findAll(@Query() query: any) {
     return this.reviewsService.findAll(query)
