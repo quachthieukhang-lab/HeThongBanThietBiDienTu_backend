@@ -25,6 +25,7 @@ import { ChatModule } from './chat/chat.module';
 import { ServicePackagesModule } from './service-packages/service-packages.module';
 import { PromotionModule } from './promotion/promotion.module';
 import { ChatHistoryModule } from './chat-history/chat-history.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
   imports: [
@@ -62,7 +63,7 @@ import { ChatHistoryModule } from './chat-history/chat-history.module';
     ServicePackagesModule,
     PromotionModule,
     ChatHistoryModule,
-    
+    DashboardModule,
   ],
   controllers: [AppController],
   providers: [AppService],
