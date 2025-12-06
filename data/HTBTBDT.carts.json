@@ -425,4 +425,137 @@
     "$date": "2025-12-05T07:12:22.619Z"
   },
   "__v": 5
+},
+{
+  "_id": {
+    "$oid": "6933a24fd17853c6dddc86e2"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-06T03:26:07.407Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:33:29.404Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6933a41fd17853c6dddc8847"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-06T03:33:51.333Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:34:02.680Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6933a43fd17853c6dddc88a9"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-06T03:34:23.875Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:34:57.755Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "6933a538d17853c6dddc89a2"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-06T03:38:32.343Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:40:32.165Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6933a602d17853c6dddc8a80"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-06T03:41:54.925Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:47:01.858Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6933a945d17853c6dddc8bfe"
+  },
+  "userId": {
+    "$oid": "6933a945d17853c6dddc8bfb"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-12-06T03:55:49.705Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:55:49.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933aeb5d17853c6dddc8e87"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "items": [],
+  "totalQuantity": 0,
+  "totalPrice": 0,
+  "status": "ordered",
+  "createdAt": {
+    "$date": "2025-12-06T04:19:01.705Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T04:28:03.655Z"
+  },
+  "__v": 3
 }]

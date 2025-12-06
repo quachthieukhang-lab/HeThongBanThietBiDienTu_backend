@@ -138,10 +138,10 @@
     "$date": "2025-11-11T11:53:16.582Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T06:50:59.550Z"
+    "$date": "2025-12-06T04:19:38.449Z"
   },
   "__v": 0,
-  "refreshTokenHash": "$2b$10$djmQVoRFSMsgpsryn2Ba5elws4IVHQz.JNBW7jh1Bj0sG4dSFJMu6"
+  "refreshTokenHash": "$2b$10$LdDkHV18ER1tqzyDl6A6Iu17uBYg0dj6AKrR6146MXoxPQbTNOBnC"
 },
 {
   "_id": {
@@ -153,7 +153,7 @@
   "roles": [
     "customer"
   ],
-  "status": "active",
+  "status": "blocked",
   "phone": "0942626536",
   "avatarUrl": null,
   "defaultAddressId": null,
@@ -161,30 +161,31 @@
     "$date": "2025-11-21T04:05:33.363Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T06:50:14.661Z"
+    "$date": "2025-12-06T04:18:33.762Z"
   },
   "__v": 0,
-  "refreshTokenHash": "$2b$10$LF6dmPeorrLZs4QrUDSfku6sEH3FFN90rDHh5c8.nKRGf6W76zgfC"
+  "refreshTokenHash": "$2b$10$45OqerHY4IG6U0arWhypB.9UhUm6uF2AeT0lx5a0oIeRvj1tXLY8i"
 },
 {
   "_id": {
-    "$oid": "6921f9222e982939a41cb4c9"
+    "$oid": "6933a945d17853c6dddc8bfb"
   },
-  "name": "asdg",
-  "email": "sd@gmail.com",
-  "passwordHash": "$2b$10$yBZIRqdDU1FqZ9rGEyjt0eWlqRbtA3T.otHGzOZAlLYCD6pQGGCYG",
+  "name": "customer",
+  "email": "customer@gmail.com",
+  "passwordHash": "$2b$10$RcGIAgObYaWHNMMX8Sx1YOZHVDkxJuatTi3FHXqSbCVAtyrub0WoS",
   "roles": [
-    "customer"
+    "admin"
   ],
-  "status": "blocked",
-  "phone": "0942766193",
+  "status": "active",
+  "phone": "0123465789",
   "avatarUrl": null,
   "defaultAddressId": null,
   "createdAt": {
-    "$date": "2025-11-22T17:55:46.354Z"
+    "$date": "2025-12-06T03:55:49.701Z"
   },
   "updatedAt": {
-    "$date": "2025-12-04T19:14:41.068Z"
+    "$date": "2025-12-06T04:18:22.120Z"
   },
-  "__v": 0
+  "__v": 0,
+  "refreshTokenHash": "$2b$10$/EFQyq/d6EAdKpSXegr2OuX0/nNYTXIWmGmtMkZZuLzQP7.HLIvKC"
 }]

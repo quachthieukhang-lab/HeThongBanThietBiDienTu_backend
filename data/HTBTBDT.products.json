@@ -484,9 +484,81 @@
     "$date": "2025-12-05T07:45:10.626Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T07:49:22.526Z"
+    "$date": "2025-12-05T11:52:06.393Z"
   },
   "__v": 0,
   "thumbnail": "uploads/products/1764920710627-561925c6-d026-4032-82db-67933c080e81.jpg",
   "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "6932c73e18a743ee9846538f"
+  },
+  "name": "Tai nghe Bluetooth Apple AirPods Pro 2 MagSafe Charge",
+  "slug": "tai-nghe-bluetooth-apple-airpods-pro-2-magsafe-charge",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a7"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b9133e"
+  },
+  "servicePackageIds": [],
+  "templateId": {
+    "$oid": "6932c61618a743ee98465360"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 5120000,
+  "priceTo": 5120000,
+  "createdAt": {
+    "$date": "2025-12-05T11:51:26.498Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T11:58:53.110Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764935486501-3d1eff03-0b6c-4fe2-b56a-1bb4100e2fc2.jpg",
+  "variantFacetSummary": {}
+},
+{
+  "_id": {
+    "$oid": "6933ace4d17853c6dddc8d2d"
+  },
+  "name": "MacBook Air 13 inch M3 2024",
+  "slug": "macbook-air-13-m3-2024",
+  "categoryId": {
+    "$oid": "672b111a9b01c38260b912a4"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d4"
+  },
+  "servicePackageIds": [
+    {
+      "$oid": "6933af4cd17853c6dddc8f60"
+    },
+    {
+      "$oid": "6933ad94d17853c6dddc8deb"
+    }
+  ],
+  "templateId": {
+    "$oid": "6933aaa4d17853c6dddc8ce3"
+  },
+  "templateVersion": 1,
+  "images": [],
+  "isPublished": true,
+  "priceFrom": 31200000,
+  "priceTo": 31200000,
+  "createdAt": {
+    "$date": "2025-12-06T04:11:16.063Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T04:55:43.223Z"
+  },
+  "__v": 0,
+  "thumbnail": "uploads/products/1764994276065-59c34cd0-29fa-45aa-b9ed-50db43cfac2b.jpg",
+  "variantFacetSummary": {},
+  "brandId": {
+    "$oid": "672b111a9b01c38260b91012"
+  }
 }]

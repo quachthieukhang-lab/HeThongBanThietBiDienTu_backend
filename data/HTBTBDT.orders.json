@@ -34,13 +34,331 @@
   "shippingFee": 30000,
   "totalPrice": 13230000,
   "paymentMethod": "cod",
-  "status": "processing",
+  "status": "cancelled",
   "promoCode": null,
   "createdAt": {
     "$date": "2025-12-05T06:50:26.937Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T06:51:39.152Z"
+    "$date": "2025-12-06T04:14:40.894Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933a409d17853c6dddc87c5"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "code": "DH-1764992009402",
+  "items": [
+    {
+      "productId": {
+        "$oid": "692eafd6e7797c7ea379c7b1"
+      },
+      "variantId": {
+        "$oid": "692eb027e7797c7ea379c82c"
+      },
+      "name": "Máy lạnh Panasonic Inverter Cao Cấp Dòng XU (Model 2024)",
+      "thumbnail": "uploads/products/1764667585366-2404aa54-e8a7-41b5-9fc4-1815380a1b92.webp",
+      "price": 3460000,
+      "quantity": 1,
+      "servicePackages": [
+        {
+          "_id": "69328e781ce81a609272777d",
+          "name": "Gói bảo hành 1",
+          "price": 1100000,
+          "duration": "4 năm"
+        }
+      ]
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Khang",
+    "phone": "0942766191",
+    "line1": "166 tầm vu",
+    "ward": "Hưng lợi",
+    "district": "Ninh Kiều",
+    "city": "Cần thơ",
+    "country": "VN"
+  },
+  "subTotal": 4560000,
+  "shippingFee": 30000,
+  "totalPrice": 4590000,
+  "paymentMethod": "cod",
+  "status": "processing",
+  "promoCode": "KHACHHANGTHANTHIET",
+  "createdAt": {
+    "$date": "2025-12-06T03:33:29.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:33:29.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933a42ad17853c6dddc8865"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "code": "DH-1764992042677",
+  "items": [
+    {
+      "productId": {
+        "$oid": "69328d861ce81a609272754d"
+      },
+      "variantId": {
+        "$oid": "69328dbc1ce81a609272758d"
+      },
+      "name": "Tủ lạnh LG Inverter 519L Side by Side (GR-B256BL)",
+      "thumbnail": "uploads/products/1764920710627-561925c6-d026-4032-82db-67933c080e81.jpg",
+      "price": 14100000,
+      "quantity": 1,
+      "servicePackages": [
+        {
+          "_id": "69328e781ce81a609272777d",
+          "name": "Gói bảo hành 1",
+          "price": 1100000,
+          "duration": "4 năm"
+        }
+      ]
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Khang",
+    "phone": "0942766191",
+    "line1": "166 tầm vu",
+    "ward": "Hưng lợi",
+    "district": "Ninh Kiều",
+    "city": "Cần thơ",
+    "country": "VN"
+  },
+  "subTotal": 15200000,
+  "shippingFee": 30000,
+  "totalPrice": 15230000,
+  "paymentMethod": "cod",
+  "status": "processing",
+  "promoCode": "KHACHHANGTHANTHIET",
+  "createdAt": {
+    "$date": "2025-12-06T03:34:02.680Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:34:02.680Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933a461d17853c6dddc892a"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "code": "DH-1764992097753",
+  "items": [
+    {
+      "productId": {
+        "$oid": "69328cb21ce81a60927272e7"
+      },
+      "variantId": {
+        "$oid": "69328d031ce81a60927273c4"
+      },
+      "name": "Tủ lạnh Samsung Inverter 400L Multidoor (RF40A4010B4)",
+      "thumbnail": "uploads/products/1764920524975-9e5913e5-4edd-451a-8eb5-6dce373752ba.jpg",
+      "price": 21300000,
+      "quantity": 1,
+      "servicePackages": [
+        {
+          "_id": "69328e501ce81a609272776a",
+          "name": "Gói tiêu chuẩn",
+          "price": 0,
+          "duration": ""
+        }
+      ]
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Khang",
+    "phone": "0942766191",
+    "line1": "166 tầm vu",
+    "ward": "Hưng lợi",
+    "district": "Ninh Kiều",
+    "city": "Cần thơ",
+    "country": "VN"
+  },
+  "subTotal": 21300000,
+  "shippingFee": 30000,
+  "totalPrice": 21330000,
+  "paymentMethod": "cod",
+  "status": "processing",
+  "promoCode": "KHACHHANGTHANTHIET",
+  "createdAt": {
+    "$date": "2025-12-06T03:34:57.756Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:34:57.756Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933a5b0d17853c6dddc89fd"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "code": "DH-1764992432164",
+  "items": [
+    {
+      "productId": {
+        "$oid": "693284941ce81a6092726870"
+      },
+      "variantId": {
+        "$oid": "693284e41ce81a60927268ba"
+      },
+      "name": "Máy giặt Electrolux UltimateCare 500",
+      "thumbnail": "uploads/products/1764918420231-91470630-c379-4419-be30-f7d76e08d8f6.jpg",
+      "price": 9500000,
+      "quantity": 1,
+      "servicePackages": [
+        {
+          "_id": "69328e501ce81a609272776a",
+          "name": "Gói tiêu chuẩn",
+          "price": 0,
+          "duration": ""
+        }
+      ]
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Khang",
+    "phone": "0942766191",
+    "line1": "166 tầm vu",
+    "ward": "Hưng lợi",
+    "district": "Ninh Kiều",
+    "city": "Cần thơ",
+    "country": "VN"
+  },
+  "subTotal": 9500000,
+  "shippingFee": 30000,
+  "totalPrice": 9530000,
+  "paymentMethod": "cod",
+  "status": "processing",
+  "promoCode": "KHACHHANGTHANTHIET",
+  "createdAt": {
+    "$date": "2025-12-06T03:40:32.166Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T03:40:32.166Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933a735d17853c6dddc8b57"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "code": "DH-1764992821856",
+  "items": [
+    {
+      "productId": {
+        "$oid": "69328d861ce81a609272754d"
+      },
+      "variantId": {
+        "$oid": "69328dbc1ce81a609272758d"
+      },
+      "name": "Tủ lạnh LG Inverter 519L Side by Side (GR-B256BL)",
+      "thumbnail": "uploads/products/1764920710627-561925c6-d026-4032-82db-67933c080e81.jpg",
+      "price": 14100000,
+      "quantity": 1,
+      "servicePackages": [
+        {
+          "_id": "69328e781ce81a609272777d",
+          "name": "Gói bảo hành 1",
+          "price": 1100000,
+          "duration": "4 năm"
+        }
+      ]
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Khang",
+    "phone": "0942766191",
+    "line1": "166 tầm vu",
+    "ward": "Hưng lợi",
+    "district": "Ninh Kiều",
+    "city": "Cần thơ",
+    "country": "VN"
+  },
+  "subTotal": 15200000,
+  "shippingFee": 30000,
+  "totalPrice": 14468500,
+  "paymentMethod": "cod",
+  "status": "shipped",
+  "promoCode": "KHACHHANGTHANTHIET",
+  "createdAt": {
+    "$date": "2025-12-06T03:47:01.858Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T04:14:29.940Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933b0d3d17853c6dddc91d1"
+  },
+  "userId": {
+    "$oid": "691fe50d1d54cb1d10be1409"
+  },
+  "code": "DH-1764995283652",
+  "items": [
+    {
+      "productId": {
+        "$oid": "6933ace4d17853c6dddc8d2d"
+      },
+      "variantId": {
+        "$oid": "6933ad5ed17853c6dddc8d90"
+      },
+      "name": "MacBook Air 13 inch M3 2024",
+      "thumbnail": "uploads/products/1764994276065-59c34cd0-29fa-45aa-b9ed-50db43cfac2b.jpg",
+      "price": 31200000,
+      "quantity": 1,
+      "servicePackages": [
+        {
+          "_id": "6933ad94d17853c6dddc8deb",
+          "name": "Apple care +",
+          "price": 422000,
+          "duration": "4 năm"
+        }
+      ]
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Khang",
+    "phone": "0942766191",
+    "line1": "166 tầm vu",
+    "ward": "Hưng lợi",
+    "district": "Ninh Kiều",
+    "city": "Cần thơ",
+    "country": "VN"
+  },
+  "subTotal": 31622000,
+  "shippingFee": 30000,
+  "totalPrice": 31602000,
+  "paymentMethod": "cod",
+  "status": "processing",
+  "promoCode": "CHAOBANMOI",
+  "createdAt": {
+    "$date": "2025-12-06T04:28:03.655Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T04:28:03.655Z"
   },
   "__v": 0
 }]

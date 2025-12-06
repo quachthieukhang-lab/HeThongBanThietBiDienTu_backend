@@ -504,4 +504,329 @@
     }
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932c61618a743ee98465360"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b9133e"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Tai nghe v1",
+      "type": "string",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Apple",
+        "Sony",
+        "JBL",
+        "Samsung",
+        "Marshall",
+        "Sennheiser"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "type",
+      "label": "Loại tai nghe",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "In-ear (Nhét tai)",
+        "Earbuds (Cài tai)",
+        "Over-ear (Chụp tai)",
+        "On-ear"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "connection",
+      "label": "Kết nối",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "True Wireless",
+        "Bluetooth",
+        "Có dây (Jack 3.5mm)",
+        "Có dây (Lightning/Type-C)"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "battery_hours",
+      "label": "Thời lượng pin (giờ)",
+      "type": "number",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        12,
+        24,
+        36
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "charge_type",
+      "label": "Đầu kết nối",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Lightning",
+        "Type-C",
+        "Micro USB",
+        "Type-C to Lightning",
+        "Type-C to Type-C",
+        "USB-A to Type-C",
+        "USB-A to Lightning",
+        "MagSafe"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933aaa4d17853c6dddc8ce3"
+  },
+  "subcategoryId": {
+    "$oid": "672b111a9b01c38260b912d4"
+  },
+  "version": 1,
+  "isActive": true,
+  "attributes": [
+    {
+      "key": "att_template_name",
+      "label": "Thuộc tính Laptop v1",
+      "type": "string",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "brand",
+      "label": "Thương hiệu",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Apple (MacBook)",
+        "Dell",
+        "HP",
+        "Asus",
+        "Acer",
+        "Lenovo",
+        "MSI",
+        "Gigabyte",
+        "LG"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "cpu",
+      "label": "Bộ vi xử lý (CPU)",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Intel Core i3",
+        "Intel Core i5",
+        "Intel Core i7",
+        "Intel Core i9",
+        "Intel Core Ultra",
+        "AMD Ryzen 3",
+        "AMD Ryzen 5",
+        "AMD Ryzen 7",
+        "AMD Ryzen 9",
+        "Apple M1",
+        "Apple M2",
+        "Apple M3"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "ram",
+      "label": "RAM",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "4GB",
+        "8GB",
+        "16GB",
+        "32GB",
+        "64GB"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "hard_drive",
+      "label": "Ổ cứng",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "SSD 256GB",
+        "SSD 512GB",
+        "SSD 1TB",
+        "SSD 2TB"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "screen_size",
+      "label": "Kích thước màn hình",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "13.3 inch",
+        "13.6 inch",
+        "14 inch",
+        "15.6 inch",
+        "16 inch",
+        "17.3 inch"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    },
+    {
+      "key": "vga",
+      "label": "Card đồ họa",
+      "type": "enum",
+      "unit": "",
+      "min": null,
+      "max": null,
+      "step": null,
+      "decimals": null,
+      "options": [
+        "Onboard (Tích hợp)",
+        "NVIDIA GeForce RTX 3050",
+        "NVIDIA GeForce RTX 4050",
+        "NVIDIA GeForce RTX 4060",
+        "NVIDIA GeForce RTX 4070",
+        "AMD Radeon"
+      ],
+      "required": false,
+      "filterable": null,
+      "sortable": null,
+      "searchable": null,
+      "group": null,
+      "order": null
+    }
+  ],
+  "__v": 0
 }]

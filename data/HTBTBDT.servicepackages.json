@@ -517,17 +517,6 @@
 },
 {
   "_id": {
-    "$oid": "692777a5d7e63f5c4595cd37"
-  },
-  "name": "Gói dịch vụ Test (Ẩn)",
-  "description": "Gói dùng để kiểm tra hệ thống",
-  "price": 1000,
-  "duration": "1 phút",
-  "type": "addon",
-  "isActive": false
-},
-{
-  "_id": {
     "$oid": "69328e501ce81a609272776a"
   },
   "name": "Gói tiêu chuẩn",
@@ -558,7 +547,25 @@
     "$date": "2025-12-05T07:49:12.580Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T07:49:12.580Z"
+    "$date": "2025-12-05T18:19:19.148Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933ad94d17853c6dddc8deb"
+  },
+  "name": "Apple care +",
+  "description": "asdadasczxc",
+  "price": 422000,
+  "duration": "4 năm",
+  "type": "warranty",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-06T04:14:12.909Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T04:14:12.909Z"
   },
   "__v": 0
 }]

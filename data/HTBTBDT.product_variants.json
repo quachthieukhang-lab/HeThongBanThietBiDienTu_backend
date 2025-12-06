@@ -110,14 +110,14 @@
   },
   "price": 3460000,
   "compareAtPrice": 4200000,
-  "stock": 7,
+  "stock": 6,
   "images": [],
   "isActive": true,
   "createdAt": {
     "$date": "2025-12-02T09:23:51.896Z"
   },
   "updatedAt": {
-    "$date": "2025-12-02T09:24:57.566Z"
+    "$date": "2025-12-06T03:33:29.401Z"
   },
   "__v": 0,
   "facets": {}
@@ -530,14 +530,14 @@
   },
   "price": 9500000,
   "compareAtPrice": 9800000,
-  "stock": 10,
+  "stock": 9,
   "images": [],
   "isActive": true,
   "createdAt": {
     "$date": "2025-12-05T07:08:20.441Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T07:08:20.441Z"
+    "$date": "2025-12-06T03:40:32.163Z"
   },
   "__v": 0
 },
@@ -618,14 +618,14 @@
     "cooling_technology": "Làm lạnh đa chiều"
   },
   "price": 21300000,
-  "stock": 10,
+  "stock": 9,
   "images": [],
   "isActive": true,
   "createdAt": {
     "$date": "2025-12-05T07:42:59.990Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T07:43:46.477Z"
+    "$date": "2025-12-06T03:34:57.752Z"
   },
   "__v": 0,
   "compareAtPrice": 22100000,
@@ -638,7 +638,7 @@
   "productId": {
     "$oid": "69328d861ce81a609272754d"
   },
-  "sku": "",
+  "sku": "GR-B256BL",
   "barcode": "",
   "attributes": {
     "brand": "LG",
@@ -651,14 +651,76 @@
   },
   "price": 14100000,
   "compareAtPrice": 14900000,
-  "stock": 10,
+  "stock": 8,
   "images": [],
   "isActive": true,
   "createdAt": {
     "$date": "2025-12-05T07:46:04.869Z"
   },
   "updatedAt": {
-    "$date": "2025-12-05T07:46:04.869Z"
+    "$date": "2025-12-06T03:47:01.855Z"
   },
-  "__v": 0
+  "__v": 0,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "6932c8b818a743ee984654b3"
+  },
+  "productId": {
+    "$oid": "6932c73e18a743ee9846538f"
+  },
+  "sku": "apple-airpod-2-magsafe",
+  "barcode": "",
+  "attributes": {
+    "brand": "Apple",
+    "type": "In-ear (Nhét tai)",
+    "connection": "Bluetooth",
+    "battery_hours": 0,
+    "charge_type": "Type-C"
+  },
+  "price": 5120000,
+  "compareAtPrice": 5620000,
+  "stock": 10,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-05T11:57:44.837Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T11:58:53.108Z"
+  },
+  "__v": 0,
+  "facets": {}
+},
+{
+  "_id": {
+    "$oid": "6933ad5ed17853c6dddc8d90"
+  },
+  "productId": {
+    "$oid": "6933ace4d17853c6dddc8d2d"
+  },
+  "sku": "macbook-air-13-inch-m3-2024",
+  "barcode": "",
+  "attributes": {
+    "brand": "Apple (MacBook)",
+    "cpu": "Apple M3",
+    "hard_drive": "SSD 1TB",
+    "ram": "8GB",
+    "screen_size": "15.6 inch",
+    "vga": "Onboard (Tích hợp)"
+  },
+  "price": 31200000,
+  "compareAtPrice": 33100000,
+  "stock": 9,
+  "images": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-12-06T04:13:18.408Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T04:28:03.651Z"
+  },
+  "__v": 0,
+  "facets": {}
 }]
